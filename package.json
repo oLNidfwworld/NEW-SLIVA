@@ -1,5 +1,5 @@
 {
-  "author": "Egor F",
+  "author": "Daniil Kuvetov",
   "name": "frontend-webpack5-boilerplate",
   "version": "5.11.0",
   "description": "Starter project template boilerplate based on Webpack with SASS/PostCSS and babel ES6/7 support.",
@@ -10,12 +10,12 @@
   ],
   "bugs": {
     "url": "https://github.com/",
-    "email": "egor@burburo.ru"
+    "email": "daniil.k@burburo.ru"
   },
   "contributors": [
     {
-      "name": "Egor Feofanov",
-      "email": "egor@burburo.ru",
+      "name": "Daniil Kuvetov",
+      "email": "daniil.k@burburo.ru",
       "url": "https://github.com/"
     }
   ],
@@ -86,10 +86,7 @@
     "@fancyapps/ui": "^4.0.27",
     "choices.js": "^10.1.0",
     "http-server": "^14.1.0",
-    "lax.js": "^2.0.3",
-    "popups": "^1.1.3",
     "pug": "^3.0.2",
-    "swiper": "^8.1.5",
-    "wowjs": "^1.1.3"
+    "swiper": "^8.1.5"
   }
 }

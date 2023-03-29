@@ -23,23 +23,25 @@
 /* Components */
 /* Browser specific styles */
 @import 'dirty/hacks';
-
-
+ 
 /* Page layout */
 @import 'blocks/header';
 @import 'blocks/footer';
-@import "@fancyapps/ui/dist/fancybox.css";
 /* Pages styles */
-@import 'demo';
 
-
-@import 'popups/css/popupS.css';
-
-@import 'wowjs/css/libs/animate.css';
-//@import 'swiper/swiper.scss';
-
-// @import url("choices.js/public/assets/styles/base.css");
-// @import url("choices.js/public/assets/styles/base.min.css");
-// @import url("choices.js/public/assets/styles/choices.css");
-// @import url("choices.js/public/assets/styles/choices.min.css");
-
+.btn{
+  width: fit-content;
+}
+.inpt{
+  padding: 15px 0px 15px 18px;
+  ::placeholder{
+    color: var(--grey);
+  }
+}
+*{
+  font-family: Mulish;
+  font-weight: 400;
+}
+body{
+  @apply bg-global-bg;
+}

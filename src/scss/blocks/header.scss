@@ -1,0 +1,39 @@
+//@media (hover: none) and (pointer: coarse) and (min-width:480px)  {
+//  h1{
+//    font-size: 30px;
+//  }
+//}
+//@media handheld and (min-width:480px){
+//
+//}
+
+header{
+  padding: 20px 0;
+}
+
+.nav-line{
+  &__wrapper{
+    @apply grid grid-cols-[auto,auto] gap-2;
+  }
+  &__burger-button{
+    @apply rounded m-auto bg-blue p-3 w-fit m-auto;
+  }
+}
+.regions{
+  @apply bg-white text-blue p-[8px_27px] w-full h-fit m-auto relative rounded;
+  &__wrapper{
+    @apply grid grid-cols-[1fr,5fr] items-center w-fit m-auto;
+  }
+  &__city{
+     @apply font-bold text-[14px] truncate leading-[17px];
+  }
+  &__delivery{
+    @apply text-[12px] leading-[15px];
+
+  }
+}
+
+.main-line{
+  @apply mt-[10px];
+
+}

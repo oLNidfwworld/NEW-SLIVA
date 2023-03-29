@@ -23,7 +23,7 @@ const htmlPluginEntries = PAGES.map((page) => new HTMLWebpackPlugin({
   hash: false,
   template: `${PAGES_DIR}/${page}`,
 	filename: `./${page.replace(/\.pug/, '.html')}`,
-  favicon: path.resolve(environment.paths.source, 'images', 'favicon.ico'),
+  favicon: path.resolve(environment.paths.source, 'assets', 'favicon.ico'),
 }));
 
 module.exports = {

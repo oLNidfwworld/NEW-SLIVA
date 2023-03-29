@@ -1,10 +1,10 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
-const colorTheme = require('./src/config/tailwind.conf').colorTheme;
-const spacingTheme = require('./src/config/tailwind.conf').spacingTheme;
 const plugin = require('tailwindcss/plugin');
+const { colorTheme } = require('./src/config/tailwind.conf');
+const { spacingTheme } = require('./src/config/tailwind.conf');
 
 module.exports = {
-  content: ["./src/**/*.{pug,html,js}"],
+  content: ['./src/**/*.{pug,html,js}'],
   important: true,
   purge: false,
   future: {
@@ -12,48 +12,55 @@ module.exports = {
     purgeLayersByDefault: true,
   },
   corePlugins: {
-    container: false
+    container: false,
   },
   theme: {
     extend: {
-      spacing:{
-        '130px':'130px'
+      spacing: {
+        '130px': '130px',
       },
       width: {
         ...defaultTheme.width,
-        fit: 'fit-content'
+        fit: 'fit-content',
       },
       height: {
         ...defaultTheme.height,
-        fit: 'fit-content'
-      }
+        fit: 'fit-content',
+      },
     },
-    container: {
-      center: true,
-      screens: {
-        sm: "100%",
-        md: "100%",
-        // lg: "1280px",
-        // xl: "1400px",
-      }
-    },
+    // container: {
+    //   center: true,
+    //   screens: {
+    //     sm: '100%',
+    //     md: '100%',
+    //     lg: "1280px",
+    //     xl: "1400px",
+    //   },
+    // },
     screens: {
-      'xs': '320px',
-      'sm': '480px',
-      'md': '768px',
-      'lg': '1024px',
-      'xl': '1440px',
+      xs: '320px',
+      sm: '480px',
+      md: '720px',
+      lg: '1024px',
+      '2lg': '1280px',
+      xl: '1440px',
     },
     spacing: {
       ...spacingTheme,
     },
     colors: {
-      'black':'var(--black)',
-      'pink':'var(--pink)',
-      'white':'var(--white)',
-      'violet':'var(--violet)',
-      'gray':'var(--gray)',
-      'transparent':'var(--transparent)',
+      green: 'var(--green)',
+      violet: 'var(--violet)',
+      blue: 'var(--blue)',
+      'light-blue': 'var(--light-blue)',
+      yellow: 'var(--yellow)',
+      black: 'var(--black)',
+      grey: 'var(--grey)',
+      'light-grey': 'var(--light-grey)',
+      'lighter-grey': 'var(--lighter-grey)',
+      white: 'var(--white)',
+      red: 'var(--red)',
+      'global-bg': 'var(--global-bg)',
     },
     borderColor: {
       ...colorTheme,
@@ -62,22 +69,22 @@ module.exports = {
       ...colorTheme,
     },
     fontSize: {
-      '90px':'90px',
-      '70px':'70px',
-      '60px':'60px',
-      '56px':'56px',
-      '54px':'54px',
-      '50px':'50px',
-      '40px':'40px',
-      '32px':'32px',
-      '30px':'30px',
-      '28px':'28px',
-      '24px':'24px',
-      '21px':'21px',
-      '20px':'20px',
-      '18px':'18px',
-      '16px':'16px',
-      '12px':'12px',
+      '90px': '90px',
+      '70px': '70px',
+      '60px': '60px',
+      '56px': '56px',
+      '54px': '54px',
+      '50px': '50px',
+      '40px': '40px',
+      '32px': '32px',
+      '30px': '30px',
+      '28px': '28px',
+      '24px': '24px',
+      '21px': '21px',
+      '20px': '20px',
+      '18px': '18px',
+      '16px': '16px',
+      '12px': '12px',
     },
     lineHeight: {
       ...defaultTheme.lineHeight,
@@ -90,35 +97,30 @@ module.exports = {
       addComponents({
         '.container': {
           maxWidth: '100%',
-          margin:'auto',
-          padding:'0 5px',
-          '@screen xs': {
-            maxWidth: '100%',
-            padding:'0 15px'
-          },
+          padding: '0 16px',
           '@screen sm': {
             maxWidth: '480px',
-            padding:'0 15px'
+            padding: '0 21px',
+            margin: 'auto',
           },
           '@screen md': {
-            maxWidth: '768px',
+            maxWidth: '720px',
+            padding: '0 27px',
           },
           '@screen lg': {
-            maxWidth: '980px', 
+            maxWidth: '1024px',
+            padding: '0 54px',
+          },
+          '@screen 2lg': {
+            maxWidth: '1280px',
+            padding: '0 31px',
           },
           '@screen xl': {
-            maxWidth: '1440px',
-            // paddingLeft: '18px',
-            // paddingRight: '18px',
+            maxWidth: '1024px',
+            padding: '0 34px',
           },
-          //'@screen xxl': {
-          //  maxWidth: '1401px',
-          //},
-          //'@screen xxxl': {
-          //  maxWidth: '1601px',
-          //},
-        }
-      })
-    })
+        },
+      });
+    }),
   ],
-}
+};
