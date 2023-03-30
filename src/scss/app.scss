@@ -33,11 +33,29 @@
   width: fit-content;
 }
 .inpt{
+  @apply rounded;
   padding: 15px 0px 15px 18px;
+}
+.inpt.grey{
+  @apply bg-lighter-grey;
+  ::placeholder{
+    color: var(--white);
+  }
+}
+.inpt.white{
+  @apply bg-white;
   ::placeholder{
     color: var(--grey);
   }
 }
+
+.search__wrapper{
+  @apply relative ;
+}
+.search__ico{
+  @apply absolute right-3 top-0 bottom-0 m-auto h-fit w-fit ;
+}
+
 *{
   font-family: Mulish;
   font-weight: 400;

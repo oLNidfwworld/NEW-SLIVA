@@ -2,24 +2,127 @@ header
     .container
         nav.nav-line
             ul.nav-line__wrapper
-                li.nav-line__burger-button
-                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                li.nav-line__item-desk
+                    a.nav-line__link(href='#') Условия доставки
+                    a.nav-line__link(href='#') Условия оплаты
+                    a.nav-line__link(href='#') Оформление и возврат
+                li.nav-line__item-desk
+                    a.nav-line__link(href='#') О компании
+                    a.nav-line__link(href='#') Контакты
+                    a.nav-line__link(href='#') Блог
+                li.nav-line__item-mob
+                    .nav-line__burger-button
+                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0.636719 1.51611H24.8791M0.636719 12.6167H24.8791M0.636719 22.4839H24.8791" stroke="white" stroke-width="2"/>
-                    </svg>
-                li.regions
-                    .regions__wrapper
-                        .min-w-4.min-h-4
-                            <svg width="22" height="29" viewBox="0 0 22 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M19.9676 12.2043C19.5081 17.7806 11.0004 26.5 11.0004 26.5C11.0004 26.5 2.54851 18.0703 2.03332 12.1174C1.57382 6.80175 5.93207 2.5 11.0701 2.5C16.2081 2.5 20.4131 6.88865 19.9676 12.2043Z" stroke="#3AAFF1" stroke-width="2" stroke-miterlimit="10"/>
-                            <path d="M11 14.5C12.6569 14.5 14 13.1569 14 11.5C14 9.84315 12.6569 8.5 11 8.5C9.34315 8.5 8 9.84315 8 11.5C8 13.1569 9.34315 14.5 11 14.5Z" fill="#3AAFF1"/>
-                            </svg>
-                        div(class="overflow-hidden")
-                            .regions__city Петропавловск камчатский
-                            .regions__delivery Завтра
-                    .absolute.right-2.top-0.bottom-4.m-auto.h-fit
-                        <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M11 1L6 6L1 1" stroke="#3AAFF1" stroke-width="2"/>
                         </svg>
+                li.nav-line__item-mob
+                    .regions
+                        .regions__wrapper
+                            .min-w-4.min-h-4
+                                <svg width="22" height="29" viewBox="0 0 22 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.9676 12.2043C19.5081 17.7806 11.0004 26.5 11.0004 26.5C11.0004 26.5 2.54851 18.0703 2.03332 12.1174C1.57382 6.80175 5.93207 2.5 11.0701 2.5C16.2081 2.5 20.4131 6.88865 19.9676 12.2043Z" stroke="#3AAFF1" stroke-width="2" stroke-miterlimit="10"/>
+                                <path d="M11 14.5C12.6569 14.5 14 13.1569 14 11.5C14 9.84315 12.6569 8.5 11 8.5C9.34315 8.5 8 9.84315 8 11.5C8 13.1569 9.34315 14.5 11 14.5Z" fill="#3AAFF1"/>
+                                </svg>
+                            div(class="overflow-hidden")
+                                .regions__city Петропавловск камчатский
+                                .regions__delivery Завтра
+                        .absolute.right-2.top-0.bottom-4.m-auto.h-fit
+                            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 1L6 6L1 1" stroke="#3AAFF1" stroke-width="2"/>
+                            </svg>
+                li.nav-line__item-mob
+                    .nav-line__question-button
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <ellipse cx="13.6346" cy="14" rx="13.537" ry="14" fill="white"/>
+                            <path d="M14.0757 16.6151H11.6241C11.6305 16.0185 11.6754 15.5047 11.7587 15.0739C11.8484 14.6364 11.999 14.242 12.2106 13.8906C12.4285 13.5393 12.7169 13.1913 13.0758 12.8466C13.3771 12.5682 13.6399 12.303 13.8642 12.0511C14.0885 11.7993 14.2648 11.5407 14.393 11.2756C14.5212 11.0038 14.5853 10.7022 14.5853 10.3707C14.5853 9.98628 14.5276 9.6681 14.4122 9.4162C14.3033 9.15768 14.1366 8.96213 13.9123 8.82956C13.6944 8.69698 13.4188 8.63069 13.0855 8.63069C12.8098 8.63069 12.5535 8.69367 12.3163 8.81961C12.0792 8.93893 11.8837 9.12454 11.7298 9.37643C11.5824 9.62833 11.5055 9.95976 11.4991 10.3707H8.71094C8.73017 9.46261 8.93207 8.71355 9.31664 8.12359C9.70762 7.527 10.23 7.08619 10.8838 6.80115C11.5375 6.50948 12.2714 6.36365 13.0855 6.36365C13.9828 6.36365 14.7519 6.51611 15.3929 6.82103C16.0338 7.11933 16.5242 7.56014 16.8639 8.14348C17.2036 8.72018 17.3734 9.42283 17.3734 10.2514C17.3734 10.8281 17.2645 11.3419 17.0466 11.7926C16.8286 12.2368 16.5434 12.6511 16.1909 13.0355C15.8384 13.42 15.4506 13.8177 15.0275 14.2287C14.6622 14.5668 14.4122 14.9214 14.2776 15.2926C14.1494 15.6638 14.0821 16.1047 14.0757 16.6151ZM11.3356 19.6875C11.3356 19.2633 11.4767 18.9119 11.7587 18.6335C12.0407 18.3485 12.4189 18.206 12.8932 18.206C13.3611 18.206 13.736 18.3485 14.018 18.6335C14.3065 18.9119 14.4507 19.2633 14.4507 19.6875C14.4507 20.0985 14.3065 20.4465 14.018 20.7315C13.736 21.0166 13.3611 21.1591 12.8932 21.1591C12.4189 21.1591 12.0407 21.0166 11.7587 20.7315C11.4767 20.4465 11.3356 20.0985 11.3356 19.6875Z" fill="#3AAFF1"/>
+                        </svg>
+
         .main-line
             .main-line__wrapper
-                input.w-full.inpt(type='search' placeholder='Поиск')
+                .main-line__item-mob
+                    .search__wrapper
+                        input.w-full.inpt.white.type-search(placeholder='Поиск' class='z-[1]')
+                        .search__ico(class='z-[2]')
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.088 20.69C16.8806 20.69 20.7658 16.7814 20.7658 11.96C20.7658 7.13853 16.8806 3.22998 12.088 3.22998C7.29534 3.22998 3.41016 7.13853 3.41016 11.96C3.41016 16.7814 7.29534 20.69 12.088 20.69Z" stroke="#40B484" stroke-width="2" stroke-miterlimit="10"/>
+                            <path d="M17.8516 18.16L26.42 26.77" stroke="#40B484" stroke-width="2" stroke-miterlimit="10"/>
+                            </svg>
+                .main-line__item-desk
+                    .logo
+                        img(src='/assets/img/logo.png')
+                .main-line__item-desk
+                    .main-line__btns
+                        .main-line__btn
+                            .regions
+                                .regions__wrapper
+                                    .min-w-4.min-h-4
+                                        <svg width="20" height="27" viewBox="0 0 20 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_1188_59019)">
+                                        <path d="M18.9676 10.7043C18.5081 16.2806 10.0004 25 10.0004 25C10.0004 25 1.54851 16.5703 1.03332 10.6174C0.573825 5.30175 4.93207 1 10.0701 1C15.2081 1 19.4131 5.38865 18.9676 10.7043Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                                        <path d="M10 13C11.6569 13 13 11.6569 13 10C13 8.34315 11.6569 7 10 7C8.34315 7 7 8.34315 7 10C7 11.6569 8.34315 13 10 13Z" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_1188_59019">
+                                        <rect width="20" height="27" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                        </svg>
+                                    div(class="overflow-hidden")
+                                        .regions__city Петропавловск камчатский
+                                        .regions__delivery Завтра
+                                .absolute.right-2.top-0.bottom-4.m-auto.h-fit
+                                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 1.5L6 6.5L1 1.5" stroke="white" stroke-width="2"/>
+                                    </svg>
+                        .main-line__btn
+                            .main-line__catalog-btn
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.85156 9.82996H24.6616" stroke="white" stroke-width="2.3" stroke-miterlimit="10"/>
+                                <path d="M9.85156 15H21.4816" stroke="white" stroke-width="2.3" stroke-miterlimit="10"/>
+                                <path d="M9.85156 20.1801H17.2616" stroke="white" stroke-width="2.3" stroke-miterlimit="10"/>
+                                <path d="M7.62984 8.68005H5.33984V10.9701H7.62984V8.68005Z" fill="white"/>
+                                <path d="M7.62984 13.86H5.33984V16.15H7.62984V13.86Z" fill="white"/>
+                                <path d="M7.62984 19.03H5.33984V21.32H7.62984V19.03Z" fill="white"/>
+                                </svg>
+                                span Каталог
+                        .main-line__btn
+                            .main-line__search-btn
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.1597 20.69C16.9811 20.69 20.8897 16.7814 20.8897 11.96C20.8897 7.13853 16.9811 3.22998 12.1597 3.22998C7.33824 3.22998 3.42969 7.13853 3.42969 11.96C3.42969 16.7814 7.33824 20.69 12.1597 20.69Z" stroke="white" stroke-width="2.3" stroke-miterlimit="10"/>
+                                <path d="M17.9609 18.16L26.5809 26.77" stroke="white" stroke-width="2.3" stroke-miterlimit="10"/>
+                                </svg>
+
+                .main-line__item-desk
+                    .main-line__self-btns
+                        .main-line__self-btn
+                            <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.0004 14.4742C17.3316 14.4742 20.0321 11.7738 20.0321 8.44256C20.0321 5.11136 17.3316 2.41089 14.0004 2.41089C10.6692 2.41089 7.96875 5.11136 7.96875 8.44256C7.96875 11.7738 10.6692 14.4742 14.0004 14.4742Z" fill="#3AAFF1" stroke="#3AAFF1" stroke-width="2" stroke-miterlimit="10"/>
+                            <path d="M25.7351 26.3976H2.26172C2.26172 19.9109 7.51172 14.6609 13.9984 14.6609C20.4851 14.6609 25.7351 19.9109 25.7351 26.3976Z" fill="#3AAFF1" stroke="#3AAFF1" stroke-width="2" stroke-miterlimit="10"/>
+                            </svg>
+                            .main-line__self-btn-bubble
+                                <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 3.14286L4.15 6L9 1" stroke="#32383C" stroke-width="2"/>
+                                </svg>
+
+                        .main-line__self-btn
+                            <svg width="28" height="25" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.9589 23.1542L4.71889 13.9142C-3.05111 6.14419 6.18889 -3.09581 13.9589 4.67419C21.8689 -3.23581 31.1089 6.00419 23.1989 13.9142L13.9589 23.1542Z" fill="#3AAFF1" stroke="#3AAFF1" stroke-width="2" stroke-miterlimit="10"/>
+                            </svg>
+                            .main-line__self-btn-bubble 3
+                        .main-line__self-btn
+                            <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1188_59044)">
+                            <path d="M20.3547 12.2356V7.63631C20.3547 4.12948 17.5142 1.28906 14.0074 1.28906C10.5006 1.28906 7.66016 4.12948 7.66016 7.63631V12.2356" stroke="#3AAFF1" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M15.8743 27.1151H24.7233V18.3535V7.85486H3.28906V27.1151H15.9726" fill="#3AAFF1"/>
+                            <path d="M15.8743 27.1151H24.7233V18.3535V7.85486H3.28906V27.1151H15.9726" stroke="#3AAFF1" stroke-width="2" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_1188_59044">
+                            <rect width="28" height="28.4042" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                            .main-line__self-btn-bubble 3
+
+
+

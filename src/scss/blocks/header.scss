@@ -8,32 +8,90 @@
 //}
 
 header{
+  @apply lg:bg-white;
   padding: 20px 0;
+  box-shadow: 0px 7px 15px -13px #829297E0;
+
 }
 
 .nav-line{
   &__wrapper{
-    @apply grid grid-cols-[auto,auto] gap-2;
+    @apply grid grid-cols-[auto,1fr] sm:grid-cols-[auto,1fr,auto] sm:gap-7 gap-2 lg:flex lg:justify-between ;
   }
   &__burger-button{
-    @apply rounded m-auto bg-blue p-3 w-fit m-auto;
+    @apply rounded m-auto bg-blue p-3 w-fit m-auto  ;
+  }
+  &__question-button{
+    @apply hidden sm:block rounded m-auto bg-blue p-[10px] w-fit m-auto  ;
+  }
+  &__link{
+    @apply text-14px leading-[17px] font-bold;
+  }
+  &__link:not(:last-child){
+    margin-right: 30px;
+  }
+  &__item-desk{
+    @apply hidden lg:flex;
+  }
+  &__item-mob{
+    @apply lg:hidden;
   }
 }
 .regions{
-  @apply bg-white text-blue p-[8px_27px] w-full h-fit m-auto relative rounded;
+  @apply bg-white text-blue p-[9px_29px] w-full h-fit m-auto relative rounded lg:bg-blue lg:text-white lg:rounded-none;
   &__wrapper{
     @apply grid grid-cols-[1fr,5fr] items-center w-fit m-auto;
   }
   &__city{
-     @apply font-bold text-[14px] truncate leading-[17px];
+     @apply font-bold text-[14px] truncate leading-[17px] ;
   }
   &__delivery{
     @apply text-[12px] leading-[15px];
 
   }
 }
+.logo{
+  @apply w-fit;
+}
 
 .main-line{
-  @apply mt-[10px];
-
+  @apply mt-[10px]  ;
+  &__wrapper{
+    @apply lg:grid lg:grid-cols-[repeat(3,auto)] lg:gap-12 lg:items-end;
+  }
+  &__item-mob{
+    @apply lg:hidden;
+  }
+  &__item-desk{
+    @apply hidden lg:block;
+  }
+  &__btns{
+    display: flex;
+  }
+  &__btn:not(:last-child){
+    margin-right: 18px;
+  }
+  &__catalog-btn{
+    @apply bg-green flex text-white justify-center items-center px-3 h-full;
+  }
+  &__search-btn{
+    @apply bg-green;
+    padding: 10px;
+  }
+  &__self-btns{
+    @apply flex items-end;
+  }
+  &__self-btn{
+    @apply relative;
+    &-bubble{
+      @apply absolute rounded-[100px] bg-global-bg p-1 -top-2 -right-3 text-12px font-extrabold leading-[15px] w-5 h-5 flex items-center justify-center;
+    }
+    > svg{
+      min-height: 30px;
+      min-width: 30px;
+    }
+  }
+  &__self-btn:not(:last-child){
+     @apply mr-11;
+  }
 }
