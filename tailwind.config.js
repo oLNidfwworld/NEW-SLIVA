@@ -110,14 +110,14 @@ module.exports = {
           },
           '@screen lg': {
             maxWidth: '1024px',
-            padding: '0 54px',
+            padding: '0 51px',
           },
           '@screen 2lg': {
             maxWidth: '1280px',
             padding: '0 31px',
           },
           '@screen xl': {
-            maxWidth: '1024px',
+            maxWidth: '1440px',
             padding: '0 34px',
           },
         },

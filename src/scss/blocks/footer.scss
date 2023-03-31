@@ -1,0 +1,46 @@
+footer{
+  @apply hidden lg:block;
+}
+.footer{
+  @apply bg-white;
+  &__{
+    &wrapper{
+      @apply grid-cols-[2fr_4fr_3fr] pt-20 pb-12 grid gap-[120px];
+    }
+  }
+}
+.mob-menu{
+  box-shadow: 0px -7px 15px -13px #829297E0;
+  @apply sticky bottom-0 lg:static bg-white p-[30px_0px_17px_0px] lg:hidden ;
+  &__{
+    &wrapper{
+    }
+  }
+}
+.bottom-links{
+  @apply grid grid-cols-2 ;
+  &__{
+    &general{
+      @apply text-18px font-bold leading-[22px] mb-5;
+    }
+    &link{
+      @apply text-[15px] font-light;
+    }
+    &wrap{
+      @apply flex flex-col mt-3;
+    }
+  }
+}
+.app-adv{
+  &__{
+    &wrapper{
+      @apply grid grid-cols-[2fr_3fr] gap-[11px];
+    }
+  }
+}
+.download-links{
+  @apply flex mt-3;
+  :not(:last-child){
+    @apply mr-2;
+  }
+}
