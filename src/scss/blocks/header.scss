@@ -81,7 +81,7 @@ header{
 }
 
 .self-btns{
-  @apply flex items-end justify-between lg:justify-normal;
+  @apply flex items-end justify-between lg:justify-center;
   &__item{
     @apply relative;
     &-bubble{
