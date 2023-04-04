@@ -27,3 +27,27 @@ new Swiper('.storys', {
     },
   },
 });
+new Swiper('.slivniye-prices', {
+  modules: [FreeMode],
+  freeMode: true,
+  breakpoints: {
+    0:{
+      slidesPerView: 1,
+    },
+    480:{
+      slidesPerView: 2,
+    },
+    720:{
+      slidesPerView: 3,
+    },
+    1024:{
+      slidesPerView: 4,
+    },
+    1280:{
+      slidesPerView: 4,
+    },
+    1440:{
+      slidesPerView: 5,
+    }
+  }
+});

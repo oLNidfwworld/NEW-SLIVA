@@ -9,23 +9,24 @@ block variables
 
 block content
   .container
-    section.banners
-      .banners__wrapper
-        .swiper-wrapper
-          .swiper-slide
-            .banners__image-wrapper
-              picture
-                source(srcset='/assets/img/banner-slide-mid.png' media='(min-width:720px) and (max-width:1023px)')
-                source(srcset='/assets/img/banner-slide-pc.png' media='(min-width:1024px)')
-                source(srcset='/assets/img/banner-slide-mob.png' )
-                image.banners__image-content
-          .swiper-slide
-            .banners__image-wrapper
-              picture
-                source(srcset='/assets/img/banner-slide-mid.png' media='(min-width:720px) and (max-width:1023px)')
-                source(srcset='/assets/img/banner-slide-pc.png' media='(min-width:1024px)')
-                source(srcset='/assets/img/banner-slide-mob.png' )
-                image.banners__image-content
+    section
+      .banners
+        .banners__wrapper
+          .swiper-wrapper
+            .swiper-slide
+              .banners__image-wrapper
+                picture
+                  source(srcset='/assets/img/banner-slide-mid.png' media='(min-width:720px) and (max-width:1023px)')
+                  source(srcset='/assets/img/banner-slide-pc.png' media='(min-width:1024px)')
+                  source(srcset='/assets/img/banner-slide-mob.png' )
+                  image.banners__image-content
+            .swiper-slide
+              .banners__image-wrapper
+                picture
+                  source(srcset='/assets/img/banner-slide-mid.png' media='(min-width:720px) and (max-width:1023px)')
+                  source(srcset='/assets/img/banner-slide-pc.png' media='(min-width:1024px)')
+                  source(srcset='/assets/img/banner-slide-mob.png' )
+                  image.banners__image-content
     section.mt-10
       .storys
         .storys__wrapper.swiper-wrapper
@@ -72,28 +73,313 @@ block content
           <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.8968 3.99401L14.2431 4.67223L11.7614 7.24105L10.8243 6.26874L12.3399 4.69623H0.0703125V3.29178H12.3399L10.8243 1.71928L11.7614 0.740967L14.8968 3.99401Z" fill="#40B484"/>
           </svg>
-    .slivniye-prices
-      .slivniye-prices__wrapper
-        .slivniye-prices__item
-          .slivniye-prices__btn-wrapper
-            .slivniye-prices__btn-fav
-              <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M10.5676 17.0465L3.8356 10.3145C-1.8254 4.65347 4.9066 -2.07853 10.5676 3.58247C16.3306 -2.18053 23.0626 4.55147 17.2996 10.3145L10.5676 17.0465Z" stroke="white" stroke-width="2.3" stroke-miterlimit="10"/>
-              </svg>
-            .slivniye-prices__btn-buy
-              <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_1221_74861)">
-              <path d="M18.7245 11.4301V7.28559C18.7245 4.1255 16.1649 1.56592 13.0048 1.56592C9.84474 1.56592 7.28516 4.1255 7.28516 7.28559V11.4301" stroke="white" stroke-width="2" stroke-linejoin="round"/>
-              <path d="M14.6886 24.8385H22.6626V16.9431V7.48254H3.34766V24.8385H14.7772" stroke="white" stroke-width="2" stroke-linejoin="round"/>
-              </g>
-              <defs>
-              <clipPath id="clip0_1221_74861">
-              <rect width="25.2315" height="25.5958" fill="white" transform="translate(0.382812 0.404297)"/>
-              </clipPath>
-              </defs>
-              </svg>
-          .slivniye-prices__item-wrapper
-            .image-wrapper
-              img(src='/assets/img/sliv-cen/marmel.png')
+      .slivniye-prices.mt-5
+        .slivniye-prices__wrapper.swiper-wrapper
+          .slivniye-prices__item.swiper-slide
+            .slivniye-prices__discount -11%
+            .slivniye-prices__btn-wrapper
+              .slivniye-prices__btn-fav
+                <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5676 17.0465L3.8356 10.3145C-1.8254 4.65347 4.9066 -2.07853 10.5676 3.58247C16.3306 -2.18053 23.0626 4.55147 17.2996 10.3145L10.5676 17.0465Z" stroke="white" stroke-width="2.3" stroke-miterlimit="10"/>
+                </svg>
+              .slivniye-prices__btn-buy
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1221_74861)">
+                <path d="M18.7245 11.4301V7.28559C18.7245 4.1255 16.1649 1.56592 13.0048 1.56592C9.84474 1.56592 7.28516 4.1255 7.28516 7.28559V11.4301" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M14.6886 24.8385H22.6626V16.9431V7.48254H3.34766V24.8385H14.7772" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_1221_74861">
+                <rect width="25.2315" height="25.5958" fill="white" transform="translate(0.382812 0.404297)"/>
+                </clipPath>
+                </defs>
+                </svg>
+            .slivniye-prices__item-wrapper
+              .slivniye-prices__image-wrapper
+                img(src='/assets/img/sliv-cen/marmel.png')
+              del.text-light-grey
+                .slivniye-prices__old-price 199.44 руб. / кг
+              .text-center
+                span.slivniye-prices__price 177.50
+                span.slivniye-prices__measure руб. / кг
+          .slivniye-prices__item.swiper-slide
+            .slivniye-prices__discount -11%
+            .slivniye-prices__btn-wrapper
+              .slivniye-prices__btn-fav
+                <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5676 17.0465L3.8356 10.3145C-1.8254 4.65347 4.9066 -2.07853 10.5676 3.58247C16.3306 -2.18053 23.0626 4.55147 17.2996 10.3145L10.5676 17.0465Z" stroke="white" stroke-width="2.3" stroke-miterlimit="10"/>
+                </svg>
+              .slivniye-prices__btn-buy
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1221_74861)">
+                <path d="M18.7245 11.4301V7.28559C18.7245 4.1255 16.1649 1.56592 13.0048 1.56592C9.84474 1.56592 7.28516 4.1255 7.28516 7.28559V11.4301" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M14.6886 24.8385H22.6626V16.9431V7.48254H3.34766V24.8385H14.7772" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_1221_74861">
+                <rect width="25.2315" height="25.5958" fill="white" transform="translate(0.382812 0.404297)"/>
+                </clipPath>
+                </defs>
+                </svg>
+            .slivniye-prices__item-wrapper
+              .slivniye-prices__image-wrapper
+                img(src='/assets/img/sliv-cen/marmel.png')
+              del.text-light-grey
+                .slivniye-prices__old-price 199.44 руб. / кг
+              .text-center
+                span.slivniye-prices__price 177.50
+                span.slivniye-prices__measure руб. / кг
+          .slivniye-prices__item.swiper-slide
+            .slivniye-prices__discount -11%
+            .slivniye-prices__btn-wrapper
+              .slivniye-prices__btn-fav
+                <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5676 17.0465L3.8356 10.3145C-1.8254 4.65347 4.9066 -2.07853 10.5676 3.58247C16.3306 -2.18053 23.0626 4.55147 17.2996 10.3145L10.5676 17.0465Z" stroke="white" stroke-width="2.3" stroke-miterlimit="10"/>
+                </svg>
+              .slivniye-prices__btn-buy
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1221_74861)">
+                <path d="M18.7245 11.4301V7.28559C18.7245 4.1255 16.1649 1.56592 13.0048 1.56592C9.84474 1.56592 7.28516 4.1255 7.28516 7.28559V11.4301" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M14.6886 24.8385H22.6626V16.9431V7.48254H3.34766V24.8385H14.7772" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_1221_74861">
+                <rect width="25.2315" height="25.5958" fill="white" transform="translate(0.382812 0.404297)"/>
+                </clipPath>
+                </defs>
+                </svg>
+            .slivniye-prices__item-wrapper
+              .slivniye-prices__image-wrapper
+                img(src='/assets/img/sliv-cen/marmel.png')
+              del.text-light-grey
+                .slivniye-prices__old-price 199.44 руб. / кг
+              .text-center
+                span.slivniye-prices__price 177.50
+                span.slivniye-prices__measure руб. / кг
+          .slivniye-prices__item.swiper-slide
+            .slivniye-prices__discount -11%
+            .slivniye-prices__btn-wrapper
+              .slivniye-prices__btn-fav
+                <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5676 17.0465L3.8356 10.3145C-1.8254 4.65347 4.9066 -2.07853 10.5676 3.58247C16.3306 -2.18053 23.0626 4.55147 17.2996 10.3145L10.5676 17.0465Z" stroke="white" stroke-width="2.3" stroke-miterlimit="10"/>
+                </svg>
+              .slivniye-prices__btn-buy
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1221_74861)">
+                <path d="M18.7245 11.4301V7.28559C18.7245 4.1255 16.1649 1.56592 13.0048 1.56592C9.84474 1.56592 7.28516 4.1255 7.28516 7.28559V11.4301" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M14.6886 24.8385H22.6626V16.9431V7.48254H3.34766V24.8385H14.7772" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_1221_74861">
+                <rect width="25.2315" height="25.5958" fill="white" transform="translate(0.382812 0.404297)"/>
+                </clipPath>
+                </defs>
+                </svg>
+            .slivniye-prices__item-wrapper
+              .slivniye-prices__image-wrapper
+                img(src='/assets/img/sliv-cen/marmel.png')
+              del.text-light-grey
+                .slivniye-prices__old-price 199.44 руб. / кг
+              .text-center
+                span.slivniye-prices__price 177.50
+                span.slivniye-prices__measure руб. / кг
+          .slivniye-prices__item.swiper-slide
+            .slivniye-prices__discount -11%
+            .slivniye-prices__btn-wrapper
+              .slivniye-prices__btn-fav
+                <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5676 17.0465L3.8356 10.3145C-1.8254 4.65347 4.9066 -2.07853 10.5676 3.58247C16.3306 -2.18053 23.0626 4.55147 17.2996 10.3145L10.5676 17.0465Z" stroke="white" stroke-width="2.3" stroke-miterlimit="10"/>
+                </svg>
+              .slivniye-prices__btn-buy
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1221_74861)">
+                <path d="M18.7245 11.4301V7.28559C18.7245 4.1255 16.1649 1.56592 13.0048 1.56592C9.84474 1.56592 7.28516 4.1255 7.28516 7.28559V11.4301" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M14.6886 24.8385H22.6626V16.9431V7.48254H3.34766V24.8385H14.7772" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_1221_74861">
+                <rect width="25.2315" height="25.5958" fill="white" transform="translate(0.382812 0.404297)"/>
+                </clipPath>
+                </defs>
+                </svg>
+            .slivniye-prices__item-wrapper
+              .slivniye-prices__image-wrapper
+                img(src='/assets/img/sliv-cen/marmel.png')
+              del.text-light-grey
+                .slivniye-prices__old-price 199.44 руб. / кг
+              .text-center
+                span.slivniye-prices__price 177.50
+                span.slivniye-prices__measure руб. / кг
+    section.mt-20(class='hidden lg:block')
+      .short-info
+        .short-info__wrapper
+          .short-info__map
+            .short-info__map-wrapper
+              <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6268e3969a945341ad0a821a78a22cca8f728be51048bd4e3aaf8a9ba5464d87&amp;width=100%;height=100%;lang=ru_RU&amp;scroll=true"></script>
+          .short-info__content
+            .short-info__content-wrapper
+              h2.text-center.mb-10 Доставка
+              .short-info__table.mb-10
+                .short-info__table-item
+                  <svg width="50" height="46" viewBox="0 0 50 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M41.5816 37.751H44.8516V30.051L40.1116 21.821H31.8516" stroke="#32383C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M41.7211 39.141C41.7211 39.6948 41.5569 40.2361 41.2492 40.6966C40.9415 41.1571 40.5042 41.5159 39.9926 41.7279C39.481 41.9398 38.918 41.9952 38.3748 41.8872C37.8317 41.7792 37.3328 41.5125 36.9412 41.1209C36.5496 40.7293 36.2829 40.2304 36.1749 39.6873C36.0669 39.1441 36.1223 38.5811 36.3342 38.0695C36.5462 37.5579 36.905 37.1206 37.3655 36.8129C37.826 36.5052 38.3673 36.341 38.9211 36.341C39.6637 36.341 40.3759 36.636 40.901 37.1611C41.4261 37.6862 41.7211 38.3984 41.7211 39.141Z" stroke="#32383C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M16.0688 39.141C16.0688 39.6948 15.9045 40.2361 15.5969 40.6966C15.2892 41.1571 14.8519 41.5159 14.3403 41.7279C13.8286 41.9398 13.2656 41.9952 12.7225 41.8872C12.1794 41.7792 11.6804 41.5125 11.2889 41.1209C10.8973 40.7293 10.6306 40.2304 10.5226 39.6873C10.4145 39.1441 10.47 38.5811 10.6819 38.0695C10.8938 37.5579 11.2527 37.1206 11.7132 36.8129C12.1736 36.5052 12.715 36.341 13.2688 36.341C14.0114 36.341 14.7235 36.636 15.2486 37.1611C15.7738 37.6862 16.0688 38.3984 16.0688 39.141Z" stroke="#32383C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M28.7003 14.7409H31.8503V37.7409H16.0703" stroke="#32383C" stroke-width="2" stroke-linejoin="round"/>
+                  <path d="M10.6698 37.7511H6.58984V22.6511" stroke="#32383C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M24.8498 32.7809H6.58984" stroke="#32383C" stroke-width="2" stroke-linejoin="round"/>
+                  <path d="M35.7616 37.7512H31.8516" stroke="#32383C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M44.39 30.051H35.75V21.821" stroke="#32383C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12.1816 24.3208C14.2166 24.3149 16.2042 23.7063 17.8937 22.5718C19.5831 21.4373 20.8986 19.8278 21.6742 17.9464C22.4498 16.0649 22.6506 13.9959 22.2514 12.0004C21.8522 10.005 20.8709 8.17244 19.4312 6.73416C17.9916 5.29589 16.1581 4.31631 14.1622 3.91905C12.1664 3.52179 10.0975 3.72466 8.21686 4.50205C6.33619 5.27945 4.72794 6.59652 3.59508 8.28706C2.46222 9.9776 1.85553 11.9658 1.85157 14.0008C1.85025 15.3573 2.11662 16.7007 2.6354 17.954C3.15419 19.2073 3.9152 20.346 4.87482 21.3047C5.83445 22.2634 6.97382 23.0233 8.22765 23.5408C9.48148 24.0584 10.8251 24.3235 12.1816 24.3208Z" stroke="#32383C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12.1797 21.3211V20.6911" stroke="#32383C" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                  <path d="M12.1914 6.68085V7.32085" stroke="#32383C" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                  <path d="M4.85156 13.9909H5.48156" stroke="#32383C" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                  <path d="M17.9997 14.0011H12.1797V11.2111" stroke="#32383C" stroke-width="2" stroke-linejoin="round"/>
+                  <path d="M49.98 6.94095C49.65 10.821 43.49 16.941 43.49 16.941C43.49 16.941 37.37 11.081 37 6.94095C37.0039 6.08736 37.176 5.2429 37.5063 4.4558C37.8366 3.66869 38.3187 2.95434 38.925 2.35355C39.5314 1.75275 40.2501 1.27727 41.0403 0.954257C41.8304 0.631241 42.6764 0.467016 43.53 0.470955C44.3836 0.474895 45.2281 0.646924 46.0152 0.977219C46.8023 1.30751 47.5166 1.78961 48.1174 2.39597C48.7182 3.00234 49.1937 3.72111 49.5167 4.51123C49.8397 5.30135 50.0039 6.14736 50 7.00095L49.98 6.94095Z" fill="#8311FD"/>
+                  <path d="M43.3192 8.99092C44.6281 8.99092 45.6892 7.92983 45.6892 6.62092C45.6892 5.312 44.6281 4.25092 43.3192 4.25092C42.0103 4.25092 40.9492 5.312 40.9492 6.62092C40.9492 7.92983 42.0103 8.99092 43.3192 8.99092Z" fill="white"/>
+                  </svg>
+                  span
+                    |По&nbsp;
+                    b Орехово-Зуево
+                    br
+                    |осуществляется в день заказа
+                .short-info__table-item
+                  <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.723 4.47445L6.05297 12.6244L1.04297 9.74445L14.983 1.74445L28.923 9.83445L15.373 18.1244L10.633 15.3544" stroke="#32383C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10.1719 15.0445L23.4919 7.04449" stroke="#32383C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M5.8625 12.6744L10.6125 15.3344L15.3725 18.1144V34.6044L1.2625 26.2144C1.2625 26.2144 1.1725 9.84445 1.0625 9.74445L5.8825 12.5044V22.0844L10.0925 24.5644L10.2025 15.0444" stroke="#32383C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M15.375 34.6043L28.925 26.3143V9.83429L15.375 18.1243V34.6043Z" stroke="#32383C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M35.4409 25.5844C35.1109 29.4644 28.9509 35.5844 28.9509 35.5844C28.9509 35.5844 22.8309 29.7244 22.4609 25.5844C22.4649 24.7308 22.6369 23.8863 22.9672 23.0992C23.2975 22.3121 23.7796 21.5978 24.386 20.997C24.9923 20.3962 25.7111 19.9207 26.5012 19.5977C27.2913 19.2747 28.1373 19.1104 28.9909 19.1144C29.8445 19.1183 30.689 19.2904 31.4761 19.6207C32.2632 19.9509 32.9775 20.433 33.5783 21.0394C34.1791 21.6458 34.6546 22.3645 34.9776 23.1547C35.3007 23.9448 35.4649 24.7908 35.4609 25.6444L35.4409 25.5844Z" fill="#00BC69"/>
+                  <path d="M28.7841 27.6343C30.093 27.6343 31.1541 26.5733 31.1541 25.2643C31.1541 23.9554 30.093 22.8943 28.7841 22.8943C27.4751 22.8943 26.4141 23.9554 26.4141 25.2643C26.4141 26.5733 27.4751 27.6343 28.7841 27.6343Z" fill="white"/>
+                  </svg>
+                  span
+                    |При&nbsp;
+                    b самовывозе
+                    br
+                    |забрать заказ можно с 9:00 до 19:00
+                .short-info__table-item
+                  <svg width="64" height="49" viewBox="0 0 64 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.559 5.15568L21.4069 14.5341L29.6003 7.11649L25.9141 17.5359L36.8219 19.317L26.3774 22.9314L31.7857 32.5699L22.4478 26.6576L18.2842 36.8956L17.0845 25.9087L6.48415 29.0367L14.3261 21.2485L5.27131 14.9111L16.2497 16.1863L15.559 5.15568Z" fill="#40B484"/>
+                  <g clip-path="url(#clip0_767_58007)">
+                  <path d="M62.9689 22.9395H22.6289V47.4495H62.9689V22.9395Z" fill="white" stroke="#32383C" stroke-width="2" stroke-miterlimit="10"/>
+                  <path d="M38.6125 40.6308C37.2898 40.6308 36.2712 40.1295 35.5565 39.1268C34.8418 38.1135 34.4845 36.6735 34.4845 34.8068C34.4845 32.9188 34.8418 31.4842 35.5565 30.5028C36.2712 29.5215 37.2898 29.0308 38.6125 29.0308C39.9458 29.0308 40.9645 29.5215 41.6685 30.5028C42.3832 31.4842 42.7405 32.9135 42.7405 34.7908C42.7405 36.6682 42.3832 38.1135 41.6685 39.1268C40.9645 40.1295 39.9458 40.6308 38.6125 40.6308ZM38.6125 38.9348C39.3378 38.9348 39.8765 38.6042 40.2285 37.9428C40.5805 37.2708 40.7565 36.2202 40.7565 34.7908C40.7565 33.3615 40.5805 32.3268 40.2285 31.6868C39.8765 31.0362 39.3378 30.7108 38.6125 30.7108C37.8978 30.7108 37.3592 31.0362 36.9965 31.6868C36.6445 32.3268 36.4685 33.3615 36.4685 34.7908C36.4685 36.2202 36.6445 37.2708 36.9965 37.9428C37.3592 38.6042 37.8978 38.9348 38.6125 38.9348ZM45.0703 40.4708V38.1348H43.7103V36.9508H45.0703V35.6388H43.7103V34.4548H45.0703V29.1908H48.8943C49.7156 29.1908 50.4089 29.3295 50.9743 29.6068C51.5503 29.8842 51.9823 30.2682 52.2703 30.7588C52.5689 31.2495 52.7183 31.8255 52.7183 32.4868C52.7183 33.1482 52.5689 33.7135 52.2703 34.1828C51.9716 34.6522 51.5449 35.0148 50.9903 35.2708C50.4356 35.5162 49.7636 35.6388 48.9743 35.6388H47.1343V36.9508H49.7103V38.1348H47.1343V40.4708H45.0703ZM47.1023 34.4548H48.6863C49.3796 34.4548 49.9076 34.3002 50.2703 33.9908C50.6436 33.6815 50.8303 33.2122 50.8303 32.5828C50.8303 31.9428 50.6436 31.4735 50.2703 31.1748C49.9076 30.8655 49.3796 30.7108 48.6863 30.7108H47.1023V34.4548Z" fill="#32383C"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_767_58007">
+                  <rect width="43" height="27" fill="white" transform="translate(21 21.3495)"/>
+                  </clipPath>
+                  </defs>
+                  </svg>
+                  span
+                    |При заказе от 1500 рублей
+                    br
+                    |доставка&nbsp;
+                    b бесплатна!
+                .short-info__table-item
+                  <svg width="65" height="49" viewBox="0 0 65 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.6019 5.72928L21.4498 15.1077L29.6432 7.6901L25.9571 18.1095L36.8648 19.8906L26.4203 23.505L31.8287 33.1435L22.4908 27.2312L18.3271 37.4692L17.1275 26.4823L6.52712 29.6103L14.3691 21.8221L5.31428 15.4847L16.2927 16.7599L15.6019 5.72928Z" fill="#8311FD"/>
+                  <g clip-path="url(#clip0_767_57962)">
+                  <path d="M62.4338 23.5131H22.0938V48.0231H62.4338V23.5131Z" fill="white" stroke="#32383C" stroke-width="2" stroke-miterlimit="10"/>
+                  <path d="M33.0542 41.3531C32.5802 41.3532 32.1076 41.3029 31.6442 41.2031C31.1904 41.1018 30.7481 40.9544 30.3242 40.7631C29.9573 40.5988 29.6196 40.3758 29.3242 40.1031L29.9742 38.6031C30.4268 38.9473 30.9292 39.2205 31.4642 39.4131C31.9782 39.594 32.5194 39.6854 33.0642 39.6831C33.6312 39.7151 34.1901 39.5371 34.6342 39.1831C34.8236 39.0124 34.9728 38.802 35.0714 38.5669C35.1699 38.3318 35.2153 38.0778 35.2042 37.8231C35.2145 37.5644 35.1709 37.3064 35.0762 37.0654C34.9815 36.8244 34.8378 36.6057 34.6542 36.4231C34.4489 36.2396 34.208 36.1005 33.9464 36.0145C33.6848 35.9284 33.4083 35.8973 33.1342 35.9231C32.7145 35.9035 32.2961 35.9839 31.9136 36.1577C31.5311 36.3316 31.1954 36.594 30.9342 36.9231H29.6242V30.2931H36.3942V31.9231H31.5042V35.3831H31.0242C31.303 35.0144 31.6761 34.7276 32.1042 34.5531C32.6381 34.3342 33.213 34.2333 33.7895 34.2575C34.3661 34.2816 34.9305 34.4303 35.4442 34.6931C35.9521 34.9818 36.3681 35.4082 36.6442 35.9231C36.9462 36.4886 37.0977 37.1222 37.0842 37.7631C37.0947 38.4227 36.9253 39.0726 36.5942 39.6431C36.267 40.1901 35.7921 40.6337 35.2242 40.9231C34.545 41.236 33.8014 41.3833 33.0542 41.3531Z" fill="#32383C"/>
+                  <path d="M42.2226 41.3531C41.6395 41.3861 41.0577 41.2693 40.5325 41.0137C40.0074 40.7581 39.5564 40.3723 39.2226 39.8931C38.4711 38.6379 38.1221 37.1826 38.2226 35.7231C38.1136 34.266 38.4633 32.8114 39.2226 31.5631C39.5618 31.0914 40.0147 30.713 40.5391 30.463C41.0635 30.213 41.6426 30.0995 42.2226 30.1331C42.803 30.0967 43.3831 30.2089 43.908 30.4592C44.4329 30.7094 44.8854 31.0893 45.2226 31.5631C45.9779 32.8057 46.3274 34.2527 46.2226 35.7031C46.3323 37.1792 45.983 38.6531 45.2226 39.9231C44.8867 40.3982 44.4345 40.7792 43.9093 41.0296C43.384 41.28 42.8033 41.3913 42.2226 41.3531ZM42.2226 39.7131C42.5529 39.7217 42.8781 39.631 43.1563 39.4527C43.4344 39.2744 43.6526 39.0168 43.7826 38.7131C44.1774 37.7645 44.3518 36.7388 44.2926 35.7131C44.3568 34.6871 44.1822 33.6602 43.7826 32.7131C43.643 32.4203 43.421 32.1746 43.144 32.0059C42.867 31.8372 42.5468 31.7528 42.2226 31.7631C41.9011 31.7535 41.5834 31.836 41.3071 32.0007C41.0307 32.1654 40.8072 32.4056 40.6626 32.6931C40.263 33.6402 40.0885 34.6671 40.1526 35.6931C40.0935 36.7188 40.2679 37.7445 40.6626 38.6931C40.7918 38.9989 41.0092 39.2593 41.2871 39.4409C41.565 39.6226 41.8907 39.7174 42.2226 39.7131Z" fill="#32383C"/>
+                  <path d="M51.5547 41.353C50.9716 41.3861 50.3897 41.2692 49.8646 41.0137C49.3394 40.7581 48.8884 40.3723 48.5547 39.893C47.8025 38.6381 47.4535 37.1826 47.5547 35.723C47.4457 34.266 47.7953 32.8113 48.5547 31.563C48.9086 31.1174 49.3587 30.7574 49.8712 30.5099C50.3837 30.2625 50.9455 30.1339 51.5147 30.1339C52.0838 30.1339 52.6456 30.2625 53.1581 30.5099C53.6707 30.7574 54.1207 31.1174 54.4747 31.563C55.2262 32.8072 55.5755 34.253 55.4747 35.703C55.5729 37.1687 55.2242 38.6297 54.4747 39.893C54.1489 40.3612 53.7109 40.7401 53.2007 40.9952C52.6906 41.2502 52.1247 41.3733 51.5547 41.353ZM51.5547 39.713C51.8849 39.7217 52.2102 39.631 52.4883 39.4527C52.7664 39.2744 52.9846 39.0167 53.1147 38.713C53.5094 37.7645 53.6838 36.7387 53.6247 35.713C53.6888 34.6871 53.5143 33.6602 53.1147 32.713C52.9634 32.4308 52.7384 32.195 52.4637 32.0305C52.189 31.8661 51.8748 31.7793 51.5547 31.7793C51.2345 31.7793 50.9203 31.8661 50.6456 32.0305C50.3709 32.195 50.1459 32.4308 49.9947 32.713C49.5859 33.6576 49.4077 34.6859 49.4747 35.713C49.4129 36.7398 49.591 37.7669 49.9947 38.713C50.1258 39.0159 50.3443 39.2728 50.6221 39.451C50.9 39.6291 51.2247 39.7203 51.5547 39.713Z" fill="#32383C"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_767_57962">
+                  <rect width="44" height="27" fill="white" transform="translate(20.2227 21.9231)"/>
+                  </clipPath>
+                  </defs>
+                  </svg>
+                  span
+                    b Минимальная&nbsp;
+                    |сумма заказа
+                    br
+                    |500 рублей
+                .short-info__table-item
+                  <svg width="49" height="45" viewBox="0 0 49 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17 0.349548L19.8174 11.4992L30.2911 6.75022L23.3306 15.9046L33.5738 21.1324L22.0768 21.3981L24.376 32.666L17 23.843L9.62398 32.666L11.9232 21.3981L0.426226 21.1324L10.6694 15.9046L3.70887 6.75022L14.1826 11.4992L17 0.349548Z" fill="#8311FD"/>
+                  <path d="M41.8709 43.6995C38.3109 43.6995 36.2909 42.6995 36.2109 42.2095V42.0895V38.2595H47.5509V42.0395V42.2095C47.4409 42.6595 45.4209 43.6995 41.8709 43.6995Z" fill="white"/>
+                  <path d="M41.8709 39.3496C38.3109 39.3496 36.2909 38.3496 36.2109 37.8596V37.7396V33.9096H47.5509V37.6996V37.8696C47.4509 38.3496 45.4209 39.3496 41.8709 39.3496Z" fill="white"/>
+                  <path d="M29.8995 43.8295C38.3937 43.8295 45.2795 36.9437 45.2795 28.4495C45.2795 19.9554 38.3937 13.0695 29.8995 13.0695C21.4054 13.0695 14.5195 19.9554 14.5195 28.4495C14.5195 36.9437 21.4054 43.8295 29.8995 43.8295Z" fill="white" stroke="#32383C" stroke-width="2" stroke-miterlimit="10"/>
+                  <rect x="37" y="38.3495" width="10" height="5" fill="white"/>
+                  <path d="M46.61 39.1895V41.8295C45.1341 42.5355 43.5032 42.8555 41.87 42.7595C40.2335 42.8568 38.599 42.5368 37.12 41.8295V39.1895H46.61ZM48.48 37.3495H35.25V42.3495C35.37 43.6495 38.25 44.6796 41.84 44.6796C45.43 44.6796 48.3 43.6795 48.43 42.3495V37.3495H48.48Z" fill="#32383C"/>
+                  <path d="M30.218 19.8295V29.7895H21.668" stroke="#32383C" stroke-width="2" stroke-miterlimit="10"/>
+                  <rect x="37" y="34.3495" width="10" height="5" fill="white"/>
+                  <path d="M46.61 34.8494V37.4894C45.1341 38.1954 43.5032 38.5154 41.87 38.4194C40.2335 38.5167 38.599 38.1967 37.12 37.4894V34.8494H46.61ZM48.48 32.9794H35.25V37.9794C35.37 39.2794 38.25 40.3094 41.84 40.3094C45.43 40.3094 48.3 39.3094 48.43 37.9794V32.9794H48.48Z" fill="#32383C"/>
+                  <path d="M41.9002 35.2795C45.0703 35.2795 47.6402 34.3348 47.6402 33.1695C47.6402 32.0042 45.0703 31.0595 41.9002 31.0595C38.73 31.0595 36.1602 32.0042 36.1602 33.1695C36.1602 34.3348 38.73 35.2795 41.9002 35.2795Z" fill="white" stroke="#32383C" stroke-width="2" stroke-miterlimit="10"/>
+                  </svg>
+                  span
+                    |При заказе с оплатой "онлайн",
+                    br
+                    |оплата должна быть совершена
+                    br
+                    |до 20:30
+                .short-info__table-item
+                  <svg width="51" height="43" viewBox="0 0 51 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M38.1539 35.7545H41.1539V28.5245L36.7339 20.7945H29.0039" stroke="#32383C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M38.2717 37.0645C38.2717 37.5842 38.1177 38.0923 37.8292 38.5246C37.5406 38.9568 37.1305 39.2939 36.6505 39.4933C36.1705 39.6926 35.6422 39.7453 35.1323 39.6446C34.6224 39.544 34.1538 39.2945 33.7856 38.9277C33.4174 38.5608 33.1661 38.0932 33.0635 37.5837C32.9609 37.0741 33.0115 36.5457 33.2091 36.0649C33.4066 35.5842 33.7421 35.1727 34.1733 34.8825C34.6045 34.5924 35.112 34.4364 35.6317 34.4345C35.9783 34.4318 36.322 34.498 36.6428 34.6291C36.9637 34.7602 37.2553 34.9536 37.5008 35.1983C37.7464 35.4429 37.941 35.7338 38.0733 36.0541C38.2056 36.3745 38.2731 36.7179 38.2717 37.0645Z" stroke="#32383C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M14.1936 37.0644C14.1936 37.5846 14.0393 38.0931 13.7504 38.5256C13.4614 38.9581 13.0506 39.2952 12.5701 39.4942C12.0895 39.6933 11.5607 39.7454 11.0505 39.6439C10.5403 39.5424 10.0717 39.2919 9.7039 38.9241C9.33609 38.5563 9.08561 38.0877 8.98413 37.5775C8.88265 37.0673 8.93473 36.5385 9.13379 36.0579C9.33285 35.5774 9.66994 35.1666 10.1024 34.8776C10.5349 34.5887 11.0434 34.4344 11.5636 34.4344C11.9093 34.4331 12.2519 34.5002 12.5716 34.6319C12.8913 34.7636 13.1818 34.9573 13.4262 35.2018C13.6707 35.4462 13.8644 35.7367 13.9961 36.0564C14.1278 36.3761 14.1949 36.7187 14.1936 37.0644Z" stroke="#32383C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M14.1912 35.7544H29.0012V14.1544H5.28125V35.7544H9.12125" stroke="#32383C" stroke-width="2" stroke-linejoin="round"/>
+                  <path d="M22.4513 31.0845H5.28125" stroke="#32383C" stroke-width="2" stroke-linejoin="round"/>
+                  <path d="M32.6839 35.7545H29.0039" stroke="#32383C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M40.7828 28.5245H32.6328V20.7945" stroke="#32383C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M50.023 7.7045C49.693 11.5845 43.533 17.7045 43.533 17.7045C43.533 17.7045 37.413 11.8445 37.043 7.7045C37.0469 6.85091 37.2189 6.00645 37.5492 5.21935C37.8795 4.43224 38.3616 3.71789 38.968 3.1171C39.5744 2.5163 40.2931 2.04082 41.0832 1.71781C41.8734 1.39479 42.7194 1.23057 43.573 1.23451C44.4266 1.23844 45.271 1.41047 46.0581 1.74077C46.8452 2.07106 47.5596 2.55316 48.1604 3.15952C48.7612 3.76589 49.2366 4.48465 49.5597 5.27478C49.8827 6.0649 50.0469 6.91091 50.043 7.7645L50.023 7.7045Z" fill="#00BC69"/>
+                  <path d="M43.3622 9.75447C44.6711 9.75447 45.7322 8.69338 45.7322 7.38447C45.7322 6.07555 44.6711 5.01447 43.3622 5.01447C42.0533 5.01447 40.9922 6.07555 40.9922 7.38447C40.9922 8.69338 42.0533 9.75447 43.3622 9.75447Z" fill="white"/>
+                  </svg>
+                  span
+                    |Доставка по&nbsp;
+                    b городам кроме
+                    br
+                    b Орехово-Зуево&nbsp;
+                    |осуществляется
+                    br
+                    |на следующий день
 
+              div.text-center
+                a(href='#').text-blue.m-auto.w-fit.text-18px.font-semibold Подробнее о доставке
+    section.mt-10
+      h2 Скидки
+      .catalog-slider.mt-5
+        .catalog-slider__wrapper
+          .catalog-slider__item.swiper-slide
+            .catalog-slider__discount -11%
+            .catalog-slider__promo Акция
+            .catalog-slider__btn-wrapper
+              .catalog-slider__btn-fav
+                <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5676 17.0465L3.8356 10.3145C-1.8254 4.65347 4.9066 -2.07853 10.5676 3.58247C16.3306 -2.18053 23.0626 4.55147 17.2996 10.3145L10.5676 17.0465Z" stroke="white" stroke-width="2.3" stroke-miterlimit="10"/>
+                </svg>
+              .catalog-slider__btn-buy
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1221_74861)">
+                <path d="M18.7245 11.4301V7.28559C18.7245 4.1255 16.1649 1.56592 13.0048 1.56592C9.84474 1.56592 7.28516 4.1255 7.28516 7.28559V11.4301" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M14.6886 24.8385H22.6626V16.9431V7.48254H3.34766V24.8385H14.7772" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_1221_74861">
+                <rect width="25.2315" height="25.5958" fill="white" transform="translate(0.382812 0.404297)"/>
+                </clipPath>
+                </defs>
+                </svg>
+            .catalog-slider__item-wrapper
+              .catalog-slider__image-wrapper
+                img(src='/assets/img/sliv-cen/marmel.png')
+              .catalog-slider__content-wrapper
+                del.text-light-grey
+                  span.catalog-slider__old-price 63.27
+                div
+                  span.catalog-slider__price 60.74&nbsp;
+                  span.catalog-slider__measure руб. /шт
+                span.catalog-slider__name Масло растительно-сливочное СЗММасло растительно-сливочное СЗММасло растительно-сливочное СЗМЖ Золотое 82,5% фольга...
+              .catalog-slider__quantity-block.mt-3
+                .catalog-slider__quantity-wrapper
+                  div.catalog-slider__quantity-minus
+                    <svg width="7" height="2" viewBox="0 0 7 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.109375 1.99007V0.0100708H6.18938V1.99007H0.109375Z" fill="#32383C"/>
+                    </svg>
+                  span.catalog-slider__quantity-count 1
+                  div.catalog-slider__quantity-plus
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.07078 9.91003V5.83003H0.0507812V4.07003H4.07078V0.0900269H5.89078V4.07003H9.89078V5.83003H5.89078V9.91003H4.07078Z" fill="#32383C"/>
+                    </svg>
 
