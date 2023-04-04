@@ -6,7 +6,7 @@
 .about-title {
     @apply grid gap-4;
     grid-template-columns: 7fr 1fr;
-   
+
     & h1 {
         @apply text-20px;
         font-weight: 800;
@@ -137,7 +137,7 @@
 @media (min-width: 1280px) {
     .about-title {
         @apply grid gap-13;
-       
+
 
         & h1 {
             font-size: 80px;
@@ -159,7 +159,7 @@
 
     .about-title {
         @apply grid;
-        
+
 
         & h1 {
             @apply text-90px;
@@ -199,5 +199,5 @@
             @apply -ml-15 text-16px;
         }
     }
-    
+
 }

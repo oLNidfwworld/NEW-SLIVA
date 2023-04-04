@@ -8,10 +8,13 @@
 //}
 
 header{
-  @apply lg:bg-white;
+  @apply lg:bg-white mb-[30px];
   padding: 20px 0;
   box-shadow: 0px 7px 15px -13px #829297E0;
+}
 
+h1,h2,h3{
+  // todo: fix redo
 }
 
 .nav-line{
