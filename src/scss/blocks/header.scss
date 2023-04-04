@@ -13,10 +13,6 @@ header{
   box-shadow: 0px 7px 15px -13px #829297E0;
 }
 
-h1,h2,h3{
-  // todo: fix redo
-}
-
 .nav-line{
   @apply lg:pb-2 lg:border-b-[1px] lg:border-[var(--global-bg)];
   &__wrapper{

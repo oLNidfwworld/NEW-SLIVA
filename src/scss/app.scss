@@ -18,70 +18,17 @@
 /* Mixins, helpers and functions */
 @import 'base/mixins';
 
-/* Vendor */
-@import 'swiper/css';
+/* Custom defaults */
+@import "base/custom";
 
-/* Components */
-/* Browser specific styles */
-@import 'dirty/hacks';
- 
-/* Page layout */
+/* Vendor */
+
+/* Pages styles */
 @import 'blocks/header';
 @import 'blocks/footer';
 @import 'blocks/index';
 @import 'blocks/about';
 @import 'blocks/contacts';
 
-/* Pages styles */
-.wrapper-content{
-  min-height: 100vh;
-
-  padding-bottom: 76px;
-}
-.wrapper-page{
-  @apply relative;
-}
-.btn{
-  width: fit-content;
-}
-.inpt{
-  @apply rounded lg:rounded-none;
-  padding: 15px 0px 15px 18px;
-}
-.inpt.grey{
-  @apply bg-lighter-grey;
-  ::placeholder{
-    color: var(--white);
-  }
-}
-.inpt.white{
-  @apply bg-white;
-  ::placeholder{
-    color: var(--grey);
-  }
-}
-.search-field{
-  &__inpt{
-    @apply lg:hidden 2lg:block bg-white 2lg:bg-lighter-grey;
-  }
-  &__wrapper{
-    @apply relative 2lg:flex;
-  }
-  &__ico{
-    @apply absolute right-3 top-0 bottom-0 m-auto h-fit w-fit lg:hidden;
-  }
-  &__btn{
-    @apply bg-green hidden lg:block;
-    padding: 10px;
-  }
-}
-*{
-  font-family: Mulish;
-  font-weight: 400;
-}
-body{
-  @apply bg-global-bg;
-}
-small{
-  @apply text-14px font-light leading-[18px];
-}
+/* Libraries styles */
+@import 'swiper/css';
