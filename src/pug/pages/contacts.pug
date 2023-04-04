@@ -1,0 +1,38 @@
+extends ../layout/main
+
+block content
+    section.contacts
+        .container
+            h1.title Контакты
+            .content 
+                .map 
+                    script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac422f9289d1d0a9c9499a5421512a3ed4b0240c434def7f4aec52921821b344e&amp;width=681&amp;height=432&amp;lang=ru_RU&amp;scroll=true")
+                    //- script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac422f9289d1d0a9c9499a5421512a3ed4b0240c434def7f4aec52921821b344e&amp;width=681&amp;height=432&amp;lang=ru_RU&amp;scroll=true")               
+                .content_info
+                    .content_info-left
+                        .item Телефон<br>                    
+                            a(href="tel:+79035234458") +7 903 523-44-58
+                            hr
+                        .item Почта<br>
+                            a(href="mailto:mail@sliva24.ru") mail@sliva24.ru
+                            hr
+                        .item Соцсети<br>
+                            a(href="https://vk.com/sliva24ru")  vk.com/sliva24ru 
+                            hr
+                    .content_info-right
+                        .item Время работы<br>
+                            a(href="#").cursor-none  Пн. – Пт.: с 9:00 до 19:00
+                            hr
+                        .item Адрес<br>
+                            a(href="#").cursor-none  г. Орехово-Зуево Кооперативная ул. 17 А
+                            hr
+                        .build-route
+                            img(src="../../assets/img/layer.svg" alt="svg").pointer                           
+                            a(href="https://yandex.ru/maps/-/CCUWnCQVcC")  Проложить маршрут
+            .data
+                .requesites 
+                    span.text-bold Реквизиты: 
+                    | ООО "ДЖИКОМ" <br>ИНН 5034026581 / ОГРНИП 1065034028267
+                .adress 
+                    span.text-bold Юридический адрес: 
+                    | 142600, Московская область, г. Орехово-Зуево, Кооперативная ул., д.17(а) <br>Тел.: +7 903 523-44-58 

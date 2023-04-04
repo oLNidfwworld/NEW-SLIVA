@@ -1,0 +1,145 @@
+body {
+    background: white !important;
+}
+
+.title {
+    @apply font-extrabold text-20px mb-[30px] leading-[50px];
+}
+
+hr {
+    border: 1px solid #E7E7E7;
+}
+
+.item a{
+    @apply text-blue text-14px;
+}
+
+.cursor-none{
+    cursor:none;
+}
+
+.content {
+    @apply grid gap-[30px] mb-10 grid-cols-1;
+    grid-template-rows: 1fr 2fr;
+}
+
+.content_info {
+    @apply bg-lighter-grey rounded;
+    padding: 20px 23px;
+
+    & .item {
+        @apply font-extrabold text-16px mb-[30px];
+        padding: 0 35px 0 0;
+    }
+}
+
+
+.contacts {
+    @apply mt-8;
+    font-family: 'Mulish';
+}
+
+.build-route {
+    @apply flex bg-yellow rounded justify-center;
+    padding: 12.5px 20px;
+    white-space: nowrap;
+}
+
+.pointer {
+    @apply mr-[13px];
+}
+
+.requesites {
+    @apply mb-[17px];
+}
+
+.data{
+    @apply text-grey text-14px;
+}
+
+.text-bold {
+    @apply font-bold text-black;
+}
+
+
+@media (min-width: 480px) {
+    .content_info {
+        padding: 40px 48px;
+
+        & .item {
+            padding: 0 120px 0 0;
+        }
+    }
+    
+}
+
+@media (min-width: 720px) {
+    .content{
+        grid-template-rows: 2fr 1fr;
+    }
+   
+    .title{
+        @apply text-[26px];
+    }
+    
+    .content_info-left{
+        padding: 0 20px 0 0;
+    }
+   
+    .content_info {
+        @apply grid gap-x-[90px];
+        padding: 40px 40px;
+        grid-template-columns: 1fr 2fr;
+
+        & .item {
+            @apply text-18px;
+            padding: 0;            
+        }
+    }
+
+    .data{
+        @apply text-16px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .content {
+        grid-template-rows: 1.5fr 1fr;
+    
+        & .item {
+            @apply text-20px;
+            padding: 0 100px 0 0;
+        }
+    }
+    .build-route{
+        max-width: 241px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .title {
+        @apply font-black text-40px mb-10;
+        line-height: 50px;
+    }
+
+    .content {
+        @apply grid gap-5 mb-10;
+        grid-template-columns: 1.8fr 1fr;
+        grid-template-rows: none;
+    }
+
+    .content_info {
+        padding: 40px 106px;
+        grid-template-columns: none;
+        
+        & .item{
+            padding: 0;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .content {
+        grid-template-columns: 3fr 1fr;
+    }
+}

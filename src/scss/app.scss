@@ -27,6 +27,9 @@
 /* Page layout */
 @import 'blocks/header';
 @import 'blocks/footer';
+@import 'blocks/about';
+@import 'blocks/contacts';
+
 /* Pages styles */
 .wrapper-content{
   min-height: 100vh;
