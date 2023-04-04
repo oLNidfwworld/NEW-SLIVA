@@ -1,7 +1,11 @@
 import '../scss/app.scss';
-import Swiper, {FreeMode} from 'swiper';
+import Swiper, {Autoplay, FreeMode} from 'swiper';
 
 new Swiper('.banners__wrapper', {
+  modules: [Autoplay],
+  autoplay: {
+    delay: 3500,
+  },
   slidesPerView: 1,
   breakpoints: {
     0: {
@@ -48,6 +52,33 @@ new Swiper('.slivniye-prices', {
     },
     1440:{
       slidesPerView: 5,
+    }
+  }
+});
+new Swiper('.catalog-slider', {
+  breakpoints: {
+    0:{
+      slidesPerView: 1,
+    },
+    480:{
+      slidesPerView: 2,
+      spaceBetween: 15,
+    },
+    720:{
+      slidesPerView: 3,
+      spaceBetween: 15,
+    },
+    1024:{
+      slidesPerView: 4,
+      spaceBetween: 23,
+    },
+    1280:{
+      slidesPerView: 4,
+      spaceBetween: 23,
+    },
+    1440:{
+      slidesPerView: 4,
+      spaceBetween: 30,
     }
   }
 });

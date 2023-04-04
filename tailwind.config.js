@@ -123,6 +123,6 @@ module.exports = {
         },
       });
     }),
-    //require('@tailwindcss/line-clamp'),
+    require('@tailwindcss/line-clamp'),
   ],
 };

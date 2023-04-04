@@ -69,7 +69,7 @@
       @apply relative;
 
       &-wrapper{
-        @apply bg-white pt-5 pr-11 pl-11 pb-5 sm:py-[11px] sm:px-4 2lg:p-5;
+        @apply rounded bg-white pt-5 pr-11 pl-11 pb-5 sm:py-[11px] sm:px-4 2lg:p-5;
         width: calc(100% - 26px);
       }
     }
@@ -115,12 +115,15 @@
 }
 .catalog{
   &-slider{
+    @apply overflow-hidden;
+  }
+  &-slider, &-items{
     &__{
       &wrapper{
       }
-      &btn{
+      &additional{
         &-wrapper{
-          @apply absolute flex flex-col right-0 items-center bottom-0 top-0 mt-auto mb-4 h-fit ;
+          @apply absolute flex flex-col right-0 items-center bottom-0 top-0 mt-auto mb-24 h-fit ;
         }
         &-fav{
           @apply mb-3 bg-light-grey p-[8px_7px_8px_7px] w-fit h-fit;
@@ -129,6 +132,10 @@
         &-buy{
           @apply bg-violet p-[13px] w-fit h-fit;
           border-radius: 100%;
+        }
+        &-bonuses{
+          @apply flex flex-col bg-[#CFE2FF] items-center py-[1px] px-[3px] mb-3 2lg:mb-20;
+          border-radius: 30px;
         }
       }
       &discount{
@@ -142,29 +149,29 @@
         @apply relative;
 
         &-wrapper{
-          @apply bg-white p-2 pb-3 sm:py-[11px] sm:px-4 2lg:p-5;
+          @apply rounded bg-white p-2 pb-3 sm:py-[11px] sm:px-4 2lg:p-5;
           width: calc(100% - 26px);
         }
       }
 
       &old-price{
-        @apply font-light text-[12px] leading-[14px] text-light-grey text-center 2lg:text-[15px];
+        @apply font-light text-[12px]  leading-[14px] 2lg:leading-[18px] text-light-grey text-center 2lg:text-[15px];
       }
       &price{
         @apply font-black text-[18px]  2lg:text-[26px];
       }
       &image-wrapper{
-        @apply w-fit m-auto;
+        @apply w-fit m-auto max-w-[155px]  2lg:max-w-[220px] xl:max-w-[254px];
       }
       &measure{
         @apply text-[12px] font-medium 2lg:text-16px;
       }
       &name{
-        @apply leading-[15px] text-[12px] font-bold line-clamp-[2];
+        @apply min-h-[40px] sm:min-h-[60px] leading-[15px] text-[12px] font-bold line-clamp-2 sm:line-clamp-3 2lg:text-16px leading-[20px];
       }
       &quantity{
         &-block{
-          @apply bg-global-bg;
+          @apply bg-global-bg rounded;
         }
         &-wrapper{
           @apply py-[9px] px-6 flex flex-row justify-between items-center;
@@ -173,4 +180,14 @@
     }
   }
 
+}
+.banners-special-prices{
+  &__{
+    &wrapper{
+      @apply grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8 lg:gap-6 2lg:gap-7 xl:gap-17;
+    }
+    &item{
+
+    }
+  }
 }

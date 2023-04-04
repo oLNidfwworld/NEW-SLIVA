@@ -337,19 +337,26 @@ block content
 
               div.text-center
                 a(href='#').text-blue.m-auto.w-fit.text-18px.font-semibold Подробнее о доставке
-    section.mt-10
+    section.mt-12
       h2 Скидки
       .catalog-slider.mt-5
-        .catalog-slider__wrapper
+        .catalog-slider__wrapper.swiper-wrapper
           .catalog-slider__item.swiper-slide
             .catalog-slider__discount -11%
-            .catalog-slider__promo Акция
-            .catalog-slider__btn-wrapper
-              .catalog-slider__btn-fav
+            .catalog-slider__additional-wrapper
+              .catalog-slider__additional-bonuses
+                .catalog-slider__additional-bonuses-icon
+                  <svg width="27" height="30" viewBox="0 0 27 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.27011 25.8163C14.3891 27.8142 20.3328 24.9755 22.5459 19.4758C24.7589 13.9762 22.4033 7.89816 17.2843 5.90025C12.1654 3.90234 6.22159 6.74108 4.00853 12.2407C1.79547 17.7404 4.15116 23.8184 9.27011 25.8163Z" fill="#AA51B9"/>
+                  <path d="M22.5448 19.4759C20.3317 24.9756 14.388 27.8143 9.26905 25.8164C4.1501 23.8185 6.53115 19.5725 8.74421 14.0728C15.9951 11.3949 12.1644 3.90239 17.2833 5.9003C22.4022 7.89821 24.7578 13.9762 22.5448 19.4759Z" fill="#C565D6"/>
+                  <path d="M2.08203 11.1989C3.00491 8.28842 6.79782 2.82327 14.5865 4.24637C22.3752 5.66947 9.49547 9.47437 2.08203 11.1989Z" fill="#1AB15C"/>
+                  </svg>
+                .catalog-slider__additional-bonuses-count 45
+              .catalog-slider__additional-fav
                 <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10.5676 17.0465L3.8356 10.3145C-1.8254 4.65347 4.9066 -2.07853 10.5676 3.58247C16.3306 -2.18053 23.0626 4.55147 17.2996 10.3145L10.5676 17.0465Z" stroke="white" stroke-width="2.3" stroke-miterlimit="10"/>
                 </svg>
-              .catalog-slider__btn-buy
+              .catalog-slider__additional-buy
                 <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_1221_74861)">
                 <path d="M18.7245 11.4301V7.28559C18.7245 4.1255 16.1649 1.56592 13.0048 1.56592C9.84474 1.56592 7.28516 4.1255 7.28516 7.28559V11.4301" stroke="white" stroke-width="2" stroke-linejoin="round"/>
@@ -363,7 +370,7 @@ block content
                 </svg>
             .catalog-slider__item-wrapper
               .catalog-slider__image-wrapper
-                img(src='/assets/img/sliv-cen/marmel.png')
+                img(src='/assets/img/sliv-cen/coffe.png')
               .catalog-slider__content-wrapper
                 del.text-light-grey
                   span.catalog-slider__old-price 63.27
@@ -382,4 +389,817 @@ block content
                     <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M4.07078 9.91003V5.83003H0.0507812V4.07003H4.07078V0.0900269H5.89078V4.07003H9.89078V5.83003H5.89078V9.91003H4.07078Z" fill="#32383C"/>
                     </svg>
-
+          .catalog-slider__item.swiper-slide
+            .catalog-slider__discount -11%
+            .catalog-slider__additional-wrapper
+              .catalog-slider__additional-fav
+                <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5676 17.0465L3.8356 10.3145C-1.8254 4.65347 4.9066 -2.07853 10.5676 3.58247C16.3306 -2.18053 23.0626 4.55147 17.2996 10.3145L10.5676 17.0465Z" stroke="white" stroke-width="2.3" stroke-miterlimit="10"/>
+                </svg>
+              .catalog-slider__additional-buy
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1221_74861)">
+                <path d="M18.7245 11.4301V7.28559C18.7245 4.1255 16.1649 1.56592 13.0048 1.56592C9.84474 1.56592 7.28516 4.1255 7.28516 7.28559V11.4301" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M14.6886 24.8385H22.6626V16.9431V7.48254H3.34766V24.8385H14.7772" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_1221_74861">
+                <rect width="25.2315" height="25.5958" fill="white" transform="translate(0.382812 0.404297)"/>
+                </clipPath>
+                </defs>
+                </svg>
+            .catalog-slider__item-wrapper
+              .catalog-slider__image-wrapper
+                img(src='/assets/img/sliv-cen/coffe.png')
+              .catalog-slider__content-wrapper
+                del.text-light-grey
+                  span.catalog-slider__old-price 63.27
+                div
+                  span.catalog-slider__price 60.74&nbsp;
+                  span.catalog-slider__measure руб. /шт
+                span.catalog-slider__name Масло растительно-сливочное СЗММасло растительно-сливочное СЗММасло растительно-сливочное СЗМЖ Золотое 82,5% фольга...
+              .catalog-slider__quantity-block.mt-3
+                .catalog-slider__quantity-wrapper
+                  div.catalog-slider__quantity-minus
+                    <svg width="7" height="2" viewBox="0 0 7 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.109375 1.99007V0.0100708H6.18938V1.99007H0.109375Z" fill="#32383C"/>
+                    </svg>
+                  span.catalog-slider__quantity-count 1
+                  div.catalog-slider__quantity-plus
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.07078 9.91003V5.83003H0.0507812V4.07003H4.07078V0.0900269H5.89078V4.07003H9.89078V5.83003H5.89078V9.91003H4.07078Z" fill="#32383C"/>
+                    </svg>
+          .catalog-slider__item.swiper-slide
+            .catalog-slider__discount -91%
+            .catalog-slider__additional-wrapper
+              .catalog-slider__additional-bonuses
+                .catalog-slider__additional-bonuses-icon
+                  <svg width="27" height="30" viewBox="0 0 27 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.27011 25.8163C14.3891 27.8142 20.3328 24.9755 22.5459 19.4758C24.7589 13.9762 22.4033 7.89816 17.2843 5.90025C12.1654 3.90234 6.22159 6.74108 4.00853 12.2407C1.79547 17.7404 4.15116 23.8184 9.27011 25.8163Z" fill="#AA51B9"/>
+                  <path d="M22.5448 19.4759C20.3317 24.9756 14.388 27.8143 9.26905 25.8164C4.1501 23.8185 6.53115 19.5725 8.74421 14.0728C15.9951 11.3949 12.1644 3.90239 17.2833 5.9003C22.4022 7.89821 24.7578 13.9762 22.5448 19.4759Z" fill="#C565D6"/>
+                  <path d="M2.08203 11.1989C3.00491 8.28842 6.79782 2.82327 14.5865 4.24637C22.3752 5.66947 9.49547 9.47437 2.08203 11.1989Z" fill="#1AB15C"/>
+                  </svg>
+                .catalog-slider__additional-bonuses-count 45
+              .catalog-slider__additional-fav
+                <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5676 17.0465L3.8356 10.3145C-1.8254 4.65347 4.9066 -2.07853 10.5676 3.58247C16.3306 -2.18053 23.0626 4.55147 17.2996 10.3145L10.5676 17.0465Z" stroke="white" stroke-width="2.3" stroke-miterlimit="10"/>
+                </svg>
+              .catalog-slider__additional-buy
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1221_74861)">
+                <path d="M18.7245 11.4301V7.28559C18.7245 4.1255 16.1649 1.56592 13.0048 1.56592C9.84474 1.56592 7.28516 4.1255 7.28516 7.28559V11.4301" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M14.6886 24.8385H22.6626V16.9431V7.48254H3.34766V24.8385H14.7772" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_1221_74861">
+                <rect width="25.2315" height="25.5958" fill="white" transform="translate(0.382812 0.404297)"/>
+                </clipPath>
+                </defs>
+                </svg>
+            .catalog-slider__item-wrapper
+              .catalog-slider__image-wrapper
+                img(src='/assets/img/sliv-cen/coffe.png')
+              .catalog-slider__content-wrapper
+                del.text-light-grey
+                  span.catalog-slider__old-price 63.27
+                div
+                  span.catalog-slider__price 60.74&nbsp;
+                  span.catalog-slider__measure руб. /шт
+                span.catalog-slider__name Масло растительно-сливочное СЗММасло растительно-сливочное СЗММасло растительно-сливочное СЗМЖ Золотое 82,5% фольга...
+              .catalog-slider__quantity-block.mt-3
+                .catalog-slider__quantity-wrapper
+                  div.catalog-slider__quantity-minus
+                    <svg width="7" height="2" viewBox="0 0 7 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.109375 1.99007V0.0100708H6.18938V1.99007H0.109375Z" fill="#32383C"/>
+                    </svg>
+                  span.catalog-slider__quantity-count 1
+                  div.catalog-slider__quantity-plus
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.07078 9.91003V5.83003H0.0507812V4.07003H4.07078V0.0900269H5.89078V4.07003H9.89078V5.83003H5.89078V9.91003H4.07078Z" fill="#32383C"/>
+                    </svg>
+          .catalog-slider__item.swiper-slide
+            .catalog-slider__discount -5%
+            .catalog-slider__additional-wrapper
+              .catalog-slider__additional-bonuses
+                .catalog-slider__additional-bonuses-icon
+                  <svg width="27" height="30" viewBox="0 0 27 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.27011 25.8163C14.3891 27.8142 20.3328 24.9755 22.5459 19.4758C24.7589 13.9762 22.4033 7.89816 17.2843 5.90025C12.1654 3.90234 6.22159 6.74108 4.00853 12.2407C1.79547 17.7404 4.15116 23.8184 9.27011 25.8163Z" fill="#AA51B9"/>
+                  <path d="M22.5448 19.4759C20.3317 24.9756 14.388 27.8143 9.26905 25.8164C4.1501 23.8185 6.53115 19.5725 8.74421 14.0728C15.9951 11.3949 12.1644 3.90239 17.2833 5.9003C22.4022 7.89821 24.7578 13.9762 22.5448 19.4759Z" fill="#C565D6"/>
+                  <path d="M2.08203 11.1989C3.00491 8.28842 6.79782 2.82327 14.5865 4.24637C22.3752 5.66947 9.49547 9.47437 2.08203 11.1989Z" fill="#1AB15C"/>
+                  </svg>
+                .catalog-slider__additional-bonuses-count 45
+              .catalog-slider__additional-fav
+                <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5676 17.0465L3.8356 10.3145C-1.8254 4.65347 4.9066 -2.07853 10.5676 3.58247C16.3306 -2.18053 23.0626 4.55147 17.2996 10.3145L10.5676 17.0465Z" stroke="white" stroke-width="2.3" stroke-miterlimit="10"/>
+                </svg>
+              .catalog-slider__additional-buy
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1221_74861)">
+                <path d="M18.7245 11.4301V7.28559C18.7245 4.1255 16.1649 1.56592 13.0048 1.56592C9.84474 1.56592 7.28516 4.1255 7.28516 7.28559V11.4301" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M14.6886 24.8385H22.6626V16.9431V7.48254H3.34766V24.8385H14.7772" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_1221_74861">
+                <rect width="25.2315" height="25.5958" fill="white" transform="translate(0.382812 0.404297)"/>
+                </clipPath>
+                </defs>
+                </svg>
+            .catalog-slider__item-wrapper
+              .catalog-slider__image-wrapper
+                img(src='/assets/img/sliv-cen/coffe.png')
+              .catalog-slider__content-wrapper
+                del.text-light-grey
+                  span.catalog-slider__old-price 63.27
+                div
+                  span.catalog-slider__price 60.74&nbsp;
+                  span.catalog-slider__measure руб. /шт
+                span.catalog-slider__name Масло растительно-сливочное СЗММасло растительно-сливочное СЗММасло растительно-сливочное СЗМЖ Золотое 82,5% фольга...
+              .catalog-slider__quantity-block.mt-3
+                .catalog-slider__quantity-wrapper
+                  div.catalog-slider__quantity-minus
+                    <svg width="7" height="2" viewBox="0 0 7 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.109375 1.99007V0.0100708H6.18938V1.99007H0.109375Z" fill="#32383C"/>
+                    </svg>
+                  span.catalog-slider__quantity-count 1
+                  div.catalog-slider__quantity-plus
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.07078 9.91003V5.83003H0.0507812V4.07003H4.07078V0.0900269H5.89078V4.07003H9.89078V5.83003H5.89078V9.91003H4.07078Z" fill="#32383C"/>
+                    </svg>
+          .catalog-slider__item.swiper-slide
+            .catalog-slider__discount -11%
+            .catalog-slider__additional-wrapper
+              .catalog-slider__additional-bonuses
+                .catalog-slider__additional-bonuses-icon
+                  <svg width="27" height="30" viewBox="0 0 27 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.27011 25.8163C14.3891 27.8142 20.3328 24.9755 22.5459 19.4758C24.7589 13.9762 22.4033 7.89816 17.2843 5.90025C12.1654 3.90234 6.22159 6.74108 4.00853 12.2407C1.79547 17.7404 4.15116 23.8184 9.27011 25.8163Z" fill="#AA51B9"/>
+                  <path d="M22.5448 19.4759C20.3317 24.9756 14.388 27.8143 9.26905 25.8164C4.1501 23.8185 6.53115 19.5725 8.74421 14.0728C15.9951 11.3949 12.1644 3.90239 17.2833 5.9003C22.4022 7.89821 24.7578 13.9762 22.5448 19.4759Z" fill="#C565D6"/>
+                  <path d="M2.08203 11.1989C3.00491 8.28842 6.79782 2.82327 14.5865 4.24637C22.3752 5.66947 9.49547 9.47437 2.08203 11.1989Z" fill="#1AB15C"/>
+                  </svg>
+                .catalog-slider__additional-bonuses-count 45
+              .catalog-slider__additional-fav
+                <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5676 17.0465L3.8356 10.3145C-1.8254 4.65347 4.9066 -2.07853 10.5676 3.58247C16.3306 -2.18053 23.0626 4.55147 17.2996 10.3145L10.5676 17.0465Z" stroke="white" stroke-width="2.3" stroke-miterlimit="10"/>
+                </svg>
+              .catalog-slider__additional-buy
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1221_74861)">
+                <path d="M18.7245 11.4301V7.28559C18.7245 4.1255 16.1649 1.56592 13.0048 1.56592C9.84474 1.56592 7.28516 4.1255 7.28516 7.28559V11.4301" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M14.6886 24.8385H22.6626V16.9431V7.48254H3.34766V24.8385H14.7772" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_1221_74861">
+                <rect width="25.2315" height="25.5958" fill="white" transform="translate(0.382812 0.404297)"/>
+                </clipPath>
+                </defs>
+                </svg>
+            .catalog-slider__item-wrapper
+              .catalog-slider__image-wrapper
+                img(src='/assets/img/sliv-cen/coffe.png')
+              .catalog-slider__content-wrapper
+                del.text-light-grey
+                  span.catalog-slider__old-price 63.27
+                div
+                  span.catalog-slider__price 60.74&nbsp;
+                  span.catalog-slider__measure руб. /шт
+                span.catalog-slider__name Масло растительно-сливочное СЗММасло растительно-сливочное СЗММасло растительно-сливочное СЗМЖ Золотое 82,5% фольга...
+              .catalog-slider__quantity-block.mt-3
+                .catalog-slider__quantity-wrapper
+                  div.catalog-slider__quantity-minus
+                    <svg width="7" height="2" viewBox="0 0 7 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.109375 1.99007V0.0100708H6.18938V1.99007H0.109375Z" fill="#32383C"/>
+                    </svg>
+                  span.catalog-slider__quantity-count 1
+                  div.catalog-slider__quantity-plus
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.07078 9.91003V5.83003H0.0507812V4.07003H4.07078V0.0900269H5.89078V4.07003H9.89078V5.83003H5.89078V9.91003H4.07078Z" fill="#32383C"/>
+                    </svg>
+          .catalog-slider__item.swiper-slide
+            .catalog-slider__discount -11%
+            .catalog-slider__additional-wrapper
+              .catalog-slider__additional-bonuses
+                .catalog-slider__additional-bonuses-icon
+                  <svg width="27" height="30" viewBox="0 0 27 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.27011 25.8163C14.3891 27.8142 20.3328 24.9755 22.5459 19.4758C24.7589 13.9762 22.4033 7.89816 17.2843 5.90025C12.1654 3.90234 6.22159 6.74108 4.00853 12.2407C1.79547 17.7404 4.15116 23.8184 9.27011 25.8163Z" fill="#AA51B9"/>
+                  <path d="M22.5448 19.4759C20.3317 24.9756 14.388 27.8143 9.26905 25.8164C4.1501 23.8185 6.53115 19.5725 8.74421 14.0728C15.9951 11.3949 12.1644 3.90239 17.2833 5.9003C22.4022 7.89821 24.7578 13.9762 22.5448 19.4759Z" fill="#C565D6"/>
+                  <path d="M2.08203 11.1989C3.00491 8.28842 6.79782 2.82327 14.5865 4.24637C22.3752 5.66947 9.49547 9.47437 2.08203 11.1989Z" fill="#1AB15C"/>
+                  </svg>
+                .catalog-slider__additional-bonuses-count 45
+              .catalog-slider__additional-fav
+                <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5676 17.0465L3.8356 10.3145C-1.8254 4.65347 4.9066 -2.07853 10.5676 3.58247C16.3306 -2.18053 23.0626 4.55147 17.2996 10.3145L10.5676 17.0465Z" stroke="white" stroke-width="2.3" stroke-miterlimit="10"/>
+                </svg>
+              .catalog-slider__additional-buy
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1221_74861)">
+                <path d="M18.7245 11.4301V7.28559C18.7245 4.1255 16.1649 1.56592 13.0048 1.56592C9.84474 1.56592 7.28516 4.1255 7.28516 7.28559V11.4301" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M14.6886 24.8385H22.6626V16.9431V7.48254H3.34766V24.8385H14.7772" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_1221_74861">
+                <rect width="25.2315" height="25.5958" fill="white" transform="translate(0.382812 0.404297)"/>
+                </clipPath>
+                </defs>
+                </svg>
+            .catalog-slider__item-wrapper
+              .catalog-slider__image-wrapper
+                img(src='/assets/img/sliv-cen/coffe.png')
+              .catalog-slider__content-wrapper
+                del.text-light-grey
+                  span.catalog-slider__old-price 63.27
+                div
+                  span.catalog-slider__price 60.74&nbsp;
+                  span.catalog-slider__measure руб. /шт
+                span.catalog-slider__name Масло растительно-сливочное СЗММасло растительно-сливочное СЗММасло растительно-сливочное СЗМЖ Золотое 82,5% фольга...
+              .catalog-slider__quantity-block.mt-3
+                .catalog-slider__quantity-wrapper
+                  div.catalog-slider__quantity-minus
+                    <svg width="7" height="2" viewBox="0 0 7 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.109375 1.99007V0.0100708H6.18938V1.99007H0.109375Z" fill="#32383C"/>
+                    </svg>
+                  span.catalog-slider__quantity-count 1
+                  div.catalog-slider__quantity-plus
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.07078 9.91003V5.83003H0.0507812V4.07003H4.07078V0.0900269H5.89078V4.07003H9.89078V5.83003H5.89078V9.91003H4.07078Z" fill="#32383C"/>
+                    </svg>
+          .catalog-slider__item.swiper-slide
+            .catalog-slider__discount -11%
+            .catalog-slider__additional-wrapper
+              .catalog-slider__additional-bonuses
+                .catalog-slider__additional-bonuses-icon
+                  <svg width="27" height="30" viewBox="0 0 27 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.27011 25.8163C14.3891 27.8142 20.3328 24.9755 22.5459 19.4758C24.7589 13.9762 22.4033 7.89816 17.2843 5.90025C12.1654 3.90234 6.22159 6.74108 4.00853 12.2407C1.79547 17.7404 4.15116 23.8184 9.27011 25.8163Z" fill="#AA51B9"/>
+                  <path d="M22.5448 19.4759C20.3317 24.9756 14.388 27.8143 9.26905 25.8164C4.1501 23.8185 6.53115 19.5725 8.74421 14.0728C15.9951 11.3949 12.1644 3.90239 17.2833 5.9003C22.4022 7.89821 24.7578 13.9762 22.5448 19.4759Z" fill="#C565D6"/>
+                  <path d="M2.08203 11.1989C3.00491 8.28842 6.79782 2.82327 14.5865 4.24637C22.3752 5.66947 9.49547 9.47437 2.08203 11.1989Z" fill="#1AB15C"/>
+                  </svg>
+                .catalog-slider__additional-bonuses-count 45
+              .catalog-slider__additional-fav
+                <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5676 17.0465L3.8356 10.3145C-1.8254 4.65347 4.9066 -2.07853 10.5676 3.58247C16.3306 -2.18053 23.0626 4.55147 17.2996 10.3145L10.5676 17.0465Z" stroke="white" stroke-width="2.3" stroke-miterlimit="10"/>
+                </svg>
+              .catalog-slider__additional-buy
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1221_74861)">
+                <path d="M18.7245 11.4301V7.28559C18.7245 4.1255 16.1649 1.56592 13.0048 1.56592C9.84474 1.56592 7.28516 4.1255 7.28516 7.28559V11.4301" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M14.6886 24.8385H22.6626V16.9431V7.48254H3.34766V24.8385H14.7772" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_1221_74861">
+                <rect width="25.2315" height="25.5958" fill="white" transform="translate(0.382812 0.404297)"/>
+                </clipPath>
+                </defs>
+                </svg>
+            .catalog-slider__item-wrapper
+              .catalog-slider__image-wrapper
+                img(src='/assets/img/sliv-cen/coffe.png')
+              .catalog-slider__content-wrapper
+                del.text-light-grey
+                  span.catalog-slider__old-price 63.27
+                div
+                  span.catalog-slider__price 60.74&nbsp;
+                  span.catalog-slider__measure руб. /шт
+                span.catalog-slider__name Масло растительно-сливочное СЗММасло растительно-сливочное СЗММасло растительно-сливочное СЗМЖ Золотое 82,5% фольга...
+              .catalog-slider__quantity-block.mt-3
+                .catalog-slider__quantity-wrapper
+                  div.catalog-slider__quantity-minus
+                    <svg width="7" height="2" viewBox="0 0 7 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.109375 1.99007V0.0100708H6.18938V1.99007H0.109375Z" fill="#32383C"/>
+                    </svg>
+                  span.catalog-slider__quantity-count 1
+                  div.catalog-slider__quantity-plus
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.07078 9.91003V5.83003H0.0507812V4.07003H4.07078V0.0900269H5.89078V4.07003H9.89078V5.83003H5.89078V9.91003H4.07078Z" fill="#32383C"/>
+                    </svg>
+          .catalog-slider__item.swiper-slide
+            .catalog-slider__discount -11%
+            .catalog-slider__promo Акция
+            .catalog-slider__additional-wrapper
+              .catalog-slider__additional-bonuses
+                .catalog-slider__additional-bonuses-icon
+                  <svg width="27" height="30" viewBox="0 0 27 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.27011 25.8163C14.3891 27.8142 20.3328 24.9755 22.5459 19.4758C24.7589 13.9762 22.4033 7.89816 17.2843 5.90025C12.1654 3.90234 6.22159 6.74108 4.00853 12.2407C1.79547 17.7404 4.15116 23.8184 9.27011 25.8163Z" fill="#AA51B9"/>
+                  <path d="M22.5448 19.4759C20.3317 24.9756 14.388 27.8143 9.26905 25.8164C4.1501 23.8185 6.53115 19.5725 8.74421 14.0728C15.9951 11.3949 12.1644 3.90239 17.2833 5.9003C22.4022 7.89821 24.7578 13.9762 22.5448 19.4759Z" fill="#C565D6"/>
+                  <path d="M2.08203 11.1989C3.00491 8.28842 6.79782 2.82327 14.5865 4.24637C22.3752 5.66947 9.49547 9.47437 2.08203 11.1989Z" fill="#1AB15C"/>
+                  </svg>
+                .catalog-slider__additional-bonuses-count 45
+              .catalog-slider__additional-fav
+                <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5676 17.0465L3.8356 10.3145C-1.8254 4.65347 4.9066 -2.07853 10.5676 3.58247C16.3306 -2.18053 23.0626 4.55147 17.2996 10.3145L10.5676 17.0465Z" stroke="white" stroke-width="2.3" stroke-miterlimit="10"/>
+                </svg>
+              .catalog-slider__additional-buy
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1221_74861)">
+                <path d="M18.7245 11.4301V7.28559C18.7245 4.1255 16.1649 1.56592 13.0048 1.56592C9.84474 1.56592 7.28516 4.1255 7.28516 7.28559V11.4301" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M14.6886 24.8385H22.6626V16.9431V7.48254H3.34766V24.8385H14.7772" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_1221_74861">
+                <rect width="25.2315" height="25.5958" fill="white" transform="translate(0.382812 0.404297)"/>
+                </clipPath>
+                </defs>
+                </svg>
+            .catalog-slider__item-wrapper
+              .catalog-slider__image-wrapper
+                img(src='/assets/img/sliv-cen/coffe.png')
+              .catalog-slider__content-wrapper
+                del.text-light-grey
+                  span.catalog-slider__old-price 63.27
+                div
+                  span.catalog-slider__price 60.74&nbsp;
+                  span.catalog-slider__measure руб. /шт
+                span.catalog-slider__name Масло растительно-сливочное СЗММасло растительно-сливочное СЗММасло растительно-сливочное СЗМЖ Золотое 82,5% фольга...
+              .catalog-slider__quantity-block.mt-3
+                .catalog-slider__quantity-wrapper
+                  div.catalog-slider__quantity-minus
+                    <svg width="7" height="2" viewBox="0 0 7 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.109375 1.99007V0.0100708H6.18938V1.99007H0.109375Z" fill="#32383C"/>
+                    </svg>
+                  span.catalog-slider__quantity-count 1
+                  div.catalog-slider__quantity-plus
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.07078 9.91003V5.83003H0.0507812V4.07003H4.07078V0.0900269H5.89078V4.07003H9.89078V5.83003H5.89078V9.91003H4.07078Z" fill="#32383C"/>
+                    </svg>
+          .catalog-slider__item.swiper-slide
+            .catalog-slider__discount -11%
+            .catalog-slider__promo Акция
+            .catalog-slider__additional-wrapper
+              .catalog-slider__additional-bonuses
+                .catalog-slider__additional-bonuses-icon
+                  <svg width="27" height="30" viewBox="0 0 27 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.27011 25.8163C14.3891 27.8142 20.3328 24.9755 22.5459 19.4758C24.7589 13.9762 22.4033 7.89816 17.2843 5.90025C12.1654 3.90234 6.22159 6.74108 4.00853 12.2407C1.79547 17.7404 4.15116 23.8184 9.27011 25.8163Z" fill="#AA51B9"/>
+                  <path d="M22.5448 19.4759C20.3317 24.9756 14.388 27.8143 9.26905 25.8164C4.1501 23.8185 6.53115 19.5725 8.74421 14.0728C15.9951 11.3949 12.1644 3.90239 17.2833 5.9003C22.4022 7.89821 24.7578 13.9762 22.5448 19.4759Z" fill="#C565D6"/>
+                  <path d="M2.08203 11.1989C3.00491 8.28842 6.79782 2.82327 14.5865 4.24637C22.3752 5.66947 9.49547 9.47437 2.08203 11.1989Z" fill="#1AB15C"/>
+                  </svg>
+                .catalog-slider__additional-bonuses-count 45
+              .catalog-slider__additional-fav
+                <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5676 17.0465L3.8356 10.3145C-1.8254 4.65347 4.9066 -2.07853 10.5676 3.58247C16.3306 -2.18053 23.0626 4.55147 17.2996 10.3145L10.5676 17.0465Z" stroke="white" stroke-width="2.3" stroke-miterlimit="10"/>
+                </svg>
+              .catalog-slider__additional-buy
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1221_74861)">
+                <path d="M18.7245 11.4301V7.28559C18.7245 4.1255 16.1649 1.56592 13.0048 1.56592C9.84474 1.56592 7.28516 4.1255 7.28516 7.28559V11.4301" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M14.6886 24.8385H22.6626V16.9431V7.48254H3.34766V24.8385H14.7772" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_1221_74861">
+                <rect width="25.2315" height="25.5958" fill="white" transform="translate(0.382812 0.404297)"/>
+                </clipPath>
+                </defs>
+                </svg>
+            .catalog-slider__item-wrapper
+              .catalog-slider__image-wrapper
+                img(src='/assets/img/sliv-cen/coffe.png')
+              .catalog-slider__content-wrapper
+                del.text-light-grey
+                  span.catalog-slider__old-price 63.27
+                div
+                  span.catalog-slider__price 60.74&nbsp;
+                  span.catalog-slider__measure руб. /шт
+                span.catalog-slider__name Масло растительно-сливочное СЗММасло растительно-сливочное СЗММасло растительно-сливочное СЗМЖ Золотое 82,5% фольга...
+              .catalog-slider__quantity-block.mt-3
+                .catalog-slider__quantity-wrapper
+                  div.catalog-slider__quantity-minus
+                    <svg width="7" height="2" viewBox="0 0 7 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.109375 1.99007V0.0100708H6.18938V1.99007H0.109375Z" fill="#32383C"/>
+                    </svg>
+                  span.catalog-slider__quantity-count 1
+                  div.catalog-slider__quantity-plus
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.07078 9.91003V5.83003H0.0507812V4.07003H4.07078V0.0900269H5.89078V4.07003H9.89078V5.83003H5.89078V9.91003H4.07078Z" fill="#32383C"/>
+                    </svg>
+    section.mt-12
+      .banners-special-prices
+        .banners-special-prices__wrapper
+          .banners-special-prices__item
+            img(src="/assets/img/banners-special-prices/1.png")
+          .banners-special-prices__item
+            img(src="/assets/img/banners-special-prices/2.png")
+    section.mt-12
+      h2 Акции
+      .catalog-slider.mt-5
+        .catalog-slider__wrapper.swiper-wrapper
+          .catalog-slider__item.swiper-slide
+            .catalog-slider__promo Акция
+            .catalog-slider__additional-wrapper
+              .catalog-slider__additional-bonuses
+                .catalog-slider__additional-bonuses-icon
+                  <svg width="27" height="30" viewBox="0 0 27 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.27011 25.8163C14.3891 27.8142 20.3328 24.9755 22.5459 19.4758C24.7589 13.9762 22.4033 7.89816 17.2843 5.90025C12.1654 3.90234 6.22159 6.74108 4.00853 12.2407C1.79547 17.7404 4.15116 23.8184 9.27011 25.8163Z" fill="#AA51B9"/>
+                  <path d="M22.5448 19.4759C20.3317 24.9756 14.388 27.8143 9.26905 25.8164C4.1501 23.8185 6.53115 19.5725 8.74421 14.0728C15.9951 11.3949 12.1644 3.90239 17.2833 5.9003C22.4022 7.89821 24.7578 13.9762 22.5448 19.4759Z" fill="#C565D6"/>
+                  <path d="M2.08203 11.1989C3.00491 8.28842 6.79782 2.82327 14.5865 4.24637C22.3752 5.66947 9.49547 9.47437 2.08203 11.1989Z" fill="#1AB15C"/>
+                  </svg>
+                .catalog-slider__additional-bonuses-count 45
+              .catalog-slider__additional-fav
+                <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5676 17.0465L3.8356 10.3145C-1.8254 4.65347 4.9066 -2.07853 10.5676 3.58247C16.3306 -2.18053 23.0626 4.55147 17.2996 10.3145L10.5676 17.0465Z" stroke="white" stroke-width="2.3" stroke-miterlimit="10"/>
+                </svg>
+              .catalog-slider__additional-buy
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1221_74861)">
+                <path d="M18.7245 11.4301V7.28559C18.7245 4.1255 16.1649 1.56592 13.0048 1.56592C9.84474 1.56592 7.28516 4.1255 7.28516 7.28559V11.4301" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M14.6886 24.8385H22.6626V16.9431V7.48254H3.34766V24.8385H14.7772" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_1221_74861">
+                <rect width="25.2315" height="25.5958" fill="white" transform="translate(0.382812 0.404297)"/>
+                </clipPath>
+                </defs>
+                </svg>
+            .catalog-slider__item-wrapper
+              .catalog-slider__image-wrapper
+                img(src='/assets/img/sliv-cen/coffe.png')
+              .catalog-slider__content-wrapper
+                del.text-light-grey
+                  span.catalog-slider__old-price 63.27
+                div
+                  span.catalog-slider__price 60.74&nbsp;
+                  span.catalog-slider__measure руб. /шт
+                span.catalog-slider__name Масло растительно-сливочное СЗММасло растительно-сливочное СЗММасло растительно-сливочное СЗМЖ Золотое 82,5% фольга...
+              .catalog-slider__quantity-block.mt-3
+                .catalog-slider__quantity-wrapper
+                  div.catalog-slider__quantity-minus
+                    <svg width="7" height="2" viewBox="0 0 7 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.109375 1.99007V0.0100708H6.18938V1.99007H0.109375Z" fill="#32383C"/>
+                    </svg>
+                  span.catalog-slider__quantity-count 1
+                  div.catalog-slider__quantity-plus
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.07078 9.91003V5.83003H0.0507812V4.07003H4.07078V0.0900269H5.89078V4.07003H9.89078V5.83003H5.89078V9.91003H4.07078Z" fill="#32383C"/>
+                    </svg>
+          .catalog-slider__item.swiper-slide
+            .catalog-slider__promo Акция
+            .catalog-slider__additional-wrapper
+              .catalog-slider__additional-fav
+                <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5676 17.0465L3.8356 10.3145C-1.8254 4.65347 4.9066 -2.07853 10.5676 3.58247C16.3306 -2.18053 23.0626 4.55147 17.2996 10.3145L10.5676 17.0465Z" stroke="white" stroke-width="2.3" stroke-miterlimit="10"/>
+                </svg>
+              .catalog-slider__additional-buy
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1221_74861)">
+                <path d="M18.7245 11.4301V7.28559C18.7245 4.1255 16.1649 1.56592 13.0048 1.56592C9.84474 1.56592 7.28516 4.1255 7.28516 7.28559V11.4301" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M14.6886 24.8385H22.6626V16.9431V7.48254H3.34766V24.8385H14.7772" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_1221_74861">
+                <rect width="25.2315" height="25.5958" fill="white" transform="translate(0.382812 0.404297)"/>
+                </clipPath>
+                </defs>
+                </svg>
+            .catalog-slider__item-wrapper
+              .catalog-slider__image-wrapper
+                img(src='/assets/img/sliv-cen/coffe.png')
+              .catalog-slider__content-wrapper
+                del.text-light-grey
+                  span.catalog-slider__old-price 63.27
+                div
+                  span.catalog-slider__price 60.74&nbsp;
+                  span.catalog-slider__measure руб. /шт
+                span.catalog-slider__name Масло растительно-сливочное СЗММасло растительно-сливочное СЗММасло растительно-сливочное СЗМЖ Золотое 82,5% фольга...
+              .catalog-slider__quantity-block.mt-3
+                .catalog-slider__quantity-wrapper
+                  div.catalog-slider__quantity-minus
+                    <svg width="7" height="2" viewBox="0 0 7 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.109375 1.99007V0.0100708H6.18938V1.99007H0.109375Z" fill="#32383C"/>
+                    </svg>
+                  span.catalog-slider__quantity-count 1
+                  div.catalog-slider__quantity-plus
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.07078 9.91003V5.83003H0.0507812V4.07003H4.07078V0.0900269H5.89078V4.07003H9.89078V5.83003H5.89078V9.91003H4.07078Z" fill="#32383C"/>
+                    </svg>
+          .catalog-slider__item.swiper-slide
+            .catalog-slider__promo Акция
+            .catalog-slider__additional-wrapper
+              .catalog-slider__additional-bonuses
+                .catalog-slider__additional-bonuses-icon
+                  <svg width="27" height="30" viewBox="0 0 27 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.27011 25.8163C14.3891 27.8142 20.3328 24.9755 22.5459 19.4758C24.7589 13.9762 22.4033 7.89816 17.2843 5.90025C12.1654 3.90234 6.22159 6.74108 4.00853 12.2407C1.79547 17.7404 4.15116 23.8184 9.27011 25.8163Z" fill="#AA51B9"/>
+                  <path d="M22.5448 19.4759C20.3317 24.9756 14.388 27.8143 9.26905 25.8164C4.1501 23.8185 6.53115 19.5725 8.74421 14.0728C15.9951 11.3949 12.1644 3.90239 17.2833 5.9003C22.4022 7.89821 24.7578 13.9762 22.5448 19.4759Z" fill="#C565D6"/>
+                  <path d="M2.08203 11.1989C3.00491 8.28842 6.79782 2.82327 14.5865 4.24637C22.3752 5.66947 9.49547 9.47437 2.08203 11.1989Z" fill="#1AB15C"/>
+                  </svg>
+                .catalog-slider__additional-bonuses-count 45
+              .catalog-slider__additional-fav
+                <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5676 17.0465L3.8356 10.3145C-1.8254 4.65347 4.9066 -2.07853 10.5676 3.58247C16.3306 -2.18053 23.0626 4.55147 17.2996 10.3145L10.5676 17.0465Z" stroke="white" stroke-width="2.3" stroke-miterlimit="10"/>
+                </svg>
+              .catalog-slider__additional-buy
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1221_74861)">
+                <path d="M18.7245 11.4301V7.28559C18.7245 4.1255 16.1649 1.56592 13.0048 1.56592C9.84474 1.56592 7.28516 4.1255 7.28516 7.28559V11.4301" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M14.6886 24.8385H22.6626V16.9431V7.48254H3.34766V24.8385H14.7772" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_1221_74861">
+                <rect width="25.2315" height="25.5958" fill="white" transform="translate(0.382812 0.404297)"/>
+                </clipPath>
+                </defs>
+                </svg>
+            .catalog-slider__item-wrapper
+              .catalog-slider__image-wrapper
+                img(src='/assets/img/sliv-cen/coffe.png')
+              .catalog-slider__content-wrapper
+                del.text-light-grey
+                  span.catalog-slider__old-price 63.27
+                div
+                  span.catalog-slider__price 60.74&nbsp;
+                  span.catalog-slider__measure руб. /шт
+                span.catalog-slider__name Масло растительно-сливочное СЗММасло растительно-сливочное СЗММасло растительно-сливочное СЗМЖ Золотое 82,5% фольга...
+              .catalog-slider__quantity-block.mt-3
+                .catalog-slider__quantity-wrapper
+                  div.catalog-slider__quantity-minus
+                    <svg width="7" height="2" viewBox="0 0 7 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.109375 1.99007V0.0100708H6.18938V1.99007H0.109375Z" fill="#32383C"/>
+                    </svg>
+                  span.catalog-slider__quantity-count 1
+                  div.catalog-slider__quantity-plus
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.07078 9.91003V5.83003H0.0507812V4.07003H4.07078V0.0900269H5.89078V4.07003H9.89078V5.83003H5.89078V9.91003H4.07078Z" fill="#32383C"/>
+                    </svg>
+          .catalog-slider__item.swiper-slide
+            .catalog-slider__promo Акция
+            .catalog-slider__additional-wrapper
+              .catalog-slider__additional-bonuses
+                .catalog-slider__additional-bonuses-icon
+                  <svg width="27" height="30" viewBox="0 0 27 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.27011 25.8163C14.3891 27.8142 20.3328 24.9755 22.5459 19.4758C24.7589 13.9762 22.4033 7.89816 17.2843 5.90025C12.1654 3.90234 6.22159 6.74108 4.00853 12.2407C1.79547 17.7404 4.15116 23.8184 9.27011 25.8163Z" fill="#AA51B9"/>
+                  <path d="M22.5448 19.4759C20.3317 24.9756 14.388 27.8143 9.26905 25.8164C4.1501 23.8185 6.53115 19.5725 8.74421 14.0728C15.9951 11.3949 12.1644 3.90239 17.2833 5.9003C22.4022 7.89821 24.7578 13.9762 22.5448 19.4759Z" fill="#C565D6"/>
+                  <path d="M2.08203 11.1989C3.00491 8.28842 6.79782 2.82327 14.5865 4.24637C22.3752 5.66947 9.49547 9.47437 2.08203 11.1989Z" fill="#1AB15C"/>
+                  </svg>
+                .catalog-slider__additional-bonuses-count 45
+              .catalog-slider__additional-fav
+                <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5676 17.0465L3.8356 10.3145C-1.8254 4.65347 4.9066 -2.07853 10.5676 3.58247C16.3306 -2.18053 23.0626 4.55147 17.2996 10.3145L10.5676 17.0465Z" stroke="white" stroke-width="2.3" stroke-miterlimit="10"/>
+                </svg>
+              .catalog-slider__additional-buy
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1221_74861)">
+                <path d="M18.7245 11.4301V7.28559C18.7245 4.1255 16.1649 1.56592 13.0048 1.56592C9.84474 1.56592 7.28516 4.1255 7.28516 7.28559V11.4301" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M14.6886 24.8385H22.6626V16.9431V7.48254H3.34766V24.8385H14.7772" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_1221_74861">
+                <rect width="25.2315" height="25.5958" fill="white" transform="translate(0.382812 0.404297)"/>
+                </clipPath>
+                </defs>
+                </svg>
+            .catalog-slider__item-wrapper
+              .catalog-slider__image-wrapper
+                img(src='/assets/img/sliv-cen/coffe.png')
+              .catalog-slider__content-wrapper
+                del.text-light-grey
+                  span.catalog-slider__old-price 63.27
+                div
+                  span.catalog-slider__price 60.74&nbsp;
+                  span.catalog-slider__measure руб. /шт
+                span.catalog-slider__name Масло растительно-сливочное СЗММасло растительно-сливочное СЗММасло растительно-сливочное СЗМЖ Золотое 82,5% фольга...
+              .catalog-slider__quantity-block.mt-3
+                .catalog-slider__quantity-wrapper
+                  div.catalog-slider__quantity-minus
+                    <svg width="7" height="2" viewBox="0 0 7 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.109375 1.99007V0.0100708H6.18938V1.99007H0.109375Z" fill="#32383C"/>
+                    </svg>
+                  span.catalog-slider__quantity-count 1
+                  div.catalog-slider__quantity-plus
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.07078 9.91003V5.83003H0.0507812V4.07003H4.07078V0.0900269H5.89078V4.07003H9.89078V5.83003H5.89078V9.91003H4.07078Z" fill="#32383C"/>
+                    </svg>
+          .catalog-slider__item.swiper-slide
+            .catalog-slider__promo Акция
+            .catalog-slider__additional-wrapper
+              .catalog-slider__additional-bonuses
+                .catalog-slider__additional-bonuses-icon
+                  <svg width="27" height="30" viewBox="0 0 27 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.27011 25.8163C14.3891 27.8142 20.3328 24.9755 22.5459 19.4758C24.7589 13.9762 22.4033 7.89816 17.2843 5.90025C12.1654 3.90234 6.22159 6.74108 4.00853 12.2407C1.79547 17.7404 4.15116 23.8184 9.27011 25.8163Z" fill="#AA51B9"/>
+                  <path d="M22.5448 19.4759C20.3317 24.9756 14.388 27.8143 9.26905 25.8164C4.1501 23.8185 6.53115 19.5725 8.74421 14.0728C15.9951 11.3949 12.1644 3.90239 17.2833 5.9003C22.4022 7.89821 24.7578 13.9762 22.5448 19.4759Z" fill="#C565D6"/>
+                  <path d="M2.08203 11.1989C3.00491 8.28842 6.79782 2.82327 14.5865 4.24637C22.3752 5.66947 9.49547 9.47437 2.08203 11.1989Z" fill="#1AB15C"/>
+                  </svg>
+                .catalog-slider__additional-bonuses-count 45
+              .catalog-slider__additional-fav
+                <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5676 17.0465L3.8356 10.3145C-1.8254 4.65347 4.9066 -2.07853 10.5676 3.58247C16.3306 -2.18053 23.0626 4.55147 17.2996 10.3145L10.5676 17.0465Z" stroke="white" stroke-width="2.3" stroke-miterlimit="10"/>
+                </svg>
+              .catalog-slider__additional-buy
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1221_74861)">
+                <path d="M18.7245 11.4301V7.28559C18.7245 4.1255 16.1649 1.56592 13.0048 1.56592C9.84474 1.56592 7.28516 4.1255 7.28516 7.28559V11.4301" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M14.6886 24.8385H22.6626V16.9431V7.48254H3.34766V24.8385H14.7772" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_1221_74861">
+                <rect width="25.2315" height="25.5958" fill="white" transform="translate(0.382812 0.404297)"/>
+                </clipPath>
+                </defs>
+                </svg>
+            .catalog-slider__item-wrapper
+              .catalog-slider__image-wrapper
+                img(src='/assets/img/sliv-cen/coffe.png')
+              .catalog-slider__content-wrapper
+                del.text-light-grey
+                  span.catalog-slider__old-price 63.27
+                div
+                  span.catalog-slider__price 60.74&nbsp;
+                  span.catalog-slider__measure руб. /шт
+                span.catalog-slider__name Масло растительно-сливочное СЗММасло растительно-сливочное СЗММасло растительно-сливочное СЗМЖ Золотое 82,5% фольга...
+              .catalog-slider__quantity-block.mt-3
+                .catalog-slider__quantity-wrapper
+                  div.catalog-slider__quantity-minus
+                    <svg width="7" height="2" viewBox="0 0 7 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.109375 1.99007V0.0100708H6.18938V1.99007H0.109375Z" fill="#32383C"/>
+                    </svg>
+                  span.catalog-slider__quantity-count 1
+                  div.catalog-slider__quantity-plus
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.07078 9.91003V5.83003H0.0507812V4.07003H4.07078V0.0900269H5.89078V4.07003H9.89078V5.83003H5.89078V9.91003H4.07078Z" fill="#32383C"/>
+                    </svg>
+          .catalog-slider__item.swiper-slide
+            .catalog-slider__promo Акция
+            .catalog-slider__additional-wrapper
+              .catalog-slider__additional-bonuses
+                .catalog-slider__additional-bonuses-icon
+                  <svg width="27" height="30" viewBox="0 0 27 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.27011 25.8163C14.3891 27.8142 20.3328 24.9755 22.5459 19.4758C24.7589 13.9762 22.4033 7.89816 17.2843 5.90025C12.1654 3.90234 6.22159 6.74108 4.00853 12.2407C1.79547 17.7404 4.15116 23.8184 9.27011 25.8163Z" fill="#AA51B9"/>
+                  <path d="M22.5448 19.4759C20.3317 24.9756 14.388 27.8143 9.26905 25.8164C4.1501 23.8185 6.53115 19.5725 8.74421 14.0728C15.9951 11.3949 12.1644 3.90239 17.2833 5.9003C22.4022 7.89821 24.7578 13.9762 22.5448 19.4759Z" fill="#C565D6"/>
+                  <path d="M2.08203 11.1989C3.00491 8.28842 6.79782 2.82327 14.5865 4.24637C22.3752 5.66947 9.49547 9.47437 2.08203 11.1989Z" fill="#1AB15C"/>
+                  </svg>
+                .catalog-slider__additional-bonuses-count 45
+              .catalog-slider__additional-fav
+                <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5676 17.0465L3.8356 10.3145C-1.8254 4.65347 4.9066 -2.07853 10.5676 3.58247C16.3306 -2.18053 23.0626 4.55147 17.2996 10.3145L10.5676 17.0465Z" stroke="white" stroke-width="2.3" stroke-miterlimit="10"/>
+                </svg>
+              .catalog-slider__additional-buy
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1221_74861)">
+                <path d="M18.7245 11.4301V7.28559C18.7245 4.1255 16.1649 1.56592 13.0048 1.56592C9.84474 1.56592 7.28516 4.1255 7.28516 7.28559V11.4301" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M14.6886 24.8385H22.6626V16.9431V7.48254H3.34766V24.8385H14.7772" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_1221_74861">
+                <rect width="25.2315" height="25.5958" fill="white" transform="translate(0.382812 0.404297)"/>
+                </clipPath>
+                </defs>
+                </svg>
+            .catalog-slider__item-wrapper
+              .catalog-slider__image-wrapper
+                img(src='/assets/img/sliv-cen/coffe.png')
+              .catalog-slider__content-wrapper
+                del.text-light-grey
+                  span.catalog-slider__old-price 63.27
+                div
+                  span.catalog-slider__price 60.74&nbsp;
+                  span.catalog-slider__measure руб. /шт
+                span.catalog-slider__name Масло растительно-сливочное СЗММасло растительно-сливочное СЗММасло растительно-сливочное СЗМЖ Золотое 82,5% фольга...
+              .catalog-slider__quantity-block.mt-3
+                .catalog-slider__quantity-wrapper
+                  div.catalog-slider__quantity-minus
+                    <svg width="7" height="2" viewBox="0 0 7 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.109375 1.99007V0.0100708H6.18938V1.99007H0.109375Z" fill="#32383C"/>
+                    </svg>
+                  span.catalog-slider__quantity-count 1
+                  div.catalog-slider__quantity-plus
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.07078 9.91003V5.83003H0.0507812V4.07003H4.07078V0.0900269H5.89078V4.07003H9.89078V5.83003H5.89078V9.91003H4.07078Z" fill="#32383C"/>
+                    </svg>
+          .catalog-slider__item.swiper-slide
+            .catalog-slider__promo Акция
+            .catalog-slider__additional-wrapper
+              .catalog-slider__additional-bonuses
+                .catalog-slider__additional-bonuses-icon
+                  <svg width="27" height="30" viewBox="0 0 27 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.27011 25.8163C14.3891 27.8142 20.3328 24.9755 22.5459 19.4758C24.7589 13.9762 22.4033 7.89816 17.2843 5.90025C12.1654 3.90234 6.22159 6.74108 4.00853 12.2407C1.79547 17.7404 4.15116 23.8184 9.27011 25.8163Z" fill="#AA51B9"/>
+                  <path d="M22.5448 19.4759C20.3317 24.9756 14.388 27.8143 9.26905 25.8164C4.1501 23.8185 6.53115 19.5725 8.74421 14.0728C15.9951 11.3949 12.1644 3.90239 17.2833 5.9003C22.4022 7.89821 24.7578 13.9762 22.5448 19.4759Z" fill="#C565D6"/>
+                  <path d="M2.08203 11.1989C3.00491 8.28842 6.79782 2.82327 14.5865 4.24637C22.3752 5.66947 9.49547 9.47437 2.08203 11.1989Z" fill="#1AB15C"/>
+                  </svg>
+                .catalog-slider__additional-bonuses-count 45
+              .catalog-slider__additional-fav
+                <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5676 17.0465L3.8356 10.3145C-1.8254 4.65347 4.9066 -2.07853 10.5676 3.58247C16.3306 -2.18053 23.0626 4.55147 17.2996 10.3145L10.5676 17.0465Z" stroke="white" stroke-width="2.3" stroke-miterlimit="10"/>
+                </svg>
+              .catalog-slider__additional-buy
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1221_74861)">
+                <path d="M18.7245 11.4301V7.28559C18.7245 4.1255 16.1649 1.56592 13.0048 1.56592C9.84474 1.56592 7.28516 4.1255 7.28516 7.28559V11.4301" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M14.6886 24.8385H22.6626V16.9431V7.48254H3.34766V24.8385H14.7772" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_1221_74861">
+                <rect width="25.2315" height="25.5958" fill="white" transform="translate(0.382812 0.404297)"/>
+                </clipPath>
+                </defs>
+                </svg>
+            .catalog-slider__item-wrapper
+              .catalog-slider__image-wrapper
+                img(src='/assets/img/sliv-cen/coffe.png')
+              .catalog-slider__content-wrapper
+                del.text-light-grey
+                  span.catalog-slider__old-price 63.27
+                div
+                  span.catalog-slider__price 60.74&nbsp;
+                  span.catalog-slider__measure руб. /шт
+                span.catalog-slider__name Масло растительно-сливочное СЗММасло растительно-сливочное СЗММасло растительно-сливочное СЗМЖ Золотое 82,5% фольга...
+              .catalog-slider__quantity-block.mt-3
+                .catalog-slider__quantity-wrapper
+                  div.catalog-slider__quantity-minus
+                    <svg width="7" height="2" viewBox="0 0 7 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.109375 1.99007V0.0100708H6.18938V1.99007H0.109375Z" fill="#32383C"/>
+                    </svg>
+                  span.catalog-slider__quantity-count 1
+                  div.catalog-slider__quantity-plus
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.07078 9.91003V5.83003H0.0507812V4.07003H4.07078V0.0900269H5.89078V4.07003H9.89078V5.83003H5.89078V9.91003H4.07078Z" fill="#32383C"/>
+                    </svg>
+          .catalog-slider__item.swiper-slide
+            .catalog-slider__promo Акция
+            .catalog-slider__promo Акция
+            .catalog-slider__additional-wrapper
+              .catalog-slider__additional-bonuses
+                .catalog-slider__additional-bonuses-icon
+                  <svg width="27" height="30" viewBox="0 0 27 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.27011 25.8163C14.3891 27.8142 20.3328 24.9755 22.5459 19.4758C24.7589 13.9762 22.4033 7.89816 17.2843 5.90025C12.1654 3.90234 6.22159 6.74108 4.00853 12.2407C1.79547 17.7404 4.15116 23.8184 9.27011 25.8163Z" fill="#AA51B9"/>
+                  <path d="M22.5448 19.4759C20.3317 24.9756 14.388 27.8143 9.26905 25.8164C4.1501 23.8185 6.53115 19.5725 8.74421 14.0728C15.9951 11.3949 12.1644 3.90239 17.2833 5.9003C22.4022 7.89821 24.7578 13.9762 22.5448 19.4759Z" fill="#C565D6"/>
+                  <path d="M2.08203 11.1989C3.00491 8.28842 6.79782 2.82327 14.5865 4.24637C22.3752 5.66947 9.49547 9.47437 2.08203 11.1989Z" fill="#1AB15C"/>
+                  </svg>
+                .catalog-slider__additional-bonuses-count 45
+              .catalog-slider__additional-fav
+                <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5676 17.0465L3.8356 10.3145C-1.8254 4.65347 4.9066 -2.07853 10.5676 3.58247C16.3306 -2.18053 23.0626 4.55147 17.2996 10.3145L10.5676 17.0465Z" stroke="white" stroke-width="2.3" stroke-miterlimit="10"/>
+                </svg>
+              .catalog-slider__additional-buy
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1221_74861)">
+                <path d="M18.7245 11.4301V7.28559C18.7245 4.1255 16.1649 1.56592 13.0048 1.56592C9.84474 1.56592 7.28516 4.1255 7.28516 7.28559V11.4301" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M14.6886 24.8385H22.6626V16.9431V7.48254H3.34766V24.8385H14.7772" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_1221_74861">
+                <rect width="25.2315" height="25.5958" fill="white" transform="translate(0.382812 0.404297)"/>
+                </clipPath>
+                </defs>
+                </svg>
+            .catalog-slider__item-wrapper
+              .catalog-slider__image-wrapper
+                img(src='/assets/img/sliv-cen/coffe.png')
+              .catalog-slider__content-wrapper
+                del.text-light-grey
+                  span.catalog-slider__old-price 63.27
+                div
+                  span.catalog-slider__price 60.74&nbsp;
+                  span.catalog-slider__measure руб. /шт
+                span.catalog-slider__name Масло растительно-сливочное СЗММасло растительно-сливочное СЗММасло растительно-сливочное СЗМЖ Золотое 82,5% фольга...
+              .catalog-slider__quantity-block.mt-3
+                .catalog-slider__quantity-wrapper
+                  div.catalog-slider__quantity-minus
+                    <svg width="7" height="2" viewBox="0 0 7 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.109375 1.99007V0.0100708H6.18938V1.99007H0.109375Z" fill="#32383C"/>
+                    </svg>
+                  span.catalog-slider__quantity-count 1
+                  div.catalog-slider__quantity-plus
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.07078 9.91003V5.83003H0.0507812V4.07003H4.07078V0.0900269H5.89078V4.07003H9.89078V5.83003H5.89078V9.91003H4.07078Z" fill="#32383C"/>
+                    </svg>
+          .catalog-slider__item.swiper-slide
+            .catalog-slider__promo Акция
+            .catalog-slider__additional-wrapper
+              .catalog-slider__additional-bonuses
+                .catalog-slider__additional-bonuses-icon
+                  <svg width="27" height="30" viewBox="0 0 27 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.27011 25.8163C14.3891 27.8142 20.3328 24.9755 22.5459 19.4758C24.7589 13.9762 22.4033 7.89816 17.2843 5.90025C12.1654 3.90234 6.22159 6.74108 4.00853 12.2407C1.79547 17.7404 4.15116 23.8184 9.27011 25.8163Z" fill="#AA51B9"/>
+                  <path d="M22.5448 19.4759C20.3317 24.9756 14.388 27.8143 9.26905 25.8164C4.1501 23.8185 6.53115 19.5725 8.74421 14.0728C15.9951 11.3949 12.1644 3.90239 17.2833 5.9003C22.4022 7.89821 24.7578 13.9762 22.5448 19.4759Z" fill="#C565D6"/>
+                  <path d="M2.08203 11.1989C3.00491 8.28842 6.79782 2.82327 14.5865 4.24637C22.3752 5.66947 9.49547 9.47437 2.08203 11.1989Z" fill="#1AB15C"/>
+                  </svg>
+                .catalog-slider__additional-bonuses-count 45
+              .catalog-slider__additional-fav
+                <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5676 17.0465L3.8356 10.3145C-1.8254 4.65347 4.9066 -2.07853 10.5676 3.58247C16.3306 -2.18053 23.0626 4.55147 17.2996 10.3145L10.5676 17.0465Z" stroke="white" stroke-width="2.3" stroke-miterlimit="10"/>
+                </svg>
+              .catalog-slider__additional-buy
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1221_74861)">
+                <path d="M18.7245 11.4301V7.28559C18.7245 4.1255 16.1649 1.56592 13.0048 1.56592C9.84474 1.56592 7.28516 4.1255 7.28516 7.28559V11.4301" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M14.6886 24.8385H22.6626V16.9431V7.48254H3.34766V24.8385H14.7772" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_1221_74861">
+                <rect width="25.2315" height="25.5958" fill="white" transform="translate(0.382812 0.404297)"/>
+                </clipPath>
+                </defs>
+                </svg>
+            .catalog-slider__item-wrapper
+              .catalog-slider__image-wrapper
+                img(src='/assets/img/sliv-cen/coffe.png')
+              .catalog-slider__content-wrapper
+                del.text-light-grey
+                  span.catalog-slider__old-price 63.27
+                div
+                  span.catalog-slider__price 60.74&nbsp;
+                  span.catalog-slider__measure руб. /шт
+                span.catalog-slider__name Масло растительно-сливочное СЗММасло растительно-сливочное СЗММасло растительно-сливочное СЗМЖ Золотое 82,5% фольга...
+              .catalog-slider__quantity-block.mt-3
+                .catalog-slider__quantity-wrapper
+                  div.catalog-slider__quantity-minus
+                    <svg width="7" height="2" viewBox="0 0 7 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.109375 1.99007V0.0100708H6.18938V1.99007H0.109375Z" fill="#32383C"/>
+                    </svg>
+                  span.catalog-slider__quantity-count 1
+                  div.catalog-slider__quantity-plus
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.07078 9.91003V5.83003H0.0507812V4.07003H4.07078V0.0900269H5.89078V4.07003H9.89078V5.83003H5.89078V9.91003H4.07078Z" fill="#32383C"/>
+                    </svg>
