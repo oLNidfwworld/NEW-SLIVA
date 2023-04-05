@@ -48,7 +48,7 @@
   @apply mb-10;
   &__{
     &wrapper{
-      @apply flex items-center;
+      @apply flex items-baseline;
     }
     &item{
       @apply text-green text-[15px];

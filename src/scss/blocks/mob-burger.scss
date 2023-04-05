@@ -1,5 +1,5 @@
 .mob-burger{
-  @apply fixed w-full  bg-white z-[102] top-0 -left-[320px] duration-fast ease-out bottom-0 right-0 lg:hidden;
+  @apply fixed w-full  bg-white z-[102] top-0 -left-[320px] duration-fast ease-out bottom-0 right-0 lg:hidden rounded-[0px_4px_4px_0px];
   height: calc(100% - 77px);
   max-width:320px;
   &__{

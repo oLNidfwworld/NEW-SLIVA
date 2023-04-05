@@ -20,6 +20,21 @@
       &-name{
         @apply text-[16px] line-clamp-2 md:text-[20px];
       }
+      &-menu{
+        @apply fixed top-0 -left-[100%] w-full h-[calc(100%-77px)] bg-white z-[100] block duration-fast ease-out max-w-[281px];
+        &-wrapper{
+          @apply p-[20px_32px_10px_16px];
+        }
+        &-item{
+          @apply mb-5;
+          a{
+            @apply font-extrabold text-black text-[16px];
+          }
+        }
+        &-show{
+          @apply left-0;
+        }
+      }
     }
   }
 }
