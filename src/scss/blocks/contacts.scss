@@ -1,3 +1,7 @@
+//body {
+//    background: white !important;
+//}
+
 .title {
     @apply font-extrabold text-20px mb-[30px] leading-[50px];
 }
@@ -31,7 +35,7 @@ hr {
 
 
 .contacts {
-    @apply mt-8;
+    @apply bg-white;
     font-family: 'Mulish';
 }
 
@@ -66,22 +70,22 @@ hr {
             padding: 0 120px 0 0;
         }
     }
-    
+
 }
 
 @media (min-width: 720px) {
     .content{
         grid-template-rows: 2fr 1fr;
     }
-   
+
     .title{
         @apply text-[26px];
     }
-    
+
     .content_info-left{
         padding: 0 20px 0 0;
     }
-   
+
     .content_info {
         @apply grid gap-x-[90px];
         padding: 40px 40px;
@@ -89,7 +93,7 @@ hr {
 
         & .item {
             @apply text-18px;
-            padding: 0;            
+            padding: 0;
         }
     }
 
@@ -101,7 +105,7 @@ hr {
 @media (min-width: 1024px) {
     .content {
         grid-template-rows: 1.5fr 1fr;
-    
+
         & .item {
             @apply text-20px;
             padding: 0 100px 0 0;
@@ -127,7 +131,7 @@ hr {
     .content_info {
         padding: 40px 106px;
         grid-template-columns: none;
-        
+
         & .item{
             padding: 0;
         }

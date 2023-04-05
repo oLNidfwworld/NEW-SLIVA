@@ -1,0 +1,193 @@
+.banners{
+  &__{
+    &wrapper{
+      @apply overflow-hidden;
+    }
+    &image-wrapper{
+      @apply overflow-hidden rounded lg:rounded-none;
+    }
+    &image-content{
+      @apply max-w-full max-h-full w-full h-full;
+    }
+  }
+}
+.storys{
+  @apply overflow-hidden max-w-[550px] m-auto;
+  &__{
+    &icon{
+      padding: 3px;
+      border-radius: 100%;
+      border-width: 3px;
+      border-style: solid;
+      //border-image-source: linear-gradient( #00BC69 , #33FFA5 );
+      width:58px;
+      height: 58px;
+      border-image-slice: 20;
+      background-clip: border-box;
+
+      //background: linear-gradient( #00BC69 , #33FFA5 ) border-box;
+      //border: 3px solid transparent;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &wrapper{
+
+    }
+    &item-wrapper{
+      @apply flex flex-col items-center w-[94px]  items-center m-auto;
+    }
+    &title{
+      @apply text-[12px] sm:text-[15px] font-semibold mt-1;
+    }
+  }
+}
+.slivniye-prices{
+  @apply overflow-hidden;
+  &__{
+    &wrapper{
+    }
+    &btn{
+      &-wrapper{
+        @apply absolute flex flex-col right-0 items-center;
+      }
+      &-fav{
+        @apply mb-3 bg-light-grey p-[8px_7px_8px_7px] w-fit h-fit;
+        border-radius: 100%;
+      }
+      &-buy{
+        @apply bg-violet p-[13px] w-fit h-fit;
+        border-radius: 100%;
+      }
+    }
+    &discount{
+      @apply w-[62px] h-[68px] top-2 left-5 absolute text-white text-16px flex items-center justify-center font-bold;
+      background:url(/src/assets/img/slivka.svg);
+    }
+    &item{
+      @apply relative;
+
+      &-wrapper{
+        @apply rounded bg-white pt-5 pr-11 pl-11 pb-5 sm:py-[11px] sm:px-4 2lg:p-5;
+        width: calc(100% - 26px);
+      }
+    }
+    &old-price{
+      @apply font-light text-[12px] text-light-grey text-center 2lg:text-[15px];
+    }
+    &price{
+      @apply text-violet font-black text-[20px]  2lg:text-[26px];
+    }
+    &image-wrapper{
+      @apply w-fit m-auto;
+    }
+    &measure{
+      @apply text-[12px] font-medium 2lg:text-16px;
+    }
+  }
+}
+
+.short-info{
+  &__{
+    &wrapper{
+      @apply grid grid-cols-1 2lg:grid-cols-2 gap-[30px] ;
+    }
+    &content-wrapper{
+      @apply px-[140px] pt-[30px] pb-[40px] 2lg:px-8 2lg:pt-[30px] 2lg:pb-9;
+    }
+    &map-wrapper{
+      @apply h-[400px] 2lg:h-full;
+    }
+    &content{
+      @apply bg-white;
+    }
+    &table{
+      @apply grid grid-cols-2 gap-y-10;
+    }
+    &table-item{
+      @apply flex flex-col text-center items-center text-[15px];
+      svg{
+        @apply mb-4;
+      }
+    }
+  }
+}
+.catalog{
+  &-slider{
+    @apply overflow-hidden;
+  }
+  &-slider, &-items{
+    &__{
+      &wrapper{
+      }
+      &additional{
+        &-wrapper{
+          @apply absolute flex flex-col right-0 items-center bottom-0 top-0 mt-auto mb-24 h-fit ;
+        }
+        &-fav{
+          @apply mb-3 bg-light-grey p-[8px_7px_8px_7px] w-fit h-fit;
+          border-radius: 100%;
+        }
+        &-buy{
+          @apply bg-violet p-[13px] w-fit h-fit;
+          border-radius: 100%;
+        }
+        &-bonuses{
+          @apply flex flex-col bg-[#CFE2FF] items-center py-[1px] px-[3px] mb-3 2lg:mb-20;
+          border-radius: 30px;
+        }
+      }
+      &discount{
+        @apply top-2 left-5 absolute text-white py-3 px-1 text-16px flex items-center justify-center font-bold bg-green;
+        border-radius: 100%;
+      }
+      &promo{
+        @apply rounded absolute right-[26px] top-0 bg-blue text-white px-4 py-1 text-16px font-bold;
+      }
+      &item{
+        @apply relative;
+
+        &-wrapper{
+          @apply rounded bg-white p-2 pb-3 sm:py-[11px] sm:px-4 2lg:p-5;
+          width: calc(100% - 26px);
+        }
+      }
+
+      &old-price{
+        @apply font-light text-[12px]  leading-[14px] 2lg:leading-[18px] text-light-grey text-center 2lg:text-[15px];
+      }
+      &price{
+        @apply font-black text-[18px]  2lg:text-[26px];
+      }
+      &image-wrapper{
+        @apply w-fit m-auto max-w-[155px]  2lg:max-w-[220px] xl:max-w-[254px];
+      }
+      &measure{
+        @apply text-[12px] font-medium 2lg:text-16px;
+      }
+      &name{
+        @apply min-h-[40px] sm:min-h-[60px] leading-[15px] text-[12px] font-bold line-clamp-2 sm:line-clamp-3 2lg:text-16px leading-[20px];
+      }
+      &quantity{
+        &-block{
+          @apply bg-global-bg rounded;
+        }
+        &-wrapper{
+          @apply py-[9px] px-6 flex flex-row justify-between items-center;
+        }
+      }
+    }
+  }
+
+}
+.banners-special-prices{
+  &__{
+    &wrapper{
+      @apply grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8 lg:gap-6 2lg:gap-7 xl:gap-17;
+    }
+    &item{
+
+    }
+  }
+}

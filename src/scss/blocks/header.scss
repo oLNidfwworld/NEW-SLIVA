@@ -8,10 +8,9 @@
 //}
 
 header{
-  @apply lg:bg-white;
+  @apply lg:bg-white ;
   padding: 20px 0;
   box-shadow: 0px 7px 15px -13px #829297E0;
-
 }
 
 .nav-line{
@@ -81,7 +80,7 @@ header{
 }
 
 .self-btns{
-  @apply flex items-end justify-between;
+  @apply flex items-end justify-between lg:justify-center;
   &__item{
     @apply relative;
     &-bubble{
