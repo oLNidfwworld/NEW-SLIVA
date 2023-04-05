@@ -1,0 +1,25 @@
+.sections{
+  &__{
+    &wrapper{
+
+    }
+    &item{
+      @apply mb-[50px] lg:mb-20;
+      &-wrapper{
+        @apply grid grid-cols-1 sm:grid-cols-2 2lg:grid-cols-3 xl:grid-cols-4 gap-5 mt-[30px] lg:mt-10;
+      }
+    }
+    &section{
+      @apply block;
+      &-wrapper{
+        @apply bg-white flex flex-row py-[10px] px-[21px] items-center;
+      }
+      &-icon{
+        @apply mr-[10px];
+      }
+      &-name{
+        @apply text-[16px] line-clamp-2 md:text-[20px];
+      }
+    }
+  }
+}
