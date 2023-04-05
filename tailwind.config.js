@@ -87,6 +87,11 @@ module.exports = {
       '14px': '14px',
       '12px': '12px',
     },
+    transitionDuration: {
+      fast: '0.3s',
+      mid: '0.6s',
+      slow: '0.9s',
+    },
     lineHeight: {
       ...defaultTheme.lineHeight,
       tight: '1.2',

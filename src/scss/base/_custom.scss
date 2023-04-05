@@ -1,3 +1,6 @@
+.overlay{
+  @apply opacity-20 bg-black fixed top-0 left-0 w-full h-full hidden z-[99] ;
+}
 .btn{
     width: fit-content;
 }
@@ -53,8 +56,9 @@ h2{
 
 .wrapper-content{
     min-height: 100vh;
-
-    padding-bottom: 76px;
+}
+.inner-content{
+  @apply pb-[50px] md:pb-[80px] pt-[30px];
 }
 .wrapper-page{
     @apply relative;
