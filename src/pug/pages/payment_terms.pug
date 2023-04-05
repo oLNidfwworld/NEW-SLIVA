@@ -1,0 +1,42 @@
+extends ../layout/main
+
+
+block content
+    section.payment 
+        .container 
+            .payment-header
+                .burger-menu
+                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 1.81616H21M0 10.4894H16.5M0 18.199H11.5" stroke="#3AAFF1" stroke-width="2"/>
+                    </svg>
+                h1.payment-header_title Условия оплаты 
+            .payment_container 
+                .payment_left-menu
+                    ul.left-menu_list 
+                        li.left-menu__item Оформление и возврат
+                        li.left-menu__item.active Условия оплаты
+                        li.left-menu__item Условия доставки
+                .payment_content
+                    .payment_content_block
+                        .payment_content-title Банковской картой при оформлении заказа (онлайн-оплата)
+                        .payment_content-text
+                            p Во время онлайн-оплаты на Вашем счете банк резервирует предварительную сумму покупки. После того, как Вы примете у курьера продукцию или получите ее в пункте выдачи, с Вашего счёта спишется итоговая сумма!
+                            p Для выбора оплаты товара с помощью банковской карты на соответствующей странице необходимо нажать кнопку Оплата онлайн. Оплата происходит через ПАО СБЕРБАНК с использованием банковских карт следующих платёжных систем:
+                            .text_carts
+                                .img-container
+                                    img(src="../../assets/img/mir.png", alt="mir")
+                                .img-container 
+                                    img(src="../../assets/img/visa.png", alt="visa")
+                                .img-container
+                                    img(src="../../assets/img/mastercard.png", alt="mastercard")
+                                .img-container
+                                    img(src="../../assets/img/jcb.png", alt="jcb")
+                            .text_comment
+                                p Для оплаты (ввода реквизитов Вашей карты) Вы будете перенаправлены на платёжный шлюз ПАО СБЕРБАНК. Соединение с платёжным шлюзом и передача информации осуществляется в защищённом режиме с использованием протокола шифрования SSL. В случае если Ваш банк поддерживает технологию безопасного проведения интернет-платежей Verified By Visa, MasterCard SecureCode, MIR Accept, J-Secure, для проведения платежа также может потребоваться ввод специального пароля.
+                                p Настоящий сайт поддерживает 256-битное шифрование. Конфиденциальность сообщаемой персональной информации обеспечивается ПАО СБЕРБАНК. Введённая информация не будет предоставлена третьим лицам за исключением случаев, предусмотренных законодательством РФ. Проведение платежей по банковским картам осуществляется в строгом соответствии с требованиями платёжных систем МИР, Visa Int., MasterCard Europe Sprl, JCB.
+                    .payment_content_block
+                        .payment_content-title Банковской картой при получении заказа
+                        .payment_content-text Вы можете оплатить свой заказ банковской картой при получении заказа. 
+                    .payment_content_block
+                        .payment_content-title Наличными при самовывозе
+                        .payment_content-text Вы можете оплатить свой заказ наличными. Оплата производится на пункте выдачи.

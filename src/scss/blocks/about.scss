@@ -22,11 +22,11 @@
     @apply grid grid-cols-1 gap-4 mb-10;
 }
 
-.item p {
+.about-content_item p {
     @apply text-14px;
 }
 
-.subject {
+.about-content__subject {
     @apply text-16px;
     font-weight: 800;
     background: linear-gradient(77.52deg, #AA51B9 10.57%, #EC7BFF 90.94%);
@@ -145,7 +145,7 @@
         }
     }
 
-    .item p {
+    .about-content_item p {
         @apply text-18px;
     }
 
@@ -168,7 +168,7 @@
         }
     }
 
-    .subject {
+    .about-content__subject {
         @apply text-40px;
         font-weight: 800;
         background: linear-gradient(77.52deg, #AA51B9 10.57%, #EC7BFF 90.94%);
