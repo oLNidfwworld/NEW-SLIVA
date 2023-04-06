@@ -1,3 +1,4 @@
+//немного много намудрил возможно можно было бы проше
 .sections{
   &__{
     &wrapper{
@@ -21,7 +22,7 @@
         @apply text-[16px] line-clamp-2 md:text-[20px];
       }
       &-menu{
-        @apply fixed top-0 -left-[100%] w-full h-[calc(100%-77px)] bg-white z-[100] block duration-fast ease-out max-w-[281px];
+        @apply fixed top-0 -left-[100%] w-full h-[calc(100%-77px)] lg:h-full bg-white z-[100] block duration-mid  max-w-[281px] md:max-w-[500px] lg:max-w-[50%];
         &-wrapper{
           @apply p-[20px_32px_10px_16px];
         }
@@ -30,7 +31,34 @@
           a{
             @apply font-extrabold text-black text-[16px];
           }
+          &-child{
+            &-wrapper{
+              @apply ml-[10px] duration-mid ease-in-out  overflow-hidden;
+              height: fit-content;
+              max-height: 0px;
+            }
+            &-wrapper-drop{
+              max-height: 700px;
+            }
+            &-item{
+              @apply my-[15px] ;
+              a{
+                @apply font-normal;
+              }
+            }
+            &-drop{
+              @apply cursor-pointer font-extrabold flex  items-center text-blue text-[16px] duration-mid ease-in-out;
+              &-arrow{
+                @apply duration-mid ml-2;
+                &-rotate{
+                  transform: rotateX(180deg);
+                }
+              }
+            }
+          }
         }
+
+
         &-show{
           @apply left-0;
         }

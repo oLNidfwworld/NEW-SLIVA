@@ -57,7 +57,7 @@ header{
 .main-line{
   @apply mt-[10px]  ;
   &__wrapper{
-    @apply lg:grid lg:grid-cols-[repeat(3,auto)] 2lg:grid-cols-[auto,1fr,auto] lg:gap-12 lg:items-end;
+    @apply lg:grid lg:grid-cols-[repeat(3,auto)] 2lg:grid-cols-[auto,1fr,auto] lg:gap-10 lg:items-end;
   }
   &__item-mob{
     @apply lg:hidden;
