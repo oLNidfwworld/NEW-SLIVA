@@ -1,8 +1,10 @@
 .error-content{
-    @apply items-center justify-center;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+    @apply text-black flex items-center justify-center flex-col text-center;
+    padding-top: 30px;
+}
+
+.error-content div {
+    @apply mb-[17px];
 }
 
 .error_404 {
@@ -16,16 +18,65 @@
 }
 
 .error-text_main{
-
+    @apply text-blue;
 }
 
-@media (min-width: 480px) {}
+@media (min-width: 480px) {
+    .error-title {
+        @apply text-18px;
+    }
 
-@media (min-width: 720px) {}
+    .error-text {
+        @apply text-14px;
+    }
+}
 
-@media (min-width: 1024px) {}
+@media (min-width: 720px) {
+    .error-content div {
+        @apply mb-[20px];
+    }
+   
+    .error_404 {
+        @apply text-[80px];
+    }
 
-@media (min-width: 1280px) {}
+    .error-title {
+        @apply text-20px;
+    }
 
+    .error-text {
+        @apply text-16px;
+    }
+}
 
-@media (min-width: 1440px) {}
+@media (min-width: 1024px) {
+    .error-content{
+        padding-top: 70px;
+    }
+
+    .error_404 {
+        @apply text-[100px];
+    }
+
+    .error-title {
+        @apply text-[26px];
+    }
+}
+
+@media (min-width: 1280px) {
+    .error-content div {
+        @apply mb-[30px];
+    }
+
+    .error_404 {
+        @apply text-[140px];
+    }
+
+    .error-title {
+        @apply text-30px;
+    }
+
+    .error-text {
+        @apply text-20px;
+    }
+}
