@@ -1,0 +1,51 @@
+.header-sections{
+  @apply w-full  h-full absolute top-[135px] h-[calc(100vh-136px)] bottom-0 left-0 bg-global-bg z-[100] hidden  ;
+  box-shadow: 0px 7px 15px -13px #829297E0;
+  &__{
+    &wrapper{
+      @apply pt-10 grid grid-cols-[8fr_4px_10fr] gap-13;
+    }
+    &1lvl{
+      &-item{
+        @apply block mb-[20px];
+        &-icon{
+          @apply mr-[10px];
+        }
+        &-name{
+          @apply font-extrabold text-[16px];
+        }
+        &-wrapper{
+          @apply flex items-center;
+        }
+        &-current{
+          filter: brightness(0) saturate(100%) invert(65%) sepia(4%) saturate(4582%) hue-rotate(105deg) brightness(92%) contrast(85%);
+        }
+      }
+
+    }
+    &2lvl{
+      &_current{
+        display: block !important;
+      }
+      &-wrapper{
+        display: none;
+      }
+      &-section{
+        &-name{
+          @apply font-bold text-[30px] text-black;
+        }
+        &-items{
+          @apply mt-11;
+          &-wrapper{
+            @apply columns-2;
+            column-gap: 15px;
+          }
+          &-item{
+            @apply font-extrabold text-[16px] text-black block w-fit;
+          }
+        }
+      }
+
+    }
+  }
+}

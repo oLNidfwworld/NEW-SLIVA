@@ -1,5 +1,5 @@
 .mob-burger{
-  @apply fixed w-full  bg-white z-[102] top-0 -left-[320px] duration-fast ease-out bottom-0 right-0 lg:hidden;
+  @apply fixed w-full  bg-white z-[102] top-0 -left-[320px] duration-fast ease-out bottom-0 right-0 lg:hidden rounded-[0px_4px_4px_0px];
   height: calc(100% - 77px);
   max-width:320px;
   &__{
@@ -10,7 +10,7 @@
       @apply px-[40px] py-[10px] block;
       border-bottom: 1px solid var(--lighter-grey);
       &-back{
-        @apply px-[40px] py-7 flex flex-row items-center;
+        @apply cursor-pointer px-[40px] py-7 flex flex-row items-center;
         border-bottom: 1px solid var(--lighter-grey);
         span{
           @apply font-bold text-[14px] leading-[18px];
@@ -21,7 +21,7 @@
       }
     }
     &bottom-item{
-      @apply px-[40px] py-[10px] block;
+      @apply  px-[40px] py-[10px] block;
       border-bottom: 1px solid var(--lighter-grey);
       span{
         @apply text-blue font-bold text-[14px] leading-[18px];
