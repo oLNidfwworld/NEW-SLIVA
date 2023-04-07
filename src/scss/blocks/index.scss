@@ -117,6 +117,46 @@
   &-slider{
     @apply overflow-hidden;
   }
+  &-items{
+    &__{
+      &wrapper {
+        @apply grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-x-[15px] sm:gap-y-[30px] md:grid-cols-3 md:gap-x-[14px] md:gap-y-10 lg:grid-cols-4 lg:gap-x-[23px] 2lg:gap-x-[24px] 2lg:gap-y-[50px] xl:grid-cols-5 xl:gap-x-[31px] ;
+      }
+      &top-bar{
+        &-wrapper{
+          @apply mb-[30px];
+        }
+        &-fast-nav{
+          @apply lg:hidden mb-5 sm:mb-10;
+          &-wrapper{
+            @apply flex flex-row flex-nowrap overflow-y-scroll;
+          }::-webkit-scrollbar {
+             display: none;
+           }
+          &-item{
+            @apply block text-[16px] font-[500] whitespace-nowrap rounded text-grey py-[6px] px-[10px];
+            &__current{
+              @apply bg-green text-white;
+              border:1px solid transparent;
+            }
+            border:1px solid var(--grey);
+          }
+          &-item:not(:last-child){
+            @apply mr-[17px];
+          }
+        }
+        &-filters{
+          &-wrapper{
+            @apply grid grid-cols-1 md:grid-cols-[2fr_5fr] gap-y-[15px] md:gap-x-[200px] lg:gap-x-[400px] 2lg:gap-x-[600px];
+
+          }
+          &-filter{
+            @apply text-white bg-blue col-span-2 md:col-span-1 text-center rounded py-[6px] flex items-center justify-center;
+          }
+        }
+      }
+    }
+  }
   &-slider, &-items{
     &__{
       &wrapper{
@@ -141,6 +181,9 @@
       &discount{
         @apply top-2 left-5 absolute text-white py-3 px-1 text-16px flex items-center justify-center font-bold bg-green;
         border-radius: 100%;
+        min-height: 50px;
+        min-width: 50px;
+        align-items: center;
       }
       &promo{
         @apply rounded absolute right-[26px] top-0 bg-blue text-white px-4 py-1 text-16px font-bold;

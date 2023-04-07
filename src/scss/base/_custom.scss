@@ -3,6 +3,8 @@
 }
 .btn{
     width: fit-content;
+    height: fit-content;
+    text-align: center;
 }
 .inpt{
     @apply rounded lg:rounded-none;
@@ -45,7 +47,7 @@
    }
 }
 .breadcrumbs{
-  @apply mb-10;
+  @apply hidden xl:block mb-10;
   &__{
     &wrapper{
       @apply flex items-baseline;
@@ -74,7 +76,10 @@
     font-family: Mulish;
     font-weight: 400;
 }
-
+.choices{
+  height: fit-content;
+  margin: 0px !important;
+}
 body{
     @apply bg-global-bg;
 }
@@ -84,6 +89,6 @@ small{
 span,h1,h2,h3,p{
     @apply text-black;
 }
-h2{
-    @apply font-extrabold text-[20px] leading-[25px] md:text-[26px] leading-[32px] lg:text-[30px] lg:leading-[37px] 2lg:text-[40px] 2lg:leading-[50px];
+.title-style{
+  @apply font-extrabold text-[20px] leading-[25px] md:text-[26px] leading-[32px] lg:text-[30px] lg:leading-[37px] 2lg:text-[40px] 2lg:leading-[50px];
 }

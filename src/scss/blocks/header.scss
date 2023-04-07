@@ -72,7 +72,7 @@ header{
     @apply mr-[18px] 2lg:mr-[24px];
   }
   &__catalog-btn{
-    @apply bg-green flex text-white justify-center items-center px-3 h-full font-bold;
+    @apply bg-green flex text-white justify-center items-center px-3 h-full font-bold cursor-pointer;
     span{
       font-weight: 600;
     }

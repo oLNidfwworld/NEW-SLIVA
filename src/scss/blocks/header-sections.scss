@@ -1,5 +1,6 @@
 .header-sections{
-  @apply w-full h-full fixed h-[calc(100%-136px)] bottom-0 left-0 bg-global-bg z-[100] hidden lg:block;
+  @apply w-full  h-full absolute top-[135px] h-[calc(100vh-136px)] bottom-0 left-0 bg-global-bg z-[100] hidden  ;
+  box-shadow: 0px 7px 15px -13px #829297E0;
   &__{
     &wrapper{
       @apply pt-10 grid grid-cols-[8fr_4px_10fr] gap-13;
@@ -15,6 +16,9 @@
         }
         &-wrapper{
           @apply flex items-center;
+        }
+        &-current{
+          filter: brightness(0) saturate(100%) invert(65%) sepia(4%) saturate(4582%) hue-rotate(105deg) brightness(92%) contrast(85%);
         }
       }
 
@@ -37,7 +41,7 @@
             column-gap: 15px;
           }
           &-item{
-            @apply font-extrabold text-[16px] text-black;
+            @apply font-extrabold text-[16px] text-black block w-fit;
           }
         }
       }
