@@ -1,0 +1,11 @@
+extends ../layout/main
+
+block content
+    div.error
+        .container
+            .error-content
+                .error_404 404
+                .error-title Страница не найдена
+                .error-text Страница, на которую Вы пытаетесь попасть, не существует или была удалена.<br>
+                    |Перейдите на 
+                    a.error-text_main(href="/")  Главную страницу

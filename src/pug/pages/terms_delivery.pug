@@ -8,9 +8,12 @@ block content
             .delivery_container 
                 .delivery_left-menu
                     ul.left-menu_list 
-                        li.left-menu__item Оформление и возврат
-                        li.left-menu__item Условия оплаты
-                        li.left-menu__item.active Условия доставки
+                        li.left-menu__item 
+                            a(href='/info_order.html') Оформление и возврат
+                        li.left-menu__item 
+                            a(href='/payment_terms.html')  Условия оплаты
+                        li.left-menu__item.active 
+                            a(href='/terms_delivery.html') Условия доставки   
                 .delivery_content
                     .delivery_content_block
                         .delivery_content-title Самовывоз

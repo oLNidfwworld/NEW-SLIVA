@@ -8,9 +8,12 @@ block content
             .payment_container 
                 .payment_left-menu
                     ul.left-menu_list 
-                        li.left-menu__item Оформление и возврат
-                        li.left-menu__item.active Условия оплаты
-                        li.left-menu__item Условия доставки
+                        li.left-menu__item
+                            a(href='/info_order.html') Оформление и возврат
+                        li.left-menu__item.active 
+                            a(href='/payment_terms.html')  Условия оплаты
+                        li.left-menu__item 
+                            a(href='/terms_delivery.html') Условия доставки   
                 .payment_content
                     .payment_content_block
                         .payment_content-title Банковской картой при оформлении заказа (онлайн-оплата)

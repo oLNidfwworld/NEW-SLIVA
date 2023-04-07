@@ -8,9 +8,12 @@ block content
             .info_container 
                 .info_left-menu
                     ul.left-menu_list 
-                        li.left-menu__item.active Оформление и возврат
-                        li.left-menu__item Условия оплаты
-                        li.left-menu__item Условия доставки
+                        li.left-menu__item.active 
+                            a(href='/info_order.html') Оформление и возврат
+                        li.left-menu__item 
+                            a(href='/payment_terms.html')  Условия оплаты
+                        li.left-menu__item 
+                            a(href='/terms_delivery.html') Условия доставки   
                 .info-content 
                     .info-content_section.order
                         .info-content__block
@@ -23,7 +26,7 @@ block content
                                     div -
                                     |В случае заказа с типом оплаты «онлайн», оплата должна быть совершена до 20:30, иначе произойдет отмена заказа.              
                         .info-content__block.contacts
-                            div Позвоните, и менеджер поможет Вам с оформлением заказа и ответит на возникшие вопросы.
+                            div.block-text Позвоните, и менеджер поможет Вам с оформлением заказа и ответит на возникшие вопросы.
                             .block-number 
                                 .block-number_phone
                                     a(href="tel:+79250823423") +7 925 082-34-23

@@ -1,0 +1,31 @@
+.error-content{
+    @apply items-center justify-center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.error_404 {
+    @apply font-bold text-60px leading-[75px] text-blue;
+}
+.error-title {
+    @apply font-semibold text-16px leading-[140%];
+}
+.error-text {
+    @apply font-semibold text-12px leading-[140%];
+}
+
+.error-text_main{
+
+}
+
+@media (min-width: 480px) {}
+
+@media (min-width: 720px) {}
+
+@media (min-width: 1024px) {}
+
+@media (min-width: 1280px) {}
+
+
+@media (min-width: 1440px) {}
