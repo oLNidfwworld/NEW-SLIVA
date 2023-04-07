@@ -50,7 +50,8 @@
     }
     &btn{
       &-wrapper{
-        @apply absolute flex flex-col right-0 items-center;
+        //@apply absolute flex flex-col right-0 items-center;
+        @apply absolute flex flex-col right-0 items-center bottom-0 top-0 mt-auto mb-24 h-fit ;
       }
       &-fav{
         @apply mb-3 bg-light-grey p-[8px_7px_8px_7px] w-fit h-fit;
