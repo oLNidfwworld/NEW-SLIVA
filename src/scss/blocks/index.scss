@@ -152,7 +152,61 @@
 
           }
           &-filter{
-            @apply text-white bg-blue col-span-2 md:col-span-1 text-center rounded py-[6px] flex items-center justify-center;
+            @apply text-white bg-blue col-span-2 md:col-span-1 text-center rounded py-[6px] flex items-center justify-center cursor-pointer h-full;
+            &-wrapper{
+              @apply fixed flex flex-col justify-between top-0 -left-[100%] w-full h-[calc(100%-77px)] lg:h-full bg-white z-[100] block duration-mid  max-w-[281px] md:max-w-[500px] lg:max-w-[50%];
+              &-shown{
+                @apply left-0;
+              }
+            }
+            &-scroll{
+              @apply pb-[124px];
+              overflow-y: auto;
+            }
+            &-single-option{
+              @apply flex justify-between;
+            }
+            &-block{
+              @apply mx-[25px] mt-[25px] pb-5;
+              &-title{
+                @apply text-[18px] font-bold mb-5;
+              }
+              &-option{
+                &-text{
+                  @apply text-[16px] font-[600];
+                }
+                &-wrapper{
+                  @apply pt-[20px];
+                }
+              }
+              &-option:not(:last-child){
+                @apply mb-[13px];
+              }
+              &-show-more{
+                @apply text-blue text-[14px] font-bold mt-2 cursor-pointer;
+              }
+            }
+            &-bottom-block{
+              @apply w-full absolute bg-white bottom-0 ;
+              &-wrapper{
+                @apply    mx-[25px]  left-0 pb-5;;
+              }
+              &-apply{
+                @apply bg-blue text-white text-[16px] text-center  py-[12px] rounded cursor-pointer;
+              }
+              &-reject{
+                @apply bg-light-grey text-white text-[16px] text-center py-[12px] rounded cursor-pointer;
+              }
+            }
+            &-block:first-child{
+              @apply mt-[30px]  ;
+            }
+            &-block:not(:last-child){
+              border-bottom: 1px solid var(--light-grey);
+            }
+            &-outer{
+
+            }
           }
         }
       }

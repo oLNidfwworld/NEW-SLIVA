@@ -1,3 +1,13 @@
+@use "@material/checkbox";
+//@use "@material/form-field";
+
+@include checkbox.core-styles;
+//@include form-field.core-styles;
+
+/* Libraries styles */
+@import 'swiper/css';
+@import 'choices.js/src/styles/choices';
+
 /* Tailwind import */
 @import "tailwindcss/base";
 @import "tailwindcss/components";
@@ -40,6 +50,5 @@
 @import 'blocks/info_order';
 @import 'blocks/404';
 
-/* Libraries styles */
-@import 'swiper/css';
-@import 'choices.js/src/styles/choices';
+
+

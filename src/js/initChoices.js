@@ -5,6 +5,7 @@ export function initChoices() {
         type: 'select-one',
         searchEnabled: false,
         itemSelectText: '',
+        searchChoices: false,
     }
     if(document.querySelector('.catalog-items__top-bar-filter-sorts')){
         const sortChoicer = new Choices(document.querySelector('.catalog-items__top-bar-filter-sorts'), config);

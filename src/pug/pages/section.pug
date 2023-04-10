@@ -31,7 +31,51 @@ block content
                                 a.catalog-items__top-bar-fast-nav-item Напитки
                         .catalog-items__top-bar-filters
                             .catalog-items__top-bar-filters-wrapper
-                                .catalog-items__top-bar-filters-filter Фильтры
+                                .catalog-items__top-bar-filters-filter-outer
+                                    .catalog-items__top-bar-filters-filter Фильтры
+                                    .catalog-items__top-bar-filters-filter-wrapper
+                                        .catalog-items__top-bar-filters-filter-scroll
+                                            //todo: adaptive for >1024
+                                            .catalog-items__top-bar-filters-filter-block
+                                                .catalog-items__top-bar-filters-filter-single-option
+                                                    span.catalog-items__top-bar-filters-filter-block-title Хит продаж
+                                                    .switch
+                                                .catalog-items__top-bar-filters-filter-single-option
+                                                    span.catalog-items__top-bar-filters-filter-block-title Скидки
+                                                    .switch
+                                            .catalog-items__top-bar-filters-filter-block
+                                                span.catalog-items__top-bar-filters-filter-block-title Бренды
+                                                .catalog-items__top-bar-filters-filter-block-option-wrapper
+                                                    .catalog-items__top-bar-filters-filter-block-option
+                                                        input(type='checkbox' name='happy' value='yes')#happy.checkbox
+                                                        label(for='happy')
+                                                            span.catalog-items__top-bar-filters-filter-block-option-text АДМ
+                                                    .catalog-items__top-bar-filters-filter-block-option
+                                                        input(type='checkbox' name='happy' value='yes')#happy.checkbox
+                                                        label(for='happy')
+                                                            span.catalog-items__top-bar-filters-filter-block-option-text  Аос ТМ
+                                                    .catalog-items__top-bar-filters-filter-block-option
+                                                        input(type='checkbox' name='happy' value='yes')#happy.checkbox
+                                                        label(for='happy')
+                                                            span.catalog-items__top-bar-filters-filter-block-option-text  Ариэль ТМ
+                                                    .catalog-items__top-bar-filters-filter-block-option
+                                                        input(type='checkbox' name='happy' value='yes')#happy.checkbox
+                                                        label(for='happy')
+                                                            span.catalog-items__top-bar-filters-filter-block-option-text  Белюкс ТМ
+                                                    .catalog-items__top-bar-filters-filter-block-option.hidden
+                                                        input(type='checkbox' name='happy' value='yes')#happy.checkbox
+                                                        label(for='happy')
+                                                            span.catalog-items__top-bar-filters-filter-block-option-text  Ариэль ТМ
+                                                    .catalog-items__top-bar-filters-filter-block-option.hidden
+                                                        input(type='checkbox' name='happy' value='yes')#happy.checkbox
+                                                        label(for='happy')
+                                                            span.catalog-items__top-bar-filters-filter-block-option-text  Белюкс ТМ
+                                                span.catalog-items__top-bar-filters-filter-block-show-more Показать еще
+                                        .catalog-items__top-bar-filters-filter-bottom-block
+                                            .catalog-items__top-bar-filters-filter-bottom-block-wrapper
+                                                .catalog-items__top-bar-filters-filter-bottom-block-apply.mb-2 Применить
+                                                .catalog-items__top-bar-filters-filter-bottom-block-reject Сбросить всё
+
                                 .grid.grid-cols-2.gap-2
                                     select.catalog-items__top-bar-filter-sorts
                                         option(value='') Сортировка
@@ -185,7 +229,6 @@ block content
                                             </svg>
                         .catalog-items__item
                             .catalog-items__discount -5%
-                                //todo : round krujok
                             .catalog-items__additional-wrapper
                                 .catalog-items__additional-bonuses
                                     .catalog-items__additional-bonuses-icon
