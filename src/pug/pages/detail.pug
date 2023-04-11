@@ -8,3 +8,121 @@ block variables
 
 
 block content
+    .inner-content
+        .container
+            .breadcrumbs
+                .breadcrumbs__wrapper
+                    .breadcrumbs__item
+                        a(href='/') Главная
+                    .breadcrumbs__item
+                        a(href='/catalog/') Каталог
+                    .breadcrumbs__item
+                        a(href='/catalog/') Автотовары
+                    .breadcrumbs__item
+                        a(href='/catalog/') Этот прекрасный кофе
+            h1.title-style.mb-10 Этот прекрасный кофе
+            .detail-item
+                .detail-item__wrapper
+                    .detail-item__image
+                        .detail-item__image-wrapper
+                            img(src='/assets/img/detail-item-img.png')
+                    .detail-item__info
+                        .detail-item__info-wrapper
+                            div
+                                .detail-item__prices-block
+                                    .flex.items-baseline
+                                        div.mr-5
+                                            span.detail-item__price 22.32
+                                            |
+                                            span.detail-item__measure руб. /шт
+                                        div
+                                            del.detail-item__old-price 23.49 руб. / шт
+                                    div.detail-item__price-description 11446.4 руб - 20 шт (упаковка)
+                                .detail-item__bonuses-block
+                                    .detail-item__bonuses.mb-2
+                                        .mr-3
+                                            <svg width="27" height="29" viewBox="0 0 27 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.27011 24.9558C14.3891 26.8871 20.3328 24.143 22.5459 18.8267C24.7589 13.5103 22.4033 7.63493 17.2843 5.70362C12.1654 3.7723 6.22159 6.51641 4.00853 11.8328C1.79547 17.1491 4.15116 23.0245 9.27011 24.9558Z" fill="#AA51B9"/>
+                                            <path d="M22.5448 18.8267C20.3317 24.143 14.388 26.8872 9.26905 24.9558C4.1501 23.0246 6.53115 18.9201 8.74421 13.6037C15.9951 11.0151 12.1644 3.77229 17.2833 5.7036C22.4022 7.63492 24.7578 13.5103 22.5448 18.8267Z" fill="#C565D6"/>
+                                            <path d="M2.08203 10.8256C3.00491 8.01216 6.79782 2.72918 14.5865 4.10484C22.3752 5.4805 9.49547 9.15858 2.08203 10.8256Z" fill="#1AB15C"/>
+                                            </svg>
+                                        span(class='text-[16px]').mr-3 Кэшбек «сливами»
+                                        span.font-bold(class='text-[15px]') 47
+                                    .detail-item__bonuses-description Копите баллы «сливы» и меняйте на товары.
+                                .detail-item__buy-block
+                                    .detail-item__quantity.h-full.mr-8
+                                        .catalog-items__quantity.h-full
+                                            .catalog-items__quantity-wrapper.bg-white
+                                                .catalog-items__quantity-minus
+                                                    <svg width="7" height="2" viewBox="0 0 7 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M0.609375 1.99006V0.0100584H6.68938V1.99006H0.609375Z" fill="#32383C"/>
+                                                    </svg>
+                                                .catalog-items__quantity-count 12
+                                                .catalog-items__quantity-plus
+                                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M4.07078 9.90995V5.82995H0.0507812V4.06995H4.07078V0.0899506H5.89078V4.06995H9.89078V5.82995H5.89078V9.90995H4.07078Z" fill="#32383C"/>
+                                                    </svg>
+                                    .catalog-items__buy.btn.bg-violet.text-white(class='py-[9px] w-full px-11').mr-8
+                                        |Купить
+                                    .detail-item__go-fav
+                                        <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.4638 21.225L4.14779 12.909C-2.84521 5.916 5.47079 -2.4 12.4638 4.593C19.5828 -2.526 27.8988 5.79 20.7798 12.909L12.4638 21.225Z" stroke="white" stroke-width="2.3" stroke-miterlimit="10"/>
+                                        </svg>
+                            .detail-item__tab(class='mt-[30px]')
+                                .detail-item__tab-wrapper
+                                    .flex.justify-between.items-center(class='mb-[15px]')
+                                        span.detail-item__tab-title Оплата и условия доставки
+                                        div.detail-item__tab-hide-tab
+                                            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 7L6 2L11 7" stroke="#3AAFF1" stroke-width="2"/>
+                                            </svg>
+                                    .detail-item__tab-info
+                                        ul.detail-item__tab-info-delivery
+                                            li.detail-item__tab-info-delivery-row
+                                                div.detail-item__tab-info-delivery-l Оплата:
+                                                div.detail-item__tab-info-delivery-r онлайн или наличными
+                                            li.detail-item__tab-info-delivery-row
+                                                div.detail-item__tab-info-delivery-l Самовывоз:
+                                                div.detail-item__tab-info-delivery-r г. Орехово-Зуево, ул. Кооперативная, д. 17а. С 9:00 до 19:00 до закрытия 1 час
+                                            li.detail-item__tab-info-delivery-row
+                                                div.detail-item__tab-info-delivery-l Доставка
+                                                div.detail-item__tab-info-delivery-r при заказе от 1500 рублей доставка бесплатна!
+                            .detail-item__tab(class='mt-[30px]')
+                                .detail-item__tab-wrapper
+                                    .flex.justify-between.items-center(class='mb-[15px]')
+                                        span.detail-item__tab-title Характеристики
+                                        div.detail-item__tab-hide-tab
+                                            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 7L6 2L11 7" stroke="#3AAFF1" stroke-width="2"/>
+                                            </svg>
+                                    .detail-item__tab-info
+                                        ul.detail-item__tab-info-chars
+                                            li.detail-item__tab-info-chars-row
+                                                div.detail-item__tab-info-chars-l Производитель
+                                                div.detail-item__tab-info-chars-r Российская Федерация
+                                            li.detail-item__tab-info-chars-row
+                                                div.detail-item__tab-info-chars-l Форма стандартизации
+                                                div.detail-item__tab-info-chars-r СТО 48432921-002
+                                            li.detail-item__tab-info-chars-row
+                                                div.detail-item__tab-info-chars-l Состав продукта
+                                                div.detail-item__tab-info-chars-r Сахар, глюкозный сироп, масло пальмоядровое, масло кокосовое, кофе натуральный растворимый NESCAFE, сухая молочная сыворотка, ароматизаторы, стабилизаторы E340, E331, E452, E471, E471, обезжренное сухое молоко, казинат натрия (молочный), агент антислеживающий Е551, соль.
+                                            li.detail-item__tab-info-chars-row
+                                                div.detail-item__tab-info-chars-l Пищ/цен в 100г Белок, г
+                                                div.detail-item__tab-info-chars-r 2,0
+                                            li.detail-item__tab-info-chars-row
+                                                div.detail-item__tab-info-chars-l Пищ/цен в 100г Жир, г
+                                                div.detail-item__tab-info-chars-r 12,0
+                                            li.detail-item__tab-info-chars-row
+                                                div.detail-item__tab-info-chars-l Пищ/цен в 100г Углеводы, г
+                                                div.detail-item__tab-info-chars-r 77,0
+                                            li.detail-item__tab-info-chars-row
+                                                div.detail-item__tab-info-chars-l Калорийность в 100г, ккал
+                                                div.detail-item__tab-info-chars-r 427,0
+                                            li.detail-item__tab-info-chars-row
+                                                div.detail-item__tab-info-chars-l Условия хранения (температура)
+                                                div.detail-item__tab-info-chars-r 0 +25 С
+                                            li.detail-item__tab-info-chars-row
+                                                div.detail-item__tab-info-chars-l Сроки реализации
+                                                div.detail-item__tab-info-chars-r 1 год
+
+

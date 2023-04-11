@@ -1,0 +1,138 @@
+.detail-item {
+  &__ {
+    &wrapper {
+      @apply grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-[30px] 2lg:gap-20 xl:gap-6 xl:grid-cols-[900fr_444px];
+    }
+
+    &image {
+      &-wrapper {
+
+      }
+    }
+
+    &info {
+      &-wrapper {
+
+      }
+    }
+
+    &price {
+      @apply font-bold text-[16px] lg:text-[30px] lg:text-violet lg:font-black 2lg:text-[40px];
+    }
+
+    &measure {
+      @apply text-[12px] lg:text-[18px] lg:font-medium;
+    }
+
+    &prices-block {
+      @apply mb-[30px];
+    }
+
+    &bonuses-block {
+      @apply mb-[30px];
+    }
+
+    &buy-block {
+      @apply flex items-center justify-between;
+    }
+
+    &old-price {
+      @apply text-grey text-[12px] font-semibold lg:text-[18px] lg:font-normal;
+    }
+
+    &price-description {
+      @apply text-green text-[13px] font-semibold lg:text-[16px] lg:font-bold ;
+    }
+
+    &bonuses {
+      @apply flex items-center bg-light-blue w-fit px-[9px];
+      border-radius: 60px;
+    }
+
+    &bonuses-description {
+      @apply text-[14px] text-grey;
+    }
+
+    &quantity {
+      @apply min-w-[170px] 2lg:min-w-[270px] xl:min-w-[170px];
+    }
+
+    &go-fav {
+      @apply bg-light-grey h-fit p-2;
+      border-radius: 100%;
+    }
+
+    &tab {
+      &-wrapper {
+        @apply  py-[13px]  px-[17px] xl:py-[13px]  xl:px-[17px]  2lg:py-[30px] 2lg:px-[35px] bg-white rounded;
+      }
+
+      &-title {
+        @apply font-bold text-blue text-[16px] 2lg:text-[20px] xl:text-[16px];
+      }
+      &-info-hide{
+        height: 0px !important;
+      }
+      &-hide-tab{
+        @apply duration-fast ease-in;
+      }
+      &-info{
+        @apply duration-fast ease-in;
+
+        overflow: hidden;
+      }
+
+      &-info-delivery{
+        &-row:not(:last-child){
+          @apply  mb-[17px];
+        }
+        &-l{
+          @apply font-bold text-black text-[14px] xl:text-[16px];
+        }
+        &-r{
+          @apply text-grey text-[14px] xl:text-[16px];
+        }
+      }
+      &-info-chars{
+        &-row {
+          @apply lg:gap-4 2lg:gap-0 xl:gap-4  grid grid-cols-1 lg:grid-cols-2 2lg:grid-cols-1 xl:grid-cols-2;
+        }
+        &-row:not(:last-child){
+          @apply  mb-[17px];
+        }
+        &-l{
+          @apply font-[500]  text-grey text-[14px] xl:text-[16px];
+        }
+        &-r{
+          @apply  font-[500] text-black   text-[14px] xl:text-[16px];
+        }
+      }
+
+      //&-info {
+      //  &-row {
+      //    @apply grid grid-cols-1 lg:grid-cols-2 2lg:grid-cols-1 xl:grid-cols-2;
+      //  }
+      //}
+      //
+      //&-info.detail-item__black-r {
+      //  &-l {
+      //    @apply text-[14px]
+      //  }
+      //
+      //  &-r {
+      //
+      //  }
+      //}
+      //
+      //&-info.detail-item__black-l {
+      //  &-l {
+      //    @apply text-[14px]
+      //  }
+      //
+      //  &-r {
+      //
+      //  }
+      //}
+    }
+  }
+}

@@ -7,6 +7,7 @@ import {initChoices} from "./initChoices";
 import {filterToggler} from "./filter-toggler";
 import {initSwitches} from "./initSwitches";
 import {sideFilter} from "./sideFilter";
+import {detailTabs} from "./detailTabs";
 
 document.addEventListener('DOMContentLoaded', () => {
   init();
@@ -21,4 +22,5 @@ const init = () => {
   headerSectionsButton();
   filterToggler();
   sideFilter();
+  detailTabs();
 };

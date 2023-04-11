@@ -2,6 +2,7 @@
   @apply opacity-20 bg-black fixed top-0 left-0 w-full h-full hidden z-[99] ;
 }
 .btn{
+    @apply rounded;
     width: fit-content;
     height: fit-content;
     text-align: center;
