@@ -1,0 +1,10 @@
+.basket{
+  &__{
+    &wrapper{
+      @apply grid grid-cols-[8fr_4fr];
+    }
+    &available-deliv{
+      @apply bg-light-blue p-5 flex items-center justify-between rounded xl:col-span-1 col-span-2;
+    }
+  }
+}
