@@ -1,10 +1,98 @@
 .basket{
   &__{
     &wrapper{
-      @apply grid grid-cols-[8fr_4fr];
+      @apply grid grid-cols-[10fr_4fr] gap-15;
     }
     &available-deliv{
-      @apply bg-light-blue p-5 flex items-center justify-between rounded xl:col-span-1 col-span-2;
+      @apply bg-light-blue p-5 flex items-center justify-between rounded xl:col-span-1 col-span-2 h-fit;
+    }
+    &right-block{
+      @apply row-start-1 row-end-4 col-start-2;
+      //grid-row-start: 1;
+      //grid-column-start: 2;
+      //grid-row-end: 4;
+      &-wrapper{
+        @apply p-5 bg-white;
+      }
+      &-title{
+        @apply text-black text-[20px] font-bold md:text-[26px] lg:text-[20px] 2lg:text-[30px];
+      }
+      &-deliv-info{
+        &-row{
+          @apply flex justify-between ;
+          &-left{
+            @apply font-semibold text-[16px];
+          }
+          &-right{
+            @apply font-bold text-[16px];
+          }
+        }
+        &-row:not(:last-child){
+          @apply mb-3;
+        }
+      }
+      &-until-free{
+        &-wrapper{
+        }
+        &-row{
+          @apply flex flex-row flex-nowrap justify-between items-center text-blue ;
+        }
+        &-progress-track{
+          @apply mt-[10px] relative;
+          width: 100%;
+          height: 3px;
+          background: var(--light-grey);
+        }
+        &-progress-row{
+          @apply absolute left-0 top-0 h-[3px] bg-blue;
+        }
+      }
+      &-itog{
+        @apply flex justify-between;
+      }
+      &-buy{
+      }
+    }
+    &left-block{
+      &-pick-row{
+        @apply flex;
+        &-param{
+          @apply flex;
+        }
+      }
+    }
+    &item{
+      &-wrapper{
+        @apply p-[20px_30px_30px_20px] grid grid-cols-4 bg-white;
+      }
+        &-image-wrapper{
+          @apply  max-w-[100px] max-h-[100px];
+        }
+      &-total-row{
+        @apply flex items-center ;
+      }
+      &-total-price{
+        @apply bg-green p-[2px]  rounded text-white w-fit text-[20px] font-extrabold;
+      }
+      &-total-old-price{
+        @apply text-grey text-[12px];
+      }
+      &-name{
+        @apply font-bold text-[14px];
+      }
+      &-price-per-item{
+        @apply text-grey text-[12px] font-[500];
+      }
+
+      &-go-fav{
+        @apply flex items-center;
+        &-icon{
+          @apply bg-light-grey p-1  rounded-[100%] w-fit h-fit mr-1;
+        }
+        &-text{
+          @apply text-black font-bold;
+        }
+      }
     }
   }
 }
