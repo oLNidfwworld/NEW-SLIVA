@@ -1,4 +1,4 @@
-import createSwitch,{ deleteSwitch } from 'switch-button';
+import createSwitch, { deleteSwitch } from 'switch-button';
 import 'switch-button/dist/index.css';
 export function  initSwitches(){
     const switchers = document.querySelectorAll('.switch');

@@ -14,6 +14,18 @@ block content
             h1.title-style.mb-10 Корзина
             .basket
                 .basket__wrapper
+
+                    .basket__total-mob
+                        .container
+                            .basket__total-mob-wrapper
+                                .basket__total-mob-prices
+                                    .basket__total-mob-prices-total-price 1 105.62 ₽
+                                    .basket__total-mob-prices-total-count 10 товаров — 3.7 кг
+                                .basket__total-mob-buy
+                                    a.basket__total-mob-buy-button.btn.w-full.bg-violet.text-white.py-2(class='text-[14px] whitespace-nowrap font-bold block') Перейти к оформлению
+
+
+
                     .basket__available-deliv
                         span(class='text-[16px] font-semibold') Доступные способы оплаты
                         div.flex
@@ -62,7 +74,7 @@ block content
                             .basket__right-block-until-free.mb-7
                                 .basket__right-block-until-free-wrapper
                                     .basket__right-block-until-free-row
-                                        div
+                                        div(class='mr-4 lg:mr-2')
                                             <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M28.8148 26.3312H31.083V20.8935L27.7411 15.0797H21.8965" stroke="#3AAFF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                             <path d="M28.9048 27.3163C28.9048 27.7072 28.7884 28.0894 28.5702 28.4145C28.352 28.7396 28.0419 28.9931 27.679 29.1431C27.3161 29.293 26.9166 29.3326 26.5311 29.2569C26.1456 29.1812 25.7912 28.9935 25.5128 28.7177C25.2344 28.4418 25.0444 28.09 24.9669 27.7068C24.8893 27.3236 24.9276 26.9261 25.0769 26.5646C25.2263 26.203 25.48 25.8936 25.806 25.6753C26.132 25.4571 26.5157 25.3398 26.9087 25.3383C27.1708 25.3363 27.4306 25.3861 27.6732 25.4847C27.9158 25.5833 28.1363 25.7288 28.3219 25.9128C28.5076 26.0967 28.6547 26.3155 28.7548 26.5565C28.8548 26.7974 28.9058 27.0557 28.9048 27.3163Z" stroke="#3AAFF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -72,18 +84,30 @@ block content
                                             <path d="M24.6789 26.3311H21.8965" stroke="#3AAFF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                             <path d="M30.8028 20.8935H24.6406V15.0797" stroke="#3AAFF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                             </svg>
-                                        div.font-bold До бесплатной доставки
+                                        div.font-bold(class='text-[12px] sm:text-[16px] lg:text-[12px] xl:text-[16px]').mr-auto До бесплатной доставки
                                         div.font-bold  760.62 ₽
                                     .basket__right-block-until-free-progress-track
                                         .basket__right-block-until-free-progress-row(class='w-1/2')
                             .basket__right-block-itog.mb-5
                                 div.basket__right-block-title Итог
                                 div.basket__right-block-title  910.62 ₽
-                            .basket__right-block-buy.btn.w-full.bg-violet.text-white.py-4(class='text-[22px] font-bold')
+                            a.basket__right-block-buy.btn.w-full.bg-violet.text-white.py-4(class='text-[18px] sm:text-[16px] md:text-[20px] lg:text-[18px] 2lg:text-[22px] font-bold block')
                                 |Перейти к оформлению
+                        .basket__right-block-total-bonuses
+                            .basket__right-block-total-bonuses-wrapper
+                                .basket__right-block-total-bonuses-block
+                                    .mr-3
+                                        <svg width="27" height="29" viewBox="0 0 27 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.27011 24.9558C14.3891 26.8871 20.3328 24.143 22.5459 18.8267C24.7589 13.5103 22.4033 7.63493 17.2843 5.70362C12.1654 3.7723 6.22159 6.51641 4.00853 11.8328C1.79547 17.1491 4.15116 23.0245 9.27011 24.9558Z" fill="#AA51B9"/>
+                                        <path d="M22.5448 18.8267C20.3317 24.143 14.388 26.8872 9.26905 24.9558C4.1501 23.0246 6.53115 18.9201 8.74421 13.6037C15.9951 11.0151 12.1644 3.77229 17.2833 5.7036C22.4022 7.63492 24.7578 13.5103 22.5448 18.8267Z" fill="#C565D6"/>
+                                        <path d="M2.08203 10.8256C3.00491 8.01216 6.79782 2.72918 14.5865 4.10484C22.3752 5.4805 9.49547 9.15858 2.08203 10.8256Z" fill="#1AB15C"/>
+                                        </svg>
+                                    span(class='text-[16px]').de.mr-3 Кэшбек «сливами»
+                                    span.font-bold(class='text-[15px]') 47
+                                p.mt-3.font-semibold «Сливы» будут начислены на следующий день после получения заказа
                     .basket__left-block
                         .basket__left-block-wrapper
-                            .basket__left-block-pick-row
+                            .basket__left-block-pick-row.mb-5
                                 .basket__left-block-pick-row-param
                                     input(type='checkbox' name='select-all' value='yes')#select-all.checkbox
                                     label(for='select-all').mr-2
@@ -92,28 +116,57 @@ block content
                             .basket__items
                                 .basket__item
                                     .basket__item-wrapper
-                                        div
+                                        div.self-center.justify-center
                                             input(type='checkbox' name='item1' value='yes')#item1.checkbox
                                             label(for='item1').mr-2
                                                 span.font-bold(class='text-[14px]')
-                                        div
+                                        div.basket__item-image-outer
                                             .basket__item-image-wrapper
                                                 img(src='/assets/img/sliv-cen/coffe.png')
-                                        div
+                                        div.basket__item-info-outer
                                             .basket__item-info
                                                 .basket__item-total-row
                                                     .basket__item-total-price.mr-2 1022.56 ₽
                                                     del.basket__item-total-old-price 1043.92 ₽
                                                 .basket__item-name Порошок для стирки Автомат Колор коробка 450 гр /ПЕРСИЛ ТМ/
                                                 .basket__item-price-per-item 127.82 ₽ / шт.
-                                        div
+                                                .basket__item-bonuses-block.mt-2
+                                                    .basket__item-bonuses
+                                                        .mr-3
+                                                            <svg width="27" height="29" viewBox="0 0 27 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M9.27011 24.9558C14.3891 26.8871 20.3328 24.143 22.5459 18.8267C24.7589 13.5103 22.4033 7.63493 17.2843 5.70362C12.1654 3.7723 6.22159 6.51641 4.00853 11.8328C1.79547 17.1491 4.15116 23.0245 9.27011 24.9558Z" fill="#AA51B9"/>
+                                                            <path d="M22.5448 18.8267C20.3317 24.143 14.388 26.8872 9.26905 24.9558C4.1501 23.0246 6.53115 18.9201 8.74421 13.6037C15.9951 11.0151 12.1644 3.77229 17.2833 5.7036C22.4022 7.63492 24.7578 13.5103 22.5448 18.8267Z" fill="#C565D6"/>
+                                                            <path d="M2.08203 10.8256C3.00491 8.01216 6.79782 2.72918 14.5865 4.10484C22.3752 5.4805 9.49547 9.15858 2.08203 10.8256Z" fill="#1AB15C"/>
+                                                            </svg>
+                                                        span(class='text-[16px]').de.mr-3 Кэшбек «сливами»
+                                                        span.font-bold(class='text-[15px]') 47
+                                        div.basket__item-buy-block-outer
                                             .basket__item-buy-block
-                                                .basket__item-go-fav
-                                                    .basket__item-go-fav-icon
-                                                        <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M6.94165 11.1534L2.98165 7.19343C-0.348353 3.86343 3.61165 -0.0965683 6.94165 3.23343C10.3316 -0.156568 14.2916 3.80343 10.9016 7.19343L6.94165 11.1534Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-                                                        </svg>
-                                                    .basket__item-go-fav-text В избранное
+                                                .flex
+                                                    .basket__item-go-fav.mr-5
+                                                        .basket__item-go-fav-icon
+                                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M6.94165 11.1534L2.98165 7.19343C-0.348353 3.86343 3.61165 -0.0965683 6.94165 3.23343C10.3316 -0.156568 14.2916 3.80343 10.9016 7.19343L6.94165 11.1534Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                                                            </svg>
+                                                        .basket__item-go-fav-text В избранное
+                                                    .basket__item-go-del
+                                                        .basket__item-go-del-icon
+                                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M11 1L1 11M1 1L11 11" stroke="#E77280" stroke-width="2"/>
+                                                            </svg>
 
+                                                        .basket__item-go-del-text Удалить
+                                                .basket__item-quantity
+                                                    .catalog-items__quantity-block(class='mt-3 sm:mt-0')
+                                                        .catalog-items__quantity-wrapper
+                                                            div.catalog-items__quantity-minus
+                                                                <svg width="7" height="2" viewBox="0 0 7 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M0.109375 1.99007V0.0100708H6.18938V1.99007H0.109375Z" fill="#32383C"/>
+                                                                </svg>
+                                                            span.catalog-items__quantity-count 1
+                                                            div.catalog-items__quantity-plus
+                                                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M4.07078 9.91003V5.83003H0.0507812V4.07003H4.07078V0.0900269H5.89078V4.07003H9.89078V5.83003H5.89078V9.91003H4.07078Z" fill="#32383C"/>
+                                                                </svg>
 
 

@@ -269,7 +269,7 @@
       }
       &quantity{
         &-block{
-          @apply bg-global-bg rounded;
+          @apply bg-global-bg rounded overflow-hidden;
         }
         &-wrapper{
           @apply py-[9px] px-6 flex flex-row justify-between items-center;

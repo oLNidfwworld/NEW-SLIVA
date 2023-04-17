@@ -1,18 +1,45 @@
 .basket{
   &__{
     &wrapper{
-      @apply grid grid-cols-[10fr_4fr] gap-15;
+      @apply grid lg:grid-cols-[9fr_5fr] xl:grid-cols-[10fr_4fr] gap-[30px] 2lg:gap-[45px] xl:gap-15;
+    }
+    &total-mob{
+      @apply fixed left-0 bottom-[77px] w-full lg:hidden bg-white z-[99];
+      &-wrapper{
+        @apply grid sm:grid-cols-2  py-1 gap-2;
+      }
+      &-buy{
+
+      }
+      &-prices{
+        &-total-price{
+          @apply text-[16px]  font-bold;
+        }
+        &-total-count{
+          @apply text-[12px]  text-grey font-semibold;
+        }
+      }
     }
     &available-deliv{
-      @apply bg-light-blue p-5 flex items-center justify-between rounded xl:col-span-1 col-span-2 h-fit;
+      @apply bg-light-blue p-5 flex flex-col md:flex-row items-center sm:items-start md:items-center justify-between rounded lg:col-start-1 lg:col-end-3 xl:col-span-1   h-fit;
     }
     &right-block{
-      @apply row-start-1 row-end-4 col-start-2;
+      @apply lg:row-start-2 lg:col-start-2 lg:row-end-3 xl:row-start-1 xl:row-end-4 xl:col-start-2 row-start-3;
       //grid-row-start: 1;
       //grid-column-start: 2;
       //grid-row-end: 4;
+      &-total-bonuses{
+        @apply mt-[10px];
+        &-wrapper{
+          @apply bg-light-blue rounded p-4;
+        }
+        &-block{
+          @apply flex items-center bg-white w-fit px-[9px];
+          border-radius: 60px;
+        }
+      }
       &-wrapper{
-        @apply p-5 bg-white;
+        @apply rounded p-2 sm:p-5 bg-white;
       }
       &-title{
         @apply text-black text-[20px] font-bold md:text-[26px] lg:text-[20px] 2lg:text-[30px];
@@ -35,7 +62,7 @@
         &-wrapper{
         }
         &-row{
-          @apply flex flex-row flex-nowrap justify-between items-center text-blue ;
+          @apply flex flex-row flex-nowrap   items-center text-blue ;
         }
         &-progress-track{
           @apply mt-[10px] relative;
@@ -61,24 +88,46 @@
         }
       }
     }
+    &items{
+      @apply grid gap-5;
+    }
     &item{
       &-wrapper{
-        @apply p-[20px_30px_30px_20px] grid grid-cols-4 bg-white;
+        @apply py-5 px-[10px] sm:p-5 xl:p-[20px_30px_30px_20px] grid grid-cols-[1fr_4fr_8fr] md:grid-cols-[1fr_2fr_12fr] md:gap-x-4 2lg:grid-cols-[1fr_3fr_9fr_7fr] bg-white;
+      }
+      &-bonuses {
+        @apply flex items-center bg-light-blue w-fit px-[9px];
+        border-radius: 60px;
+        > .text-\[16px\]{
+          @apply hidden md:block;
+        }
+      }
+      &-buy-block-outer{
+        @apply justify-self-center col-start-1 col-end-4 mt-3 border-t-[1px] border-t-light-grey pt-3 w-full 2lg:col-start-[unset] 2lg:col-end-[unset] 2lg:border-t-[unset] 2lg:border-t-0;
+      }
+      &-buy-block{
+        @apply flex justify-between flex-col sm:flex-row 2lg:flex-col h-full w-fit sm:w-full 2lg:w-fit m-auto ;
+      }
+      &-quantity{
+        @apply sm:min-w-[130px];
       }
         &-image-wrapper{
-          @apply  max-w-[100px] max-h-[100px];
+          @apply  max-w-[62px] max-h-[62px] sm:max-w-[78px] sm:max-h-[78px] 2lg:max-w-[100px] 2lg:max-h-[100px];
+        }
+        &-image-outer{
+          @apply  justify-self-center self-center;
         }
       &-total-row{
         @apply flex items-center ;
       }
       &-total-price{
-        @apply bg-green p-[2px]  rounded text-white w-fit text-[20px] font-extrabold;
+        @apply bg-green p-[2px] whitespace-nowrap rounded text-white w-fit text-[14px] lg:text-[18px] 2lg:text-[20px] font-extrabold;
       }
       &-total-old-price{
-        @apply text-grey text-[12px];
+        @apply text-grey text-[12px] whitespace-nowrap;
       }
       &-name{
-        @apply font-bold text-[14px];
+        @apply font-bold text-[14px] 2lg:text-[16px] my-[10px] line-clamp-2 ;
       }
       &-price-per-item{
         @apply text-grey text-[12px] font-[500];
@@ -90,7 +139,16 @@
           @apply bg-light-grey p-1  rounded-[100%] w-fit h-fit mr-1;
         }
         &-text{
-          @apply text-black font-bold;
+          @apply text-black text-[14px] font-semibold;
+        }
+      }
+      &-go-del{
+        @apply flex items-center;
+        &-icon{
+          @apply   p-1    w-fit h-fit mr-1;
+        }
+        &-text{
+          @apply text-red text-[14px] font-semibold;
         }
       }
     }

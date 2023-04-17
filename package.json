@@ -87,6 +87,7 @@
     "@fancyapps/ui": "^4.0.27",
     "@material/checkbox": "^14.0.0",
     "choices.js": "^10.1.0",
+    "gsap": "^3.11.5",
     "http-server": "^14.1.0",
     "pug": "^3.0.2",
     "swiper": "^8.1.5",

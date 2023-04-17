@@ -16,6 +16,13 @@
       }
     }
 
+    &mob-block{
+      @apply fixed w-full bg-white left-0 bottom-[77px] lg:hidden z-[99];
+      &-wrapper{
+        @apply items-center grid grid-cols-[3fr_1fr] sm:grid-cols-[5fr_1fr_3fr] md:grid-cols-[4fr_1fr_3fr_3fr] py-4 gap-y-3 sm:gap-3;
+      }
+    }
+
     &price {
       @apply font-bold text-[16px] lg:text-[30px] lg:text-violet lg:font-black 2lg:text-[40px];
     }
@@ -58,7 +65,7 @@
     }
 
     &go-fav {
-      @apply bg-light-grey h-fit p-2;
+      @apply bg-light-grey h-fit w-fit p-2;
       border-radius: 100%;
     }
 

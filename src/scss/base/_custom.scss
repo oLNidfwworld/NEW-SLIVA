@@ -48,7 +48,7 @@
    }
 }
 .breadcrumbs{
-  @apply hidden xl:block mb-10;
+  @apply hidden lg:block mb-10;
   &__{
     &wrapper{
       @apply flex items-baseline;

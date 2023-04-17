@@ -8,7 +8,6 @@ block variables
 
 
 block content
-    //todo: filter >1024
     .inner-content
         .container
             .breadcrumbs
@@ -30,7 +29,37 @@ block content
                     .detail-item__info
                         .detail-item__info-wrapper
                             div
-                                .detail-item__prices-block
+                                .detail-item__mob-block
+                                    .container
+                                        .detail-item__mob-block-wrapper
+                                            .detail-item__prices-block.mb-0
+                                                .flex.items-baseline
+                                                    div.mr-5
+                                                        span.detail-item__price 22.32
+                                                        |
+                                                        span.detail-item__measure руб. /шт
+                                                    div
+                                                        del.detail-item__old-price 23.49 руб. / шт
+                                                div.detail-item__price-description 11446.4 руб - 20 шт (упаковка)
+                                            .detail-item__go-fav(class='justify-self-end sm:justify-self-center')
+                                                <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.4638 21.225L4.14779 12.909C-2.84521 5.916 5.47079 -2.4 12.4638 4.593C19.5828 -2.526 27.8988 5.79 20.7798 12.909L12.4638 21.225Z" stroke="white" stroke-width="2.3" stroke-miterlimit="10"/>
+                                                </svg>
+                                            .detail-item__quantity(class='col-span-2 sm:col-span-1')
+                                                .catalog-items__quantity-block.h-full
+                                                    .catalog-items__quantity-wrapper.bg-lighter-grey
+                                                        .catalog-items__quantity-minus
+                                                            <svg width="7" height="2" viewBox="0 0 7 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M0.609375 1.99006V0.0100584H6.68938V1.99006H0.609375Z" fill="#32383C"/>
+                                                            </svg>
+                                                        .catalog-items__quantity-count 12
+                                                        .catalog-items__quantity-plus
+                                                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M4.07078 9.90995V5.82995H0.0507812V4.06995H4.07078V0.0899506H5.89078V4.06995H9.89078V5.82995H5.89078V9.90995H4.07078Z" fill="#32383C"/>
+                                                            </svg>
+                                            .catalog-items__buy.btn.bg-violet.text-white(class='py-[9px] w-full px-11 col-span-full md:col-span-1')
+                                                | Купить
+                                .detail-item__prices-block(class='hidden lg:block')
                                     .flex.items-baseline
                                         div.mr-5
                                             span.detail-item__price 22.32
@@ -50,9 +79,9 @@ block content
                                         span(class='text-[16px]').mr-3 Кэшбек «сливами»
                                         span.font-bold(class='text-[15px]') 47
                                     .detail-item__bonuses-description Копите баллы «сливы» и меняйте на товары.
-                                .detail-item__buy-block
+                                .detail-item__buy-block(class='hidden lg:flex')
                                     .detail-item__quantity.h-full.mr-8
-                                        .catalog-items__quantity.h-full
+                                        .catalog-items__quantity-block.h-full
                                             .catalog-items__quantity-wrapper.bg-white
                                                 .catalog-items__quantity-minus
                                                     <svg width="7" height="2" viewBox="0 0 7 2" fill="none" xmlns="http://www.w3.org/2000/svg">

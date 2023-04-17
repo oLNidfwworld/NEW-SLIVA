@@ -13,4 +13,10 @@ export function burgerMenu() {
       overlay.classList.toggle('block');
       document.body.style.overflow = 'initial';
   });
+    overlay.addEventListener('click',()=>{
+        burgerMenu.classList.toggle('mob-burger-show');
+            document.body.style.overflow = 'initial';
+            overlay.classList.toggle('block');
+
+    })
 }
