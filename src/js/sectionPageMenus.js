@@ -12,9 +12,9 @@ export function sectionPageMenus() {
   overlay.addEventListener('click',()=>{
     let currentMenu = document.querySelector('.sections__section-menu.sections__section-menu-show');
     if(currentMenu){
-      currentMenu.classList.toggle('sections__section-menu-show');
+      currentMenu.classList.remove('sections__section-menu-show');
       document.body.style.overflow = 'initial';
-      overlay.classList.toggle('block');
+      overlay.classList.remove('block');
     }
   })
   buttonChildDrop.forEach((el)=>{

@@ -3,9 +3,10 @@
   box-shadow: 0px 7px 15px -13px #829297E0;
   &__{
     &wrapper{
-      @apply pt-10 grid grid-cols-[8fr_4px_10fr] gap-13;
+      @apply pt-10 grid grid-cols-[8fr_4px_10fr] gap-13 h-full pb-5;
     }
     &1lvl{
+      @apply h-full overflow-auto;
       &-item{
         @apply block mb-[20px];
         &-icon{
@@ -22,6 +23,20 @@
         }
       }
 
+    }
+    &1lvl::-webkit-scrollbar{
+      height: 0px;
+      width: 0px;
+    }
+    &progress-scrollbar{
+      @apply relative bg-light-grey ;
+      &-point{
+        @apply absolute w-[14px] h-[14px] bg-green -left-[5px];
+        border-radius: 100%;
+      }
+      &-progressTrack{
+        @apply absolute w-full bg-green;
+      }
     }
     &2lvl{
       &_current{

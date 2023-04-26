@@ -12,9 +12,9 @@ export function filterToggler() {
     overlay.addEventListener('click', () => {
       const currentMenu = document.querySelector('.catalog-items__top-bar-filters-filter-wrapper-shown');
       if (currentMenu) {
-        currentMenu.classList.toggle('catalog-items__top-bar-filters-filter-wrapper-shown');
+        currentMenu.classList.remove('catalog-items__top-bar-filters-filter-wrapper-shown');
         document.body.style.overflow = 'initial';
-        overlay.classList.toggle('block');
+        overlay.classList.remove('block');
       }
     });
   }

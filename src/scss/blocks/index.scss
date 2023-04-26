@@ -48,6 +48,9 @@
   &__{
     &wrapper{
     }
+    &image-wrapper{
+      @apply overflow-hidden max-w-[155px] max-h-[155px];
+    }
     &btn{
       &-wrapper{
         //@apply absolute flex flex-col right-0 items-center;
@@ -259,7 +262,13 @@
         @apply font-black text-[18px]  2lg:text-[26px];
       }
       &image-wrapper{
-        @apply w-fit m-auto max-w-[155px]  2lg:max-w-[220px] xl:max-w-[254px];
+        @apply overflow-hidden w-fit m-auto
+        w-[155px] h-[155px]
+        2lg:h-[220px] 2lg:w-[220px]
+        xl:h-[254px]  xl:w-[254px] ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
       &measure{
         @apply text-[12px] font-medium 2lg:text-16px;

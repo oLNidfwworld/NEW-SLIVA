@@ -14,9 +14,9 @@ export function burgerMenu() {
       document.body.style.overflow = 'initial';
   });
     overlay.addEventListener('click',()=>{
-        burgerMenu.classList.toggle('mob-burger-show');
+        burgerMenu.classList.remove('mob-burger-show');
             document.body.style.overflow = 'initial';
-            overlay.classList.toggle('block');
+            overlay.classList.remove('block');
 
     })
 }

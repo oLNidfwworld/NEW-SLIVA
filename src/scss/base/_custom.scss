@@ -2,10 +2,13 @@
   @apply opacity-20 bg-black fixed top-0 left-0 w-full h-full hidden z-[99] ;
 }
 .btn{
-    @apply rounded;
+    @apply rounded  duration-fast hover:scale-[1.10];
     width: fit-content;
     height: fit-content;
     text-align: center;
+}
+.btn.has-normal-round{
+  @apply hover:rounded-[10px];
 }
 .inpt{
     @apply rounded lg:rounded-none;
