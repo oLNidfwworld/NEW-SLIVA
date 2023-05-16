@@ -1,4 +1,4 @@
-import Swiper, { Autoplay, FreeMode } from 'swiper';
+import Swiper, {Autoplay, FreeMode, Navigation} from 'swiper';
 
 export function initSwipers() {
   new Swiper('.banners__wrapper', {
@@ -55,7 +55,12 @@ export function initSwipers() {
       },
     },
   });
-  new Swiper('.catalog-slider', {
+  let catalogSlider = new Swiper('.catalog-slider', {
+    modules: [Navigation],
+      navigation: {
+        nextEl: '.catalog-slider-next',
+        prevEl: '.catalog-slider-prev',
+      },
     breakpoints: {
       0: {
         slidesPerView: 1,
@@ -82,4 +87,5 @@ export function initSwipers() {
       },
     },
   });
+
 }

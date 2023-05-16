@@ -266,9 +266,6 @@
         w-[155px] h-[155px]
         2lg:h-[220px] 2lg:w-[220px]
         xl:h-[254px]  xl:w-[254px] ;
-        display: flex;
-        justify-content: center;
-        align-items: center;
       }
       &measure{
         @apply text-[12px] font-medium 2lg:text-16px;

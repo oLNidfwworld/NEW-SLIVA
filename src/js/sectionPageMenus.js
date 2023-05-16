@@ -1,5 +1,5 @@
 export function sectionPageMenus() {
-  const sectionButtons = document.querySelectorAll('.sections__section-wrapper');
+  const sectionButtons = document.querySelectorAll('div.sections__section-wrapper');
   const overlay = document.querySelector('#overlay');
   const buttonChildDrop = document.querySelectorAll('.sections__section-menu-item-child-drop');
   sectionButtons.forEach((btn) => {

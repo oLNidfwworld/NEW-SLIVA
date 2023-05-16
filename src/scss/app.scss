@@ -46,5 +46,65 @@
 @import 'blocks/detail';
 @import "blocks/basket";
 
-
+.order-basket{
+  &__{
+    &right-block{
+      @apply lg:row-start-2 lg:col-start-2 lg:row-end-3 xl:row-start-1 xl:row-end-4 xl:col-start-2 row-start-3;
+      //grid-row-start: 1;
+      //grid-column-start: 2;
+      //grid-row-end: 4;
+      &-total-bonuses{
+        @apply mt-[10px];
+        &-wrapper{
+          @apply bg-light-blue rounded p-4;
+        }
+        &-block{
+          @apply flex items-center bg-white w-fit px-[9px];
+          border-radius: 60px;
+        }
+      }
+      &-wrapper{
+        @apply rounded p-2 sm:p-5 bg-white;
+      }
+      &-title{
+        @apply text-black text-[20px] font-bold md:text-[26px] lg:text-[20px] 2lg:text-[30px];
+      }
+      &-deliv-info{
+        &-row{
+          @apply flex justify-between ;
+          &-left{
+            @apply font-semibold text-[16px];
+          }
+          &-right{
+            @apply font-bold text-[16px];
+          }
+        }
+        &-row:not(:last-child){
+          @apply mb-3;
+        }
+      }
+      &-until-free{
+        &-wrapper{
+        }
+        &-row{
+          @apply flex flex-row flex-nowrap   items-center text-blue ;
+        }
+        &-progress-track{
+          @apply mt-[10px] relative;
+          width: 100%;
+          height: 3px;
+          background: var(--light-grey);
+        }
+        &-progress-row{
+          @apply absolute left-0 top-0 h-[3px] bg-blue;
+        }
+      }
+      &-itog{
+        @apply flex justify-between;
+      }
+      &-buy{
+      }
+    }
+  }
+}
 
