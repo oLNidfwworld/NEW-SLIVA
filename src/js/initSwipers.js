@@ -36,22 +36,33 @@ export function initSwipers() {
     freeMode: true,
     breakpoints: {
       0: {
-        slidesPerView: 1,
+        slidesPerView: 1.2,
+
+        spaceBetween: 10
+      },
+      370: {
+        slidesPerView: 1.2,
+        spaceBetween: 15
       },
       480: {
-        slidesPerView: 2,
+        slidesPerView: 2.3,
+        spaceBetween: 20
       },
       720: {
-        slidesPerView: 3,
+        slidesPerView: 3.3,
+        spaceBetween: 20
       },
       1024: {
-        slidesPerView: 4,
+        slidesPerView: 4.3,
+        spaceBetween: 20
       },
       1280: {
-        slidesPerView: 4,
+        slidesPerView: 4.3,
+        spaceBetween: 20
       },
       1440: {
-        slidesPerView: 5,
+        slidesPerView: 5.3,
+        spaceBetween: 20
       },
     },
   });
@@ -61,30 +72,39 @@ export function initSwipers() {
         nextEl: '.catalog-slider-next',
         prevEl: '.catalog-slider-prev',
       },
-    breakpoints: {
-      0: {
-        slidesPerView: 1,
-      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1.1,
+          spaceBetween: 10
+        },
+        370: {
+          slidesPerView: 2.15,
+          spaceBetween: 5
+        },
       480: {
-        slidesPerView: 2,
+        slidesPerView: 2.2,
         spaceBetween: 15,
       },
       720: {
-        slidesPerView: 3,
+        slidesPerView: 3.3,
         spaceBetween: 15,
       },
       1024: {
-        slidesPerView: 4,
+        slidesPerView: 4.3,
         spaceBetween: 23,
       },
       1280: {
-        slidesPerView: 4,
+        slidesPerView: 4.3,
         spaceBetween: 23,
       },
       1440: {
-        slidesPerView: 4,
-        spaceBetween: 30,
-      },
+          slidesPerView: 4.3,
+          spaceBetween: 30,
+        },
+        1920: {
+          slidesPerView: 5.3,
+          spaceBetween: 30,
+        },
     },
   });
 

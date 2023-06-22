@@ -5,7 +5,9 @@ export function filterToggler() {
   if (filterButton && filterWrapper) {
     filterButton.addEventListener('click', () => {
       filterWrapper.classList.add('catalog-items__top-bar-filters-filter-wrapper-shown');
-      document.body.style.overflow = 'hidden';
+      if(window.windowWidth < 1024){
+        document.body.style.overflow = 'hidden';
+      }
       overlay.classList.toggle('block');
     });
 
@@ -13,7 +15,10 @@ export function filterToggler() {
       const currentMenu = document.querySelector('.catalog-items__top-bar-filters-filter-wrapper-shown');
       if (currentMenu) {
         currentMenu.classList.remove('catalog-items__top-bar-filters-filter-wrapper-shown');
-        document.body.style.overflow = 'initial';
+
+        if(window.windowWidth < 1024) {
+          document.body.style.overflow = 'initial';
+        }
         overlay.classList.remove('block');
       }
     });
