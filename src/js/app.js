@@ -22,8 +22,8 @@ const init = () => {
   initSwitches();
   burgerMenu();
   sectionPageMenus();
-  headerSectionsButton();
-  headerScrollProgressBar();
+  //headerSectionsButton();
+  //headerScrollProgressBar();
   filterToggler();
   sideFilter();
   detailTabs();

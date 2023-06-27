@@ -32,7 +32,11 @@ export function initSwipers() {
     },
   });
   new Swiper('.slivniye-prices', {
-    modules: [FreeMode],
+    modules: [FreeMode, Navigation],
+    navigation: {
+      nextEl: '.slivniye-prices__slider-next',
+      prevEl: '.slivniye-prices__slider-prev',
+    },
     freeMode: true,
     breakpoints: {
       0: {
